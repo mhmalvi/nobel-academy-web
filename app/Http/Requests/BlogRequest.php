@@ -24,11 +24,11 @@ class BlogRequest extends FormRequest
     public function rules()
     {
         return [
-            'required|max:100|unique:App\Models\Blog,blog_title',
+            'title' => 'required|max:100|unique:App\Models\Blog,blog_title',
             'blog_slug' => 'unique:App\Models\Blog,blog_slug',
             'summary' => 'required|max:255',
             'summernote' => 'required',
-            'image' => 'required|image|mimes:png,jpg,jpeg|max:2048'
+            'image' => 'required|mimes:png,jpg,jpeg|max:2048'
         ];
     }
 }
