@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 page-content">
-                    <h2 style="color: #fff;">SHB50115 - Diploma of Beauty Therapy</h2>
+                    <h1 style="color: #fff;">SHB50115 - Diploma of Beauty Therapy</h1>
                     <div class="page_nav">
                         <span>You are here:</span> <a href="{{ URL::to('/') }}">Home</a> <span><i
                                 class="fa fa-angle-double-right"></i>Courses</span>
@@ -27,17 +27,21 @@
                         class=" border_radius img-responsive bottom15">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h3 class="top30 bottom20">Qualification Description</h3>
+                            <h2 class="top30 bottom20">Qualification for Beauty Therapy Course</h2>
                             <p class="bottom25 text-justify">
                                 The beauty therapy industry is currently experiencing very strong growth. According to the
                                 Australian Government's Career Outlook service, with about 25,000 job openings anticipated
                                 over the next five years. Employers seek skilled applicants that are dependable,
                                 well-presented, and have good interpersonal skills.
+                            </p>
+                            <p>
                                 This qualification reflects the role of individuals employed as beauty therapists to provide
                                 a broad range of beauty therapy treatments and services including facial treatments, body
                                 massage and treatments, hair removal, lash and brow treatments, nail and make-up services.
                                 This includes consultation with clients to provide beauty advice, recommend beauty
                                 treatments and services, and sell retail skin-care and cosmetic products.
+                            </p>
+                            <p>
                                 These individuals work relatively autonomously, and are accountable for personal outputs.
                                 Their work involves the self-directed application of knowledge and skills with substantial
                                 depth in some areas where judgement is required in planning and selecting appropriate
@@ -45,13 +49,11 @@
                                 No occupational licensing, certification or specific legislative requirements apply to this
                                 qualification at the time of publication. You'll be led by an experienced team of experts
                                 who understand the industry and its requirements.
-                                <br />
-                                <br />
-                                <br />
-                                <strong>Entry and Enrolment Process:</strong>
-
-                                <br />
-
+                            </p>
+                            <br>
+                            <h4>Entry and Enrolment Process:</h4>
+                            <br>
+                            <p>
                                 All prospective students are required to participate in an interview with the Course Career
                                 Advisor or the Education Manager. The interview may be in person or via the phone/skype. The
                                 information obtained from the interview and the outcome of the test report will be assessed
@@ -64,25 +66,25 @@
                         <div class="col-sm-12">
                             <h3 class="top30 bottom20">Packaging Rules</h3>
                             <p class="bottom25">
-                            <ul>
+                            <ol>
                                 <li>13 core units</li>
                                 <li>12 elective units, consisting of: </li>
-                            </ul>
+                            </ol>
 
-                            <ul>
+                            <ol>
                                 <li>all units from Group A, B, or C:</li>
-                            </ul>
+                            </ol>
 
-                            <ul>
+                            <ol>
                                 <li><strong>Group A</strong> – Electrolysis/Diathermy</li>
                                 <li><strong>Group B</strong> – Relaxation Massage</li>
                                 <li><strong>Group C</strong> – Spa Treatments</li>
-                            </ul>
+                            </ol>
 
-                            <ul>
+                            <ol>
                                 <li>remaining units from Group D - General Electives, elsewhere in SHB Training Package, or
                                     any other current training package or accredited course.</li>
-                            </ul>
+                            </ol>
                             </p>
                         </div>
                     </div>
@@ -130,7 +132,7 @@
                                         <div id="B" class="panel-collapse collapse" role="tabpanel"
                                             aria-labelledby="headingTwo">
                                             <div class="panel-body">
-                                                <ul>
+                                                <ol>
                                                     <li class="nta_course">
                                                         Consult with clients and provide quality salon services
                                                     </li>
@@ -157,7 +159,7 @@
                                                         Perform a variety of advanced waxing procedures in a hygienic and
                                                         painless manner for the customer.
                                                     </li>
-                                                </ul>
+                                                </ol>
                                             </div>
                                         </div>
                                     </div>

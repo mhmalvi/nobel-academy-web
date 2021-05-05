@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 page-content">
-                    <h2 style="color: #fff;">HLT52015 - Diploma of Remedial Massage</h2>
+                    <h1 style="color: #fff;">HLT52015 - Diploma of Remedial Massage</h1>
                     <div class="page_nav">
                         <span>You are here:</span> <a href="{{ URL::to('/') }}">Home</a> <span><i
                                 class="fa fa-angle-double-right"></i>Courses</span>
@@ -30,53 +30,62 @@
                         class=" border_radius img-responsive bottom15">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h3 class="top30 bottom20">Qualification Description</h3>
+                            <h2 class="top30 bottom20">Qualification for Remedial Massage Course</h2>
                             <p class="bottom25">
                                 This qualification reflects the role of remedial massage therapists who work with clients
                                 presenting with soft tissue dysfunction, musculoskeletal imbalance or restrictions in range
                                 of motion (ROM). Practitioners may be self-employed or work within a larger health service.
+                            </p>
+                            <p class="bottom25">
                                 This course will teach you how to do remedial massage, which involves the use of massage,
                                 stretching, and other methods to enhance wellness, wellbeing, and relaxation. You'll acquire
                                 the theoretical expertise you'll need to evaluate your clients' soft tissue dysfunction and
                                 handle others that have a particular need.
+                            </p>
+                            <p class="bottom25">
                                 To achieve this qualification, the candidate must have completed at least 200 hours of work
                                 as detailed in the Assessment Requirements of units of competency. No licensing,
                                 legislative, regulatory or certification requirements apply to this qualification at the
                                 time of publication.
+
+                            </p>
+                            <p class="bottom25">
                                 At Noble Training Academy, everything you study has a direct application in the real world.
                                 Practical skills can be developed by hands-on experience. you'll earn 200 hours of clinical
                                 experience in massage clinics. This allows you to perform massage techniques on a variety of
                                 people, including students, employees, and the general public.
-
                             </p>
                             <br>
-                            <br>
                             <h4><strong>Our programs include:</strong></h4>
-                            <ul>
+                            <br>
+                            <ol>
                                 <li>Workshops</li>
                                 <li>Drop-in sessions</li>
                                 <li>Peer mentoring</li>
                                 <li>Math’s and writing resources</li>
                                 <li>Resume and career guidance.</li>
-                            </ul>
+                            </ol>
                             <br>
                             <p>
                                 Our remedial massage experts will teach you the following in this nationally recognized
                                 qualification:
-                                Advanced massage techniques to treat a variety of injuries.
-                                Clients with soft tissue dysfunction, musculoskeletal imbalance, or motion limitations are
-                                assessed and treated.
-                                To devise a detailed recovery plan that includes the use of specialized massage techniques.
-                                With a Diploma in Remedial Massage, you'll be able to practice as a licensed Remedial
-                                Massage Practitioner or Therapist. This course may be available as part of a Traineeship
-                                program.
-                                Via job-placement opportunities offered as part of this course, you can complete the
-                                required 200 hours of hands-on and real-world massage therapy work.
-
                             </p>
                             <br>
+                            <ol>
+                                <li> Advanced massage techniques to treat a variety of injuries.</li>
+                                <li> Clients with soft tissue dysfunction, musculoskeletal imbalance, or motion limitations
+                                    are assessed and treated.</li>
+                                <li> To devise a detailed recovery plan that includes the use of specialized massage
+                                    techniques. With a Diploma in Remedial Massage, you'll be able to practice as a licensed
+                                    Remedial Massage Practitioner or Therapist. This course may be available as part of a
+                                    Traineeship program.</li>
+                                <li> Via job-placement opportunities offered as part of this course, you can complete the
+                                    required 200 hours of hands-on and real-world massage therapy work.</li>
+                            </ol>
+                            <br>
                             <h4><strong>Career:</strong></h4>
-                            <ul>
+                            <br>
+                            <ol>
                                 <li> Graduates may be able to work independently or as part of a health clinic as remedial
                                     massage
                                     therapists.</li>
@@ -84,9 +93,10 @@
                                     team as a
                                     specialist member.</li>
                                 <li> Graduates will continue their education with the Advanced Diploma in Myotherapy.</li>
-                            </ul>
+                            </ol>
                             <br>
                             <h4><strong>Entry and Enrolment Process:</strong></h4>
+                            <br>
                             <p>
                                 All prospective students must meet with the Course Career Advisor or the Education Manager
                                 for
@@ -106,11 +116,11 @@
                                 <li>16 core units</li>
                                 <li>
                                     <span>5 elective units, consisting of:</span>
-                                    <ul>
-                                        <li>- at least 1 unit from the Business Management group below</li>
-                                        <li>- up to 4 units from the electives listed below, any endorsed Training Package
+                                    <ol>
+                                        <li>at least 1 unit from the Business Management group below</li>
+                                        <li>up to 4 units from the electives listed below, any endorsed Training Package
                                             or accredited course – these units must be relevant to the work outcome</li>
-                                    </ul>
+                                    </ol>
                                 </li>
                             </ul>
                         </div>

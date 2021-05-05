@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 page-content">
-                    <h2 style="color: #fff;">SHB40115 - Certificate IV in Beauty Therapy</h2>
+                    <h1 style="color: #fff;">SHB40115 - Certificate IV in Beauty Therapy</h1>
                     <div class="page_nav">
                         <span>You are here:</span> <a href="{{ URL::to('/') }}">Home</a> <span><i
                                 class="fa fa-angle-double-right"></i>Courses</span>
@@ -35,19 +35,26 @@
                                 The beauty care industry is one of Australia's fastest growing consumer industries, and the
                                 number of Beauty Therapists is projected to increase dramatically by2023, with about 25,000
                                 job openings.
+                            </p>
+                            <p class="bottom25">
                                 This qualification reflects the role of individuals who work as beauty therapists to provide
                                 a range of beauty therapy treatments and services, including lash and brow treatments, nail
                                 services, make-up, massage and waxing. They communicate with clients to recommend treatments
                                 and services and sell retail skin care and cosmetic products.
+                            </p>
+                            <p class="bottom25">
                                 These individuals undertake work independently, with limited guidance from others, to
                                 perform routine and non-routine activities and solve non-routine problems. They apply and
                                 adapt technical skills and knowledge, and use judgment in the provision of beauty treatments
                                 and services. These individuals are responsible for their own outputs and provide limited
                                 guidance to others.
+                            </p>
+                            <p class="bottom25">
                                 Work is typically conducted in beauty salons and spas.
                                 No occupational licensing, certification or specific legislative requirements apply to this
                                 qualification at the time of publication.
-
+                            </p>
+                            <p class="bottom25">
                                 When you complete the Certificate IV in Beauty Therapy, you will have the knowledge and
                                 expertise to offer a professional range of beauty treatments and services to your clients.
                                 This course will also prepare you to start your own company or work in the industry. You can
@@ -57,11 +64,13 @@
                             <br>
                             <br />
                             <h4>LEARN NEW SKILLS</h4>
+                            <br>
                             <p>
                                 You will learn and expand your skills in the following areas through theoretical and
                                 practical course work:
                             </p>
-                            <ul>
+                            <br>
+                            <ol>
                                 <li>A range of massage techniques</li>
                                 <li>Facial techniques including exfoliation and facial massage</li>
                                 <li>Nail treatments including manicure and pedicure</li>
@@ -72,27 +81,30 @@
                                 <li>Retail and sales operations</li>
                                 <li>Eye lash extensions</li>
                                 <li>Lash and brows</li>
-                            </ul>
+                            </ol>
                             <br />
                             <br />
                             <h4>DEVELOP YOUR TALENT</h4>
+                            <br>
                             <p>Polish and set your skills to get ahead in this industry:</p>
-                            <ul>
+                            <br>
+                            <ol>
                                 <li>People skills to help clients feel comfortable and at ease</li>
                                 <li>Strong communication skills</li>
                                 <li>The ability to manage time effectively</li>
                                 <li>High levels of discretion and professional integrity</li>
-                            </ul>
+                            </ol>
                             <br />
                             <br />
                             <h4>Job opportunity:</h4>
-                            <ul>
+                            <br>
+                            <ol>
                                 <li>Senior Beauty Therapist</li>
                                 <li>
                                     Freelance Make-up Artist at retail cosmetic counters, fashion and media sets, or
                                     photography studios
                                 </li>
-                            </ul>
+                            </ol>
                         </div>
                     </div>
                     <div class="bottom15"></div>
@@ -104,11 +116,11 @@
                                 <li>13 core units</li>
                                 <li>
                                     <span>6 elective units, consisting of</span>
-                                    <ul>
-                                        <li>- 3 units from the list below</li>
-                                        <li>- 3 units from the list below, elsewhere in SHB Training Package, or any other
+                                    <ol>
+                                        <li>3 units from the list below</li>
+                                        <li>3 units from the list below, elsewhere in SHB Training Package, or any other
                                             current Training Package or accredited course</li>
-                                    </ul>
+                                    </ol>
                                 </li>
                             </ul>
                         </div>

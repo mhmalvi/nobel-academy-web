@@ -190,7 +190,7 @@ body,html{
 	font-family: 'Archivo Black';
 }
 
-h2, #about .priorty .about-post h4, .icon_box h4, .contact_address .address h4, .number-counters .counters-item strong,  #parallax h1,
+h1, #about .priorty .about-post h4, .icon_box h4, .contact_address .address h4, .number-counters .counters-item strong,  #parallax h1,
 .reviews .review_left strong, #error .error h2,
 .shopping_box h4.price_product, .cart_table .price_product, .cart_table .product-name h4,
 nav.bootsnav .megamenu-content .title{
@@ -262,7 +262,7 @@ h1,h2,h3,h4,h5,h6{
 	margin:0;
 }
 h1{
-	font-size:3.000em;
+	font-size:2.25em;
 }
 h2{
 	font-size:2.000em;
@@ -4001,4 +4001,9 @@ nav.navbar.bootsnav #menu_bars{
   }
   .course_name:hover{
 	  color: #3FD4FB;
+  }
+
+  ol li {
+	  list-style-type:disc;
+	  padding: 5px 0px !important;
   }

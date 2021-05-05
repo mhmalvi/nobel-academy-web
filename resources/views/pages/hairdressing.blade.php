@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 page-content">
-                    <h2 style="color: #fff;">SHB30416 - Certificate III in Hairdressing</h2>
+                    <h1 style="color: #fff;">SHB30416 - Certificate III in Hairdressing</h1>
                     <div class="page_nav">
                         <span>You are here:</span> <a href="{{ URL::to('/') }}">Home</a> <span><i
                                 class="fa fa-angle-double-right"></i>Courses</span>
@@ -30,23 +30,31 @@
                         class=" border_radius img-responsive bottom15">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h3 class="top30 bottom20">Qualification Description</h3>
+                            <h2 class="top30 bottom20">Qualification for Hair Dressing Course</h2>
                             <p class="bottom25">
                                 Hairdressing skills are in high demand, according to the Australian Government's Job Outlook
                                 service, with employers finding it difficult to fill vacancies. Over the next five years,
                                 the industry is projected to expand at a rapid pace, with more than 31,000 job openings.
+                            </p>
+                            <p class="bottom25">
                                 Learn how to color and lighten hair, provide shampoo and basin services, and design and cut
                                 hair in a modern salon environment. Much of this will take place in a classroom setting as
                                 well as in a real-world technical salon setting.
+                            </p>
+                            <p class="bottom25">
+
                                 After completing this course, you will have everything you need to confidently pursue jobs
-                                in the hairdressing industry.
-                                This qualification reflects the role of hairdressers who use a range of well-developed
-                                sales, consultation and technical skills and knowledge to provide a broad range of
-                                hairdressing services to clients. They use discretion and judgement to provide client
-                                services and take responsibility for the outcomes of their own work.
+                                in the hairdressing industry. This qualification reflects the role of hairdressers who use a
+                                range of well-developed sales, consultation and technical skills and knowledge to provide a
+                                broad range of hairdressing services to clients. They use discretion and judgement to
+                                provide clientservices and take responsibility for the outcomes of their own work.
+                            </p>
+                            <p class="bottom25">
                                 This qualification provides a pathway to work as a hairdresser in any industry environment,
                                 usually a salon. No occupational licensing, certification or specific legislative
                                 requirements apply to this qualification at the time of publication.
+                            </p>
+                            <p class="bottom25">
                                 Our hairdressing courses will prepare you to provide a full range of client services to both
                                 male and female customers, including consultation and guidance, hair and scalp treatments,
                                 haircutting, hair design, and lightening. In our purpose-built facilities, you'll have
@@ -54,27 +62,31 @@
                                 need to start your hairdressing career.
                             </p>
                             <br>
-                            <br>
                             <h4><strong>LEARN NEW SKILLS</strong></h4>
+                            <br>
                             <p>Through your on-the-job experience and course work, you will learn:</p>
-                            <ul>
+                            <br>
+                            <ol>
                                 <li>Ways to unleash your creative skills on women's and men's hair</li>
                                 <li>Cutting methods and techniques</li>
                                 <li>About colours and application techniques</li>
                                 <li>To create special occasion and classic up-styles</li>
                                 <li>Design haircut structures</li>
-                            </ul>
+                            </ol>
                             <br>
                             <h4><strong>Develop your talent</strong></h4>
+                            <br>
                             <p>Develop the personal qualities and abilities that will help you advance in this field:</p>
-                            <ul>
+                            <br>
+                            <ol>
                                 <li>Communication skills to connect with clients</li>
                                 <li>Skills in customer care, teamwork, and consultation</li>
                                 <li>To meet client needs, problem-solving techniques are used.</li>
                                 <li>Explore and develop your creative abilities.</li>
-                            </ul>
+                            </ol>
                             <br>
                             <h4><strong>Entry requirements</strong></h4>
+                            <br>
                             <p>There are no formal entry requirements for this course.</p>
                         </div>
                     </div>
@@ -83,16 +95,16 @@
                         <div class="col-sm-12">
                             <h3 class="top30 bottom20">Packaging Rules</h3>
                             <p class="bottom25">28 units must be completed:</p>
-                            <ul>
+                            <ol>
                                 <li>21 core units</li>
                                 <li>
                                     <span>7 electives consisting of</span>
                                     <ul>
-                                        <li>- all 3 units from Group A or all 3 units from Group B</li>
-                                        <li>- 4 units from Group C.</li>
+                                        <li>all 3 units from Group A or all 3 units from Group B</li>
+                                        <li>4 units from Group C.</li>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ol>
                         </div>
                     </div>
                     <br>
@@ -179,13 +191,13 @@
                                         <div class="panel-heading" role="tab" id="headingTwo">
                                             <h4 class="panel-title">
                                                 <a class="collapsed" role="button" data-toggle="collapse"
-                                                    data-parent="#accordion" href="#C" aria-expanded="false"
-                                                    aria-controls="C">
+                                                    data-parent="#accordion" href="#D" aria-expanded="false"
+                                                    aria-controls="D">
                                                     What you need to know about studying as an International student
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="C" class="panel-collapse collapse" role="tabpanel"
+                                        <div id="D" class="panel-collapse collapse" role="tabpanel"
                                             aria-labelledby="headingTwo">
                                             <div class="panel-body">
                                                 <p>
