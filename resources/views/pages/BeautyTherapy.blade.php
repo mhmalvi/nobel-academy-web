@@ -31,30 +31,30 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <h3 class="top30 bottom20">Qualification Description</h3>
-                            <p class="bottom25">
+                            <p class="bottom25 text-justify">
                                 The beauty care industry is one of Australia's fastest growing consumer industries, and the
-                                number of Beauty Therapists is projected to increase dramatically by2023, with about 25,000
+                                number of Beauty Therapists is projected to increase dramatically by 2023, with about 25,000
                                 job openings.
                             </p>
-                            <p class="bottom25">
+                            <p class="bottom25 text-justify">
                                 This qualification reflects the role of individuals who work as beauty therapists to provide
                                 a range of beauty therapy treatments and services, including lash and brow treatments, nail
                                 services, make-up, massage and waxing. They communicate with clients to recommend treatments
                                 and services and sell retail skin care and cosmetic products.
                             </p>
-                            <p class="bottom25">
+                            <p class="bottom25 text-justify">
                                 These individuals undertake work independently, with limited guidance from others, to
                                 perform routine and non-routine activities and solve non-routine problems. They apply and
                                 adapt technical skills and knowledge, and use judgment in the provision of beauty treatments
                                 and services. These individuals are responsible for their own outputs and provide limited
                                 guidance to others.
                             </p>
-                            <p class="bottom25">
+                            <p class="bottom25 text-justify">
                                 Work is typically conducted in beauty salons and spas.
                                 No occupational licensing, certification or specific legislative requirements apply to this
                                 qualification at the time of publication.
                             </p>
-                            <p class="bottom25">
+                            <p class="bottom25 text-justify">
                                 When you complete the Certificate IV in Beauty Therapy, you will have the knowledge and
                                 expertise to offer a professional range of beauty treatments and services to your clients.
                                 This course will also prepare you to start your own company or work in the industry. You can
@@ -111,7 +111,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <h3 class="top30 bottom20">Packaging Rules</h3>
-                            <p class="bottom25">19 units must be completed</p>
+                            <p class="bottom25 text-justify">19 units must be completed</p>
                             <ul>
                                 <li>13 core units</li>
                                 <li>

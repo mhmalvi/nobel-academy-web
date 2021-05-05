@@ -31,25 +31,25 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <h2 class="top30 bottom20">Qualification for Remedial Massage Course</h2>
-                            <p class="bottom25">
+                            <p class="bottom25 text-justify">
                                 This qualification reflects the role of remedial massage therapists who work with clients
                                 presenting with soft tissue dysfunction, musculoskeletal imbalance or restrictions in range
                                 of motion (ROM). Practitioners may be self-employed or work within a larger health service.
                             </p>
-                            <p class="bottom25">
+                            <p class="bottom25 text-justify">
                                 This course will teach you how to do remedial massage, which involves the use of massage,
                                 stretching, and other methods to enhance wellness, wellbeing, and relaxation. You'll acquire
                                 the theoretical expertise you'll need to evaluate your clients' soft tissue dysfunction and
                                 handle others that have a particular need.
                             </p>
-                            <p class="bottom25">
+                            <p class="bottom25 text-justify">
                                 To achieve this qualification, the candidate must have completed at least 200 hours of work
                                 as detailed in the Assessment Requirements of units of competency. No licensing,
                                 legislative, regulatory or certification requirements apply to this qualification at the
                                 time of publication.
 
                             </p>
-                            <p class="bottom25">
+                            <p class="bottom25 text-justify">
                                 At Noble Training Academy, everything you study has a direct application in the real world.
                                 Practical skills can be developed by hands-on experience. you'll earn 200 hours of clinical
                                 experience in massage clinics. This allows you to perform massage techniques on a variety of
@@ -111,7 +111,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <h3 class="top30 bottom20">Packaging Rules</h3>
-                            <p class="bottom25">Total number of units = 21</p>
+                            <p class="bottom25 text-justify">Total number of units = 21</p>
                             <ul>
                                 <li>16 core units</li>
                                 <li>

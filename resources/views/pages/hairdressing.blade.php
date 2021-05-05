@@ -31,17 +31,17 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <h2 class="top30 bottom20">Qualification for Hair Dressing Course</h2>
-                            <p class="bottom25">
+                            <p class="bottom25 text-justify">
                                 Hairdressing skills are in high demand, according to the Australian Government's Job Outlook
                                 service, with employers finding it difficult to fill vacancies. Over the next five years,
                                 the industry is projected to expand at a rapid pace, with more than 31,000 job openings.
                             </p>
-                            <p class="bottom25">
+                            <p class="bottom25 text-justify">
                                 Learn how to color and lighten hair, provide shampoo and basin services, and design and cut
                                 hair in a modern salon environment. Much of this will take place in a classroom setting as
                                 well as in a real-world technical salon setting.
                             </p>
-                            <p class="bottom25">
+                            <p class="bottom25 text-justify">
 
                                 After completing this course, you will have everything you need to confidently pursue jobs
                                 in the hairdressing industry. This qualification reflects the role of hairdressers who use a
@@ -49,12 +49,12 @@
                                 broad range of hairdressing services to clients. They use discretion and judgement to
                                 provide clientservices and take responsibility for the outcomes of their own work.
                             </p>
-                            <p class="bottom25">
+                            <p class="bottom25 text-justify">
                                 This qualification provides a pathway to work as a hairdresser in any industry environment,
                                 usually a salon. No occupational licensing, certification or specific legislative
                                 requirements apply to this qualification at the time of publication.
                             </p>
-                            <p class="bottom25">
+                            <p class="bottom25 text-justify">
                                 Our hairdressing courses will prepare you to provide a full range of client services to both
                                 male and female customers, including consultation and guidance, hair and scalp treatments,
                                 haircutting, hair design, and lightening. In our purpose-built facilities, you'll have
@@ -94,7 +94,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <h3 class="top30 bottom20">Packaging Rules</h3>
-                            <p class="bottom25">28 units must be completed:</p>
+                            <p class="bottom25 text-justify">28 units must be completed:</p>
                             <ol>
                                 <li>21 core units</li>
                                 <li>

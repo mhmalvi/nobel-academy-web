@@ -34,14 +34,14 @@
                                 over the next five years. Employers seek skilled applicants that are dependable,
                                 well-presented, and have good interpersonal skills.
                             </p>
-                            <p>
+                            <p class="bottom25 text-justify">
                                 This qualification reflects the role of individuals employed as beauty therapists to provide
                                 a broad range of beauty therapy treatments and services including facial treatments, body
                                 massage and treatments, hair removal, lash and brow treatments, nail and make-up services.
                                 This includes consultation with clients to provide beauty advice, recommend beauty
                                 treatments and services, and sell retail skin-care and cosmetic products.
                             </p>
-                            <p>
+                            <p class="bottom25 text-justify">
                                 These individuals work relatively autonomously, and are accountable for personal outputs.
                                 Their work involves the self-directed application of knowledge and skills with substantial
                                 depth in some areas where judgement is required in planning and selecting appropriate
@@ -53,7 +53,7 @@
                             <br>
                             <h4>Entry and Enrolment Process:</h4>
                             <br>
-                            <p>
+                            <p class="bottom25 text-justify">
                                 All prospective students are required to participate in an interview with the Course Career
                                 Advisor or the Education Manager. The interview may be in person or via the phone/skype. The
                                 information obtained from the interview and the outcome of the test report will be assessed
