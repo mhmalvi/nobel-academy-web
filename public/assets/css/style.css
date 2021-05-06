@@ -194,11 +194,10 @@ h1, #about .priorty .about-post h4, .icon_box h4, .contact_address .address h4, 
 .reviews .review_left strong, #error .error h2,
 .shopping_box h4.price_product, .cart_table .price_product, .cart_table .product-name h4,
 nav.bootsnav .megamenu-content .title{
-	font-family: 'museo_slab700';
+	font-family: 'Source Sans Pro';
 }
 
 p{
-	font-family: 'Roboto', sans-serif;
 	font-size:1em;
 }
 
