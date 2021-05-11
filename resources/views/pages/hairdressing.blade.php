@@ -62,30 +62,26 @@
                                 need to start your hairdressing career.
                             </p>
                             <br>
-                            <h4><strong>LEARN NEW SKILLS</strong></h4>
+                            <div>
+                                <p><strong>Learn New Skills</strong></p>
+                                <p>Through your on-the-job experience and course work, you will learn:</p>
+                                <p>- Ways to unleash your creative skills on women's and men's hair</p>
+                                <p>- Cutting methods and techniques</p>
+                                <p>- About colours and application techniques</p>
+                                <p>- To create special occasion and classic up-styles</p>
+                                <p>- Design haircut structures</p>
+                            </div>
                             <br>
-                            <p>Through your on-the-job experience and course work, you will learn:</p>
+                            <div>
+                                <p><strong>Develop your talent</strong></p>
+                                <p>Develop the personal qualities and abilities that will help you advance in this field:</p>
+                                <p>- Communication skills to connect with clients</p>
+                                <p>- Skills in customer care, teamwork, and consultation</p>
+                                <p>- To meet client needs, problem-solving techniques are used.</p>
+                                <p>- Explore and develop your creative abilities.</p>
+                            </div>
                             <br>
-                            <ol>
-                                <li>Ways to unleash your creative skills on women's and men's hair</li>
-                                <li>Cutting methods and techniques</li>
-                                <li>About colours and application techniques</li>
-                                <li>To create special occasion and classic up-styles</li>
-                                <li>Design haircut structures</li>
-                            </ol>
-                            <br>
-                            <h4><strong>Develop your talent</strong></h4>
-                            <br>
-                            <p>Develop the personal qualities and abilities that will help you advance in this field:</p>
-                            <br>
-                            <ol>
-                                <li>Communication skills to connect with clients</li>
-                                <li>Skills in customer care, teamwork, and consultation</li>
-                                <li>To meet client needs, problem-solving techniques are used.</li>
-                                <li>Explore and develop your creative abilities.</li>
-                            </ol>
-                            <br>
-                            <h4><strong>Entry requirements</strong></h4>
+                            <p><strong>Entry requirements</strong></p>
                             <br>
                             <p>There are no formal entry requirements for this course.</p>
                         </div>
@@ -93,18 +89,12 @@
                     <div class="bottom15"></div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <h3 class="top30 bottom20">Packaging Rules</h3>
-                            <p class="bottom25 text-justify">28 units must be completed:</p>
-                            <ol>
-                                <li>21 core units</li>
-                                <li>
-                                    <span>7 electives consisting of</span>
-                                    <ul>
-                                        <li>all 3 units from Group A or all 3 units from Group B</li>
-                                        <li>4 units from Group C.</li>
-                                    </ul>
-                                </li>
-                            </ol>
+                            <h2 class="top30 bottom20">Packaging Rules</h2>
+                            <p>28 units must be completed:</p>
+                            <p>- 21 core units</p>
+                            <p>- 7 electives consisting of</p>
+                            <p>- all 3 units from Group A or all 3 units from Group B</p>
+                            <p>- 4 units from Group C.</p>
                         </div>
                     </div>
                     <br>
@@ -124,11 +114,11 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingOne">
                                             <h4 class="panel-title" role="button" data-toggle="collapse"
-                                                data-parent="#accordion" href="#A" aria-expanded="false" aria-controls="A">
+                                                data-parent="#accordion" href="#faqA" aria-expanded="false" aria-controls="faqA">
                                                 What is the time of admission for Beauty therapy course?
                                             </h4>
                                         </div>
-                                        <div id="A" class="panel-collapse collapse" role="tabpanel"
+                                        <div id="faqA" class="panel-collapse collapse" role="tabpanel"
                                             aria-labelledby="headingOne">
                                             <div class="panel-body">
                                                 <p>
@@ -143,13 +133,13 @@
                                         <div class="panel-heading" role="tab" id="headingTwo">
                                             <h4 class="panel-title">
                                                 <a class="collapsed" role="button" data-toggle="collapse"
-                                                    data-parent="#accordion" href="#B" aria-expanded="false"
-                                                    aria-controls="B">
+                                                    data-parent="#accordion" href="#faqB" aria-expanded="false"
+                                                    aria-controls="faqB">
                                                     What is the Professional Outcomes of this course?
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="B" class="panel-collapse collapse" role="tabpanel"
+                                        <div id="faqB" class="panel-collapse collapse" role="tabpanel"
                                             aria-labelledby="headingTwo">
                                             <div class="panel-body">
                                                 <p>
@@ -167,13 +157,13 @@
                                         <div class="panel-heading" role="tab" id="headingTwo">
                                             <h4 class="panel-title">
                                                 <a class="collapsed" role="button" data-toggle="collapse"
-                                                    data-parent="#accordion" href="#C" aria-expanded="false"
-                                                    aria-controls="C">
+                                                    data-parent="#accordion" href="#faqc" aria-expanded="false"
+                                                    aria-controls="faqc">
                                                     What is the Employment Outcomes of this course?
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="C" class="panel-collapse collapse" role="tabpanel"
+                                        <div id="faqc" class="panel-collapse collapse" role="tabpanel"
                                             aria-labelledby="headingTwo">
                                             <div class="panel-body">
                                                 <p>
@@ -191,13 +181,13 @@
                                         <div class="panel-heading" role="tab" id="headingTwo">
                                             <h4 class="panel-title">
                                                 <a class="collapsed" role="button" data-toggle="collapse"
-                                                    data-parent="#accordion" href="#D" aria-expanded="false"
-                                                    aria-controls="D">
+                                                    data-parent="#accordion" href="#faqD" aria-expanded="false"
+                                                    aria-controls="faqD">
                                                     What you need to know about studying as an International student
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="D" class="panel-collapse collapse" role="tabpanel"
+                                        <div id="faqD" class="panel-collapse collapse" role="tabpanel"
                                             aria-labelledby="headingTwo">
                                             <div class="panel-body">
                                                 <p>

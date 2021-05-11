@@ -30,7 +30,7 @@
                         class=" border_radius img-responsive bottom15">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h3 class="top30 bottom20">Qualification Description</h3>
+                            <h2 class="top30 bottom20">Qualification Description for Certificate IV in Beauty Therapy</h2>
                             <p class="bottom25 text-justify">
                                 The beauty care industry is one of Australia's fastest growing consumer industries, and the
                                 number of Beauty Therapists is projected to increase dramatically by 2023, with about 25,000
@@ -60,69 +60,63 @@
                                 This course will also prepare you to start your own company or work in the industry. You can
                                 learn small business promotion tips to help you succeed in a highly competitive market.
                             </p>
-
-                            <br>
-                            <br />
-                            <h4>LEARN NEW SKILLS</h4>
-                            <br>
-                            <p>
-                                You will learn and expand your skills in the following areas through theoretical and
-                                practical course work:
-                            </p>
-                            <br>
-                            <ol>
-                                <li>A range of massage techniques</li>
-                                <li>Facial techniques including exfoliation and facial massage</li>
-                                <li>Nail treatments including manicure and pedicure</li>
-                                <li>Skin analysis individualised to the skin type and concerns of your client</li>
-                                <li>Spray tanning</li>
-                                <li>Waxing </li>
-                                <li>Facials and specialised facials</li>
-                                <li>Retail and sales operations</li>
-                                <li>Eye lash extensions</li>
-                                <li>Lash and brows</li>
-                            </ol>
-                            <br />
-                            <br />
-                            <h4>DEVELOP YOUR TALENT</h4>
-                            <br>
-                            <p>Polish and set your skills to get ahead in this industry:</p>
-                            <br>
-                            <ol>
-                                <li>People skills to help clients feel comfortable and at ease</li>
-                                <li>Strong communication skills</li>
-                                <li>The ability to manage time effectively</li>
-                                <li>High levels of discretion and professional integrity</li>
-                            </ol>
-                            <br />
-                            <br />
-                            <h4>Job opportunity:</h4>
-                            <br>
-                            <ol>
-                                <li>Senior Beauty Therapist</li>
-                                <li>
-                                    Freelance Make-up Artist at retail cosmetic counters, fashion and media sets, or
-                                    photography studios
-                                </li>
-                            </ol>
+                            
+                            <br/>
+                            
+                            <div>
+                                <p>
+                                    <strong>Learn New Skills</strong>
+                                </p>
+                                <p> You will learn and expand your skills in the following areas through theoretical and practical course work:</p>
+                                <p>- A range of massage techniques</p>
+                                <p>- Facial techniques including exfoliation and facial massage</p>
+                                <p>- Nail treatments including manicure and pedicure</p>
+                                <p>- Skin analysis individualised to the skin type and concerns of your client</p>
+                                <p>- Spray tanning</p>
+                                <p>- Waxing </p>
+                                <p>- Facials and specialised facials</p>
+                                <p>- Retail and sales operations</p>
+                                <p>- Eye lash extensions</p>
+                                <p>- Lash and brows</p>
+                            </div>
+                            
+                            <br/>
+                            
+                            <div>
+                                <p>
+                                    <strong>Develop Your Telent</strong>
+                                </p>
+                                <p>Polish and set your skills to get ahead in this industry:</p>
+                                <p>- People skills to help clients feel comfortable and at ease</p>
+                                <p>- Strong communication skills</p>
+                                <p>- The ability to manage time effectively</p>
+                                <p>- High levels of discretion and professional integrity</p>
+                            </div>
+                            
+                            <br/>
+                            
+                            <div>
+                                <p>
+                                    <strong>Job opportunity:</strong>
+                                </p>
+                                <p>- Senior Beauty Therapist</p>
+                                <p>
+                                    - Freelance Make-up Artist at retail cosmetic counters, fashion and media sets, or photography studios
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="bottom15"></div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <h3 class="top30 bottom20">Packaging Rules</h3>
-                            <p class="bottom25 text-justify">19 units must be completed</p>
-                            <ul>
-                                <li>13 core units</li>
-                                <li>
-                                    <span>6 elective units, consisting of</span>
-                                    <ol>
-                                        <li>3 units from the list below</li>
-                                        <li>3 units from the list below, elsewhere in SHB Training Package, or any other
-                                            current Training Package or accredited course</li>
-                                    </ol>
-                                </li>
-                            </ul>
+                            <h2 class="top30 bottom20">Packaging Rules</h2>
+                            <p>- 19 units must be completed</p>
+                            <p>- 13 core units</p>
+                            <p>- 6 elective units, consisting of</p>
+                            <p>- 3 units from the list below</p>
+                            <p>
+                                - 3 units from the list below, elsewhere in SHB Training Package, or any other current Training Package or accredited course
+                            </p>
                         </div>
                     </div>
 

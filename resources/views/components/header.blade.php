@@ -74,10 +74,14 @@
             </ul>
             <div class="clearfix"></div>
             <ul class="social_icon black top25 bottom20">
-            <li><a href="#." class="facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#." class="twitter"><i class="icon-twitter4"></i></a></li>
-            <li><a href="#." class="instagram"><i class="icon-instagram"></i></a></li>
-          </ul>
+                <li><a href="https://www.facebook.com/NTA.Australia/" class="facebook" target="blank"><i
+                class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/nta_2020)" class="twitter" target="blank"><i
+                class="icon-twitter4"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCLmvHOEVNr3iG1il_HeXPsg" class="dribble"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/noble_training_academy/" class="instagram" target="blank"><i
+                class="icon-instagram"></i></a></li>
+            </ul>
           </nav>
         </div>   
     </nav>

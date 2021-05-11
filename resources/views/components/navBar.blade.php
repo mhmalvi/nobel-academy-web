@@ -7,10 +7,13 @@
                     <span class="info"><i class="icon-mail"></i>enquiries@nta.nsw.edu.au</span>
                 </div>
                 <ul class="social_top pull-right">
-                    <li><a href="https://www.facebook.com/NTA.Australia/" target="blank"><i
+                    <li><a href="https://www.facebook.com/NTA.Australia/" class="facebook" target="blank"><i
                                 class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/nta_2020" target="blank"><i class="icon-twitter4"></i></a></li>
-                    <li><a href="javascript:void(0)" class="dribble"><i class="icon-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/nta_2020)" class="twitter" target="blank"><i
+                                class="icon-twitter4"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCLmvHOEVNr3iG1il_HeXPsg" class="dribble"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/noble_training_academy/" class="instagram" target="blank"><i
+                                class="icon-instagram"></i></a></li>
                 </ul>
             </div>
         </div>

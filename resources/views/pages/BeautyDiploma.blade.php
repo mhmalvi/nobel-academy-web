@@ -51,7 +51,9 @@
                                 who understand the industry and its requirements.
                             </p>
                             <br>
-                            <h4>Entry and Enrolment Process:</h4>
+                            <p>
+                                <strong>Entry and Enrolment Process:</strong>
+                            </p>
                             <br>
                             <p class="bottom25 text-justify">
                                 All prospective students are required to participate in an interview with the Course Career
@@ -64,28 +66,14 @@
                     <div class="bottom15"></div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <h3 class="top30 bottom20">Packaging Rules</h3>
+                            <h2 class="top30 bottom20">Packaging Rules</h2>
                             <p class="bottom25">
-                            <ol>
-                                <li>13 core units</li>
-                                <li>12 elective units, consisting of: </li>
-                            </ol>
-
-                            <ol>
-                                <li>all units from Group A, B, or C:</li>
-                            </ol>
-
-                            <ol>
-                                <li><strong>Group A</strong> – Electrolysis/Diathermy</li>
-                                <li><strong>Group B</strong> – Relaxation Massage</li>
-                                <li><strong>Group C</strong> – Spa Treatments</li>
-                            </ol>
-
-                            <ol>
-                                <li>remaining units from Group D - General Electives, elsewhere in SHB Training Package, or
-                                    any other current training package or accredited course.</li>
-                            </ol>
-                            </p>
+                            <p>13 core units</p>
+                            <p>12 elective units, consisting of all units from Group A, B, or C:</p>
+                            <p><strong>Group A</strong> – Electrolysis/Diathermy</p>
+                            <p><strong>Group B</strong> – Relaxation Massage</p>
+                            <p><strong>Group C</strong> – Spa Treatments</p>
+                            <p>remaining units from Group D - General Electives, elsewhere in SHB Training Package, or any other current training package or accredited course.</p>
                         </div>
                     </div>
                     <br>
@@ -105,11 +93,11 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingOne">
                                             <h4 class="panel-title" role="button" data-toggle="collapse"
-                                                data-parent="#accordion" href="#A" aria-expanded="false" aria-controls="A">
+                                                data-parent="#accordion" href="#faqA" aria-expanded="false" aria-controls="faqA">
                                                 What is the time of admission for Beauty therapy course?
                                             </h4>
                                         </div>
-                                        <div id="A" class="panel-collapse collapse" role="tabpanel"
+                                        <div id="faqA" class="panel-collapse collapse" role="tabpanel"
                                             aria-labelledby="headingOne">
                                             <div class="panel-body">
                                                 <p>
@@ -123,13 +111,13 @@
                                         <div class="panel-heading" role="tab" id="headingTwo">
                                             <h4 class="panel-title">
                                                 <a class="collapsed" role="button" data-toggle="collapse"
-                                                    data-parent="#accordion" href="#B" aria-expanded="false"
-                                                    aria-controls="B">
+                                                    data-parent="#accordion" href="#faqB" aria-expanded="false"
+                                                    aria-controls="faqB">
                                                     What will you learn?
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="B" class="panel-collapse collapse" role="tabpanel"
+                                        <div id="faqB" class="panel-collapse collapse" role="tabpanel"
                                             aria-labelledby="headingTwo">
                                             <div class="panel-body">
                                                 <ol>
@@ -167,13 +155,13 @@
                                         <div class="panel-heading" role="tab" id="headingTwo">
                                             <h4 class="panel-title">
                                                 <a class="collapsed" role="button" data-toggle="collapse"
-                                                    data-parent="#accordion" href="#C" aria-expanded="false"
-                                                    aria-controls="C">
+                                                    data-parent="#accordion" href="#faqC" aria-expanded="false"
+                                                    aria-controls="faqC">
                                                     What is the Employment Outcomes of this course?
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="C" class="panel-collapse collapse" role="tabpanel"
+                                        <div id="faqC" class="panel-collapse collapse" role="tabpanel"
                                             aria-labelledby="headingTwo">
                                             <div class="panel-body">
                                                 <p>
@@ -192,13 +180,13 @@
                                         <div class="panel-heading" role="tab" id="headingTwo">
                                             <h4 class="panel-title">
                                                 <a class="collapsed" role="button" data-toggle="collapse"
-                                                    data-parent="#accordion" href="#D" aria-expanded="false"
+                                                    data-parent="#accordion" href="#faqD" aria-expanded="false"
                                                     aria-controls="D">
                                                     What you need to know about studying as an International student?
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="D" class="panel-collapse collapse" role="tabpanel"
+                                        <div id="faqD" class="panel-collapse collapse" role="tabpanel"
                                             aria-labelledby="headingTwo">
                                             <div class="panel-body">
                                                 <p>

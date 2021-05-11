@@ -24,7 +24,7 @@
         <div class="container aboutus">
             <div class="row">
                 <div class="col-md-7 wow fadeInLeft" data-wow-delay="300ms">
-                    <h2 class="heading heading_space">Welcome to NTA <span class="divider-left"></span></h2>
+                    <h2 class="heading heading_space">Who We Are <span class="divider-left"></span></h2>
                     <p class="bottom25 text-justify" style="font-size: 1rem; line-height: 1.2;">It’s all going about
                         making ideas
                         happen. Nor again is there anyone who loves or
@@ -55,7 +55,7 @@
     <section id="history" class="padding bg_grey">
         <div class="container aboutus">
             <div class="card mb-3" style="background-color: transparent; border: 0px;">
-                <h2 class="heading text-center">Our Mission<span class="divider-center"></span></h2>
+                <h2 class="heading text-center">Mission<span class="divider-center"></span></h2>
                 <div style="padding: 20px 0px;"></div>
                 <div class="row no-gutters">
                     <div class="col-md-5">
@@ -65,7 +65,7 @@
                     <div class="col-md-7">
                         <div class="card-body">
                             <div style="padding: 20px 0px;"></div>
-                            <p class="text-justify" style="font-size: 1.3rem; line-height: 1.2;">
+                            <p class="text-justify" style="font-size: 1rem; line-height: 2;">
                                 Our mission is to provide quality training and assessment that will make you proficient in
                                 required skills on successive completion of the enrolled course. With us, you take a step
                                 forward in your career. We support our students at all time and guide throughout the
@@ -83,13 +83,13 @@
     <section id="tours" class="padding">
         <div class="container aboutus">
             <div class="card mb-3" style="background-color: transparent; border: 0px;">
-                <h2 class="heading text-center">Our Vision<span class="divider-center"></span></h2>
+                <h2 class="heading text-center">Vision<span class="divider-center"></span></h2>
                 <div style="padding: 20px 0px;"></div>
                 <div class="row no-gutters">
                     <div class="col-md-7">
                         <div class="card-body">
                             <div style="padding: 30px 0px;"></div>
-                            <p class="text-justify" style="font-size: 1.3rem; line-height: 1.2;">
+                            <p class="text-justify" style="font-size: 1; line-height: 2;">
                                 We intend to grow exponentially catering our training to every nook in Australia.
                                 <br>
                                 <br>
@@ -111,4 +111,189 @@
         </div>
     </section>
     <!-- University Tour -->
+    
+        <!-- Company History -->
+    <section id="history" class="padding bg_grey">
+        <div class="container aboutus">
+            <div class="card mb-3" style="background-color: transparent; border: 0px;">
+                <h2 class="heading text-center">What We Do<span class="divider-center"></span></h2>
+                <div style="padding: 20px 0px;"></div>
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <div style="padding: 20px 0px;"></div>
+                            <p class="text-center" style="font-size: 1rem; line-height: 2;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, 
+                                adipisci similique sequi culpa ad officia? Facilis ratione commodi natus sequi nam. 
+                                Totam sequi impedit aspernatur?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Company History -->
+
+    <!-- University Tour -->
+    <section id="tours" class="padding">
+        <div class="container aboutus">
+            <div class="card mb-3" style="background-color: transparent; border: 0px;">
+                <h2 class="heading text-center">How We Do<span class="divider-center"></span></h2>
+                <div style="padding: 20px 0px;"></div>
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <div style="padding: 30px 0px;"></div>
+                            <p class="text-center" style="font-size: 1; line-height: 2;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, 
+                                adipisci similique sequi culpa ad officia? Facilis ratione commodi natus sequi nam. 
+                                Totam sequi impedit aspernatur?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- University Tour -->
+    
+    
+    <section id="testinomila_page" class="padding bg_grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow fadeInDown">
+                    <h2 class="heading heading_space">What People Say ?<span class="divider-left"></span></h2>
+                </div>
+            </div>
+            <div id="js-grid-masonry" class="cbp">
+                <div class="cbp-item">
+                    <div class="cbp-caption-defaultWrap">
+                    <div class="testimonial_wrap">
+                        <div class="testimonial_text text-center">
+                        <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
+                        <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling.</p>
+                        </div>
+                        <div class="testimonial_pic">
+                        <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
+                        <span class="color">John Smith</span>
+                        <span class="post_img">Owner Edua</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="cbp-item">
+                    <div class="cbp-caption-defaultWrap">
+                    <div class="testimonial_wrap">
+                        <div class="testimonial_text text-center">
+                        <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
+                        <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling. Innovativeness is 
+                            the pledge of our stable development. We tap into the most successful international management data, forestalling market.
+                        </p>
+                        </div>
+                        <div class="testimonial_pic">
+                        <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
+                        <span class="color">John Smith</span>
+                        <span class="post_img">Owner Edua</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="cbp-item">
+                    <div class="cbp-caption-defaultWrap">
+                    <div class="testimonial_wrap">
+                        <div class="testimonial_text text-center">
+                        <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
+                        <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling.
+                            Innovativeness is the pledge of our stable development. We tap into successful.
+                        </p>
+                        </div>
+                        <div class="testimonial_pic">
+                        <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
+                        <span class="color">John Smith</span>
+                        <span class="post_img">Owner Edua</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="cbp-item">
+                    <div class="cbp-caption-defaultWrap">
+                    <div class="testimonial_wrap">
+                        <div class="testimonial_text text-center">
+                        <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
+                        <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling.</p>
+                        </div>
+                        <div class="testimonial_pic">
+                        <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
+                        <span class="color">John Smith</span>
+                        <span class="post_img">Owner Edua</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="cbp-item">
+                    <div class="cbp-caption-defaultWrap">
+                    <div class="testimonial_wrap">
+                        <div class="testimonial_text text-center">
+                        <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
+                        <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling. Innovativeness is the 
+                            pledge of our stable development. We tap into the most successful international management data, forestalling market.
+                        </p>
+                        </div>
+                        <div class="testimonial_pic">
+                        <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
+                        <span class="color">John Smith</span>
+                        <span class="post_img">Owner Edua</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="cbp-item">
+                    <div class="cbp-caption-defaultWrap">
+                    <div class="testimonial_wrap">
+                        <div class="testimonial_text text-center">
+                        <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
+                        <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling.
+                            Innovativeness is the pledge of our stable development. We tap into successful.
+                        </p>
+                        </div>
+                        <div class="testimonial_pic">
+                        <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
+                        <span class="color">John Smith</span>
+                        <span class="post_img">Owner Edua</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="cbp-item">
+                    <div class="cbp-caption-defaultWrap">
+                    <div class="testimonial_wrap">
+                        <div class="testimonial_text text-center">
+                        <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
+                        <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling.</p>
+                        </div>
+                        <div class="testimonial_pic">
+                        <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
+                        <span class="color">John Smith</span>
+                        <span class="post_img">Owner Edua</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="cbp-item">
+                    <div class="cbp-caption-defaultWrap testimonial_wrap">
+                    <div class="testimonial_text text-center">
+                        <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
+                        <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling. Innovativeness is the pledge of our stable development. We tap into the most successful international management data, forestalling market.</p>
+                    </div>
+                    <div class="testimonial_pic">
+                        <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
+                        <span class="color">John Smith</span>
+                        <span class="post_img">Owner Edua</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection

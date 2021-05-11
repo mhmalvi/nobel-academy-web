@@ -24,7 +24,7 @@ class BlogRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|max:100|unique:App\Models\Blog,blog_title',
+            'title' => 'required|max:255|unique:App\Models\Blog,blog_title',
             'blog_slug' => 'unique:App\Models\Blog,blog_slug',
             'summary' => 'required|max:255',
             'summernote' => 'required',

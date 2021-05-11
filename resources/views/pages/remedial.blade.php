@@ -55,74 +55,75 @@
                                 experience in massage clinics. This allows you to perform massage techniques on a variety of
                                 people, including students, employees, and the general public.
                             </p>
+                            
                             <br>
-                            <h4><strong>Our programs include:</strong></h4>
+                            
+                            <div>
+                                <p>
+                                    <strong>Our programs include:</strong>
+                                </p>
+                                <br>
+                                <p>- Workshops</p>
+                                <p>- Drop-in sessions</p>
+                                <p>- Peer mentoring</p>
+                                <p>- Math’s and writing resources</p>
+                                <p>- Resume and career guidance.</p>
+                            </div>
+                            
                             <br>
-                            <ol>
-                                <li>Workshops</li>
-                                <li>Drop-in sessions</li>
-                                <li>Peer mentoring</li>
-                                <li>Math’s and writing resources</li>
-                                <li>Resume and career guidance.</li>
-                            </ol>
-                            <br>
-                            <p>
-                                Our remedial massage experts will teach you the following in this nationally recognized
-                                qualification:
-                            </p>
-                            <br>
-                            <ol>
-                                <li> Advanced massage techniques to treat a variety of injuries.</li>
-                                <li> Clients with soft tissue dysfunction, musculoskeletal imbalance, or motion limitations
-                                    are assessed and treated.</li>
-                                <li> To devise a detailed recovery plan that includes the use of specialized massage
+                            
+                            <div class="bottom25 text-justify">
+                                <p>
+                                    <strong>
+                                        Our remedial massage experts will teach you the following in this nationally recognized qualification:
+                                    </strong>
+                                </p>
+                                <br>
+                                <p> 
+                                    - Advanced massage techniques to treat a variety of injuries.
+                                </p>
+                                <p> 
+                                    - Clients with soft tissue dysfunction, musculoskeletal imbalance, or motion limitations
+                                    are assessed and treated.
+                                </p>
+                                <p>
+                                    - To devise a detailed recovery plan that includes the use of specialized massage
                                     techniques. With a Diploma in Remedial Massage, you'll be able to practice as a licensed
                                     Remedial Massage Practitioner or Therapist. This course may be available as part of a
-                                    Traineeship program.</li>
-                                <li> Via job-placement opportunities offered as part of this course, you can complete the
-                                    required 200 hours of hands-on and real-world massage therapy work.</li>
-                            </ol>
+                                    Traineeship program.
+                                </p>
+                                <p> 
+                                    - Via job-placement opportunities offered as part of this course, you can complete the
+                                    required 200 hours of hands-on and real-world massage therapy work.
+                                </p>
+                            </div>
                             <br>
-                            <h4><strong>Career:</strong></h4>
+                            <p><strong>Career:</strong></p>
                             <br>
-                            <ol>
-                                <li> Graduates may be able to work independently or as part of a health clinic as remedial
-                                    massage
-                                    therapists.</li>
-                                <li> A remedial massage therapist may also work as part of a multi-disciplinary health care
-                                    team as a
-                                    specialist member.</li>
-                                <li> Graduates will continue their education with the Advanced Diploma in Myotherapy.</li>
-                            </ol>
+                            <p>- Graduates may be able to work independently or as part of a health clinic as remedial massage therapists.</p>
+                            <p>- A remedial massage therapist may also work as part of a multi-disciplinary health care team as a specialist member.</p>
+                            <p>- Graduates will continue their education with the Advanced Diploma in Myotherapy.</p>
                             <br>
-                            <h4><strong>Entry and Enrolment Process:</strong></h4>
+                            <p><strong>Entry and Enrolment Process:</strong></p>
                             <br>
-                            <p>
+                            <p class="bottom25 text-justify">
                                 All prospective students must meet with the Course Career Advisor or the Education Manager
-                                for
-                                an interview. The interview can take place in person or over the phone or via Skype. The
+                                for an interview. The interview can take place in person or over the phone or via Skype. The
                                 Education Manager will determine the suitability and capacity to complete the course based
-                                on
-                                the details gathered from the interview and the results of the test study.
+                                on the details gathered from the interview and the results of the test study.
                             </p>
                         </div>
                     </div>
                     <div class="bottom15"></div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <h3 class="top30 bottom20">Packaging Rules</h3>
-                            <p class="bottom25 text-justify">Total number of units = 21</p>
-                            <ul>
-                                <li>16 core units</li>
-                                <li>
-                                    <span>5 elective units, consisting of:</span>
-                                    <ol>
-                                        <li>at least 1 unit from the Business Management group below</li>
-                                        <li>up to 4 units from the electives listed below, any endorsed Training Package
-                                            or accredited course – these units must be relevant to the work outcome</li>
-                                    </ol>
-                                </li>
-                            </ul>
+                            <h2 class="top30 bottom20">Packaging Rules</h2>
+                            <p>Total number of units = 21</p>
+                            <p>- 16 core units</p>
+                            <p>- 5 elective units, consisting of at least 1 unit from the Business Management group below</p>
+                            <p>
+                                - up to 4 units from the electives listed below, any endorsed Training Package or accredited course – these units must be relevant to the work outcome
+                            </p>
                         </div>
                     </div>
 
@@ -143,11 +144,11 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingOne">
                                             <h4 class="panel-title" role="button" data-toggle="collapse"
-                                                data-parent="#accordion" href="#A" aria-expanded="false" aria-controls="A">
+                                                data-parent="#accordion" href="#faqA" aria-expanded="false" aria-controls="faqA">
                                                 How you will learn?
                                             </h4>
                                         </div>
-                                        <div id="A" class="panel-collapse collapse" role="tabpanel"
+                                        <div id="faqA" class="panel-collapse collapse" role="tabpanel"
                                             aria-labelledby="headingOne">
                                             <div class="panel-body">
                                                 <p>
@@ -173,13 +174,13 @@
                                         <div class="panel-heading" role="tab" id="headingTwo">
                                             <h4 class="panel-title">
                                                 <a class="collapsed" role="button" data-toggle="collapse"
-                                                    data-parent="#accordion" href="#B" aria-expanded="false"
-                                                    aria-controls="B">
+                                                    data-parent="#accordion" href="#faqB" aria-expanded="false"
+                                                    aria-controls="faqB">
                                                     Industries connected to us
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="B" class="panel-collapse collapse" role="tabpanel"
+                                        <div id="faqB" class="panel-collapse collapse" role="tabpanel"
                                             aria-labelledby="headingTwo">
                                             <div class="panel-body">
                                                 <p>
@@ -195,13 +196,13 @@
                                         <div class="panel-heading" role="tab" id="headingTwo">
                                             <h4 class="panel-title">
                                                 <a class="collapsed" role="button" data-toggle="collapse"
-                                                    data-parent="#accordion" href="#C" aria-expanded="false"
-                                                    aria-controls="C">
+                                                    data-parent="#accordion" href="#faqC" aria-expanded="false"
+                                                    aria-controls="faqC">
                                                     What you need to know about studying as an International student
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="C" class="panel-collapse collapse" role="tabpanel"
+                                        <div id="faqC" class="panel-collapse collapse" role="tabpanel"
                                             aria-labelledby="headingTwo">
                                             <div class="panel-body">
                                                 <p>

@@ -4006,3 +4006,15 @@ nav.navbar.bootsnav #menu_bars{
 	  list-style-type:disc;
 	  padding: 5px 0px !important;
   }
+  .pagination > .active > a, 
+  .pagination > .active > a:focus, 
+  .pagination > .active > a:hover, 
+  .pagination > .active > span, 
+  .pagination > .active > span:focus, 
+  .pagination > .active > span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #3FD4FB !important;
+    border-color: #3FD4FB !important;
+}
