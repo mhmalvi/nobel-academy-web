@@ -1770,7 +1770,7 @@ body.pushmenu-push-toright .wrap-sticky nav.navbar.bootsnav.sticked{
 #facts{}
 .number-counters{}
 .number-counters .counters-item{
-	margin:30px 0;
+	margin:80px 0;
 	text-align:center;
 }
 .number-counters .counters-item i{
@@ -1781,7 +1781,7 @@ body.pushmenu-push-toright .wrap-sticky nav.navbar.bootsnav.sticked{
 }
 .number-counters .counters-item strong {
   font-size: 3.000em;
-  line-height: 3.000em;
+  line-height: 1.500em;
 }
 .number-counters .counters-item p{
 	font-size:1.125em;
