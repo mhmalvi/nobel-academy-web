@@ -3,12 +3,11 @@
 @push('css')
     <link href="{{asset('assets/admin/css/plugins/jasny/jasny-bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/admin/css/plugins/chosen/bootstrap-chosen.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/admin/css/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
     <div class="wrapper wrapper-content">
-        <form action="{{route('admin.blog.store')}}" method="post" enctype="multipart/form-data">
+        <form action="{{route('admin.blog.store')}}" method="post" enctype="multipart/form-data" id="formBlog">
             @csrf
             <div class="container">
                 <div class="ibox">
@@ -53,13 +52,16 @@
                 <div class="ibox">
                     <div class="ibox-content">
                         <div class="form-group">
-                            <input type="text" class="form-control" name="meta_tags" id="meta_tags" placeholder="blogs meta tags..."/>
+                            <input type="text" class="form-control" name="meta_tags" id="meta_tags" placeholder="blogs meta tags..." value="{{old('meta_tags')}}"/>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="meta_keys" id="meta_keys" placeholder="blogs meta keywords..."/>
+                            <input type="text" class="form-control" name="meta_keys" id="meta_keys" placeholder="blogs meta keywords..." value="{{old('meta_keys')}}"/>
                         </div>
                         <div class="form-group">
-                            <textarea name="meta_desc" class="form-control" rows="5" style="resize: none;" placeholder="bolgs meta description..."></textarea>
+                            <textarea name="meta_desc" class="form-control" rows="5" style="resize: none;" placeholder="bolgs meta description...">{{old('meta_desc')}}</textarea>
+                            @error('meta_desc')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
                         </div>
                     </div>
                 </div>
@@ -71,6 +73,10 @@
                                 <cite class="tex-light">*max-upload-size: 2mb</cite>
                                 <br>
                                 <cite class="tex-light">*image-dimension: 822 x 480 px</cite>
+                                <br/>
+                                @error('image')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                             <div class="col-lg-6">
                                 <div id="image"></div>
@@ -80,7 +86,7 @@
                 </div>
 
                 <div style="display: flex; justify-content: center;">
-                    <button type="button" class="btn btn-outline-primary" onclick="">Publish</button>
+                    <button type="button" class="btn btn-outline-primary" onclick="event.preventDefault(); document.getElementById('formBlog').submit();">Publish</button>
                 </div>
             </div>
         </form>
@@ -91,7 +97,6 @@
 @push('js')
     <script src="{{asset('assets/admin/js/plugins/jasny/jasny-bootstrap.min.js')}}"></script>
     <script src="{{asset('assets/admin/js/plugins/chosen/chosen.jquery.js')}}"></script>
-    <script src="{{asset('assets/admin/js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js')}}"></script>
     <script src="{{asset('assets/admin/js/plugins/spartan/spartan-multi-image-picker-min.js')}}"></script>
     <script src="{{asset('assets/tinymce/tinymce.min.js')}}"></script>
     @include('admin.blogs.scripts')

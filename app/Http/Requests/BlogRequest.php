@@ -28,7 +28,8 @@ class BlogRequest extends FormRequest
             'blog_slug' => 'unique:App\Models\Blog,blog_slug',
             'summary' => 'required|max:255',
             'summernote' => 'required',
-            'image' => 'required|mimes:png,jpg,jpeg|max:2048'
+            'meta_desc' => 'max:255',
+            'image' => 'required|mimes:png,jpg,jpeg|max:2048|dimensions:min_width=822,min_height=480'
         ];
     }
 }

@@ -44,9 +44,16 @@ class BlogController extends Controller
      */
     public function store(BlogRequest $request)
     {
-        if ($request->hasFile('image')) {
-            $slug = SlugService::createSlug(Blog::class, 'blog_slug', $request->title);
+        $file = null;
+        $slug = SlugService::createSlug(Blog::class, 'blog_slug', $request->title);
 
+        $category = $request->category;
+
+        if (is_null($request->category)) {
+            $category = null;
+        }
+
+        if ($request->hasFile('image')) {
             //check if directory exist or not
             if (!Storage::exists("public/blogs")) {
                 Storage::makeDirectory("public/blogs");
@@ -57,45 +64,44 @@ class BlogController extends Controller
 
             $file = date('dmy-hms') . '.' . $imgExtension;
 
-            $category = $request->category;
+            //store image into storage directory
+            Storage::putFileAs(
+                'public/blogs',
+                $image,
+                $file
+            );
+        }
 
-            if (is_null($request->category)) {
-                $category = null;
-            }
+        $data = [
+            'user_id' => Auth::id(),
+            'blog_title' => $request->title,
+            'blog_slug' => $slug,
+            'category_id' => $category,
+            'blog_summery' => $request->summary,
+            'blog_details' => $request->summernote,
+            'meta_tags' => $request->meta_tags,
+            'meta_keys' => $request->meta_keys,
+            'meta_desc' => $request->meta_desc,
+            'thumbnail' => $file
+        ];
 
-            $data = [
-                'user_id' => Auth::id(),
-                'blog_title' => $request->title,
-                'blog_slug' => $slug,
-                'category_id' => $category,
-                'blog_summery' => $request->summary,
-                'blog_details' => $request->summernote,
-                'meta_tags' => $request->meta_tags,
-                'meta_keys' => $request->meta_keys,
-                'meta_desc' => $request->meta_desc,
-                'thumbnail' => $file
+        try {
+            Blog::create($data);
+
+            $notification = [
+                'message'   =>  'nothing went wrong',
+                'alert-type'    =>  'success'
             ];
 
-            try {
-                Blog::create($data);
-                //store image into storage directory
-                Storage::putFileAs('public/blogs', $image, $file);
+            return redirect()->back()->with($notification);
+        } catch (\Throwable $th) {
+            $notification = [
+                // 'message'   =>  'oops! Something went wrong',
+                'message'   =>  $th->getMessage(),
+                'alert-type'    =>  'warning'
+            ];
 
-                $notification = [
-                    'message'   =>  'nothing went wrong',
-                    'alert-type'    =>  'success'
-                ];
-
-                return redirect()->back()->with($notification);
-            } catch (\Throwable $th) {
-                $notification = [
-                    // 'message'   =>  'oops! Something went wrong',
-                    'message'   =>  $th->getMessage(),
-                    'alert-type'    =>  'warning'
-                ];
-
-                return redirect()->back()->with($notification);
-            }
+            return redirect()->back()->with($notification);
         }
     }
 

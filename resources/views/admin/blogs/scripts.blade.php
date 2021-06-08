@@ -1,14 +1,5 @@
 <script>
     $(document).ready(function(){
-        $('#meta_tags').tagsinput({
-            tagClass: 'label label-primary'
-        });
-
-        $('#meta_keys').tagsinput({
-            tagClass: 'label label-primary',
-            maxTags: 5
-        });
-
         $("#image").spartanMultiImagePicker({
             fieldName:   'image',
             maxCount: 1
