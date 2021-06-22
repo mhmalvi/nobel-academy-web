@@ -62,6 +62,18 @@
         </div>
     </section>
     <!-- Company History -->
+    <section class="rpl">
+        <button type="button" class="rpl-btn" data-toggle="rpl-modal" id="toggle-modal">
+            <lord-icon
+                src="https://cdn.lordicon.com//pndvzexs.json"
+                trigger="loop"
+                colors="primary:#002B46,secondary:#002B46"
+                class="lord-icon-size">
+            </lord-icon>
+            Click Here For Your Free Skill Check
+        </button>
+        @include('components.rpl-modal')
+    </section>
     <!--ABout US-->
     <section id="about" class="padding">
         <div class="container">
