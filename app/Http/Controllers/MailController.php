@@ -13,20 +13,21 @@ class MailController extends Controller
     /**
      * Contact Us mail
      */
-    public function contactUs(ContactUsRequest $request){
-       $body = [
-        'name' => $request->name,
-        'email' =>  $request->email,
-        'message' => $request->message,
-       ];
+    public function contactUs(ContactUsRequest $request)
+    {
+        $body = [
+            'name' => $request->name,
+            'email' =>  $request->email,
+            'message' => $request->message,
+        ];
 
-       $subject = $request->subject;
+        $subject = $request->subject;
 
-       Mail::to('enquiries@nta.nsw.edu.au')->send(new ContactUs($subject, $body));
+        Mail::to('enquiries@nta.nsw.edu.au')->send(new ContactUs($subject, $body));
 
-       $notification = [
-        'message'   =>  'Thanks for you query!',
-        'alert-type'    =>  'info'
+        $notification = [
+            'message'   =>  'Thanks for you query!',
+            'alert-type'    =>  'info'
         ];
 
         return redirect()->back()->with($notification);
@@ -36,7 +37,8 @@ class MailController extends Controller
     /**
      * Apply For course
      */
-    public function courseApply(Request $request){
+    public function courseApply(Request $request)
+    {
         $body = [
             'name' => $request->name,
             'email' =>  $request->email,
@@ -51,8 +53,14 @@ class MailController extends Controller
         $notification = [
             'message'   =>  'Thanks for your application',
             'alert-type'    =>  'info'
-            ];
-    
-            return redirect()->back()->with($notification);
+        ];
+
+        return redirect()->back()->with($notification);
+    }
+
+
+    public function checkEligibility(Request $request)
+    {
+        return response()->json(['status' => 'success'], 200);
     }
 }

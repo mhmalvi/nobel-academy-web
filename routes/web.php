@@ -38,19 +38,20 @@ Route::get('certificate-iv-in-beauty-therapy', [CoursesController::class, 'Beaut
 //Mail Controllers
 Route::post('contact-us', [MailController::class, 'contactUs'])->name('contactus');
 Route::post('applyNow', [MailController::class, 'courseApply'])->name('apply');
+Route::post('check-eligibility', [MailController::class, 'checkEligibility']);
 
 Route::post('/upload', [AdminBlogController::class, 'uploadFile']);
 
 /**
  * Admin Routes
  */
-Route::middleware(['auth:sanctum', 'verified'])->name('admin.')->group(function(){
+Route::middleware(['auth:sanctum', 'verified'])->name('admin.')->group(function () {
     Route::get('/dashboard', [AdminHomeController::class, 'index'])->name('home');
-    
+
     //Blogs
     Route::resource('blog', AdminBlogController::class);
     //Atributes
-    Route::prefix('attributes')->group(function(){
+    Route::prefix('attributes')->group(function () {
         //Category
         Route::get('categories', [CategoryController::class, 'index'])->name('category');
         Route::post('categories', [CategoryController::class, 'store'])->name('category.add');
@@ -60,7 +61,7 @@ Route::middleware(['auth:sanctum', 'verified'])->name('admin.')->group(function(
     });
 
     //Settings
-    Route::prefix('settings')->group(function(){
+    Route::prefix('settings')->group(function () {
         //Profile
         Route::get('profile', [AdminHomeController::class, 'profile'])->name('userProfile');
         Route::post('profile', [AdminHomeController::class, 'profileUpdate'])->name('userProfileUpdate');
