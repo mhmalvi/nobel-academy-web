@@ -115,13 +115,13 @@ $(document).ready(function() {
         e.preventDefault();
         const fd = new FormData();
 
-        fd.append("qualification", $("#qualification").val());
-        fd.append("relevant", $("input[name=relevent]").val());
-        fd.append("work_location", $("input[name=work_location]").val());
-        fd.append("location", $("input[name=location]").val());
         fd.append("name", $("#name").val());
-        fd.append("contact", $("#phone").val());
         fd.append("email", $("#email").val());
+        fd.append("contact", $("#phone").val());
+        fd.append("location", $("input[name=location]").val());
+        fd.append("qualification", $("#qualification").val());
+        fd.append("experience", $("input[name=experience]").val());
+        fd.append("work_location", $("input[name=work_location]").val());
         fd.append("remark", $("#remark").val());
 
         var files = $("#files").prop("files");
@@ -143,14 +143,17 @@ $(document).ready(function() {
                 $(".load-scrn").toggleClass("visible");
             },
             success: function(data) {
-                setTimeout(() => {
+                if (data.success == "success") {
                     $("#msform").trigger("reset");
                     $("#msform").toggleClass("show");
                     $(".success").toggleClass("show");
                     $(".load-scrn").toggleClass("visible");
-                }, 3000);
+                }
             },
-            error: function(err) {}
+            error: function(err) {
+                $(".load-scrn").toggleClass("visible");
+                alert("Invalid request. Please try again!");
+            }
         });
     });
 });

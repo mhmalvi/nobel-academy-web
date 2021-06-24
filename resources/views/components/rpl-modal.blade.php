@@ -24,6 +24,10 @@
                             <label class="fieldlabels">What qualification are you looking for? *</label>
                             <select class="form-control" id="qualification">
                                 <option value>Select the qualification you looking for...</option>
+                                <option value="SHB50115 - Diploma of Beauty Therapy">SHB50115 - Diploma of Beauty Therapy</option>
+                                <option value="HLT52015 - Diploma of Remedial Massage">HLT52015 - Diploma of Remedial Massage</option>
+                                <option value="SHB30416 - Certificate III in Hairdressing">SHB30416 - Certificate III in Hairdressing</option>
+                                <option value="SHB40115 - Certificate IV in Beauty Therapy">SHB40115 - Certificate IV in Beauty Therapy</option>
                             </select>
                         </div> 
                         
@@ -36,7 +40,7 @@
                                 <div class="fieldlabels">How many years of relevant work experience do you have? *</div>
                                 <div class="row">
                                     <div class="col-sm-3 col-xs-6">
-                                        <input type="radio" name="relevant" id="one" value="1 - 2 years" />
+                                        <input type="radio" name="experience" id="one" value="1 - 2 years" />
                                         <label for="one" class="exp-lbl">
                                             <div>1 - 2 <br> Years</div>
                                         </label>
