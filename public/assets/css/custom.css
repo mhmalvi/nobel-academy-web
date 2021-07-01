@@ -1,18 +1,25 @@
+.p-0 {
+    padding: 0 !important;
+}
+
 .rpl {
     text-align: center !important;
     padding: 50px 0px;
     background: #ebeff2;
 }
+
 .rpl-btn {
     padding: 0px 50px;
     border: 2px solid #3fd4fb;
     border-radius: 0px;
     transition: 0.4s;
 }
+
 .lord-icon-size {
     width: 50px !important;
     height: 50px !important;
 }
+
 .rpl-btn:hover {
     background-color: #3fd4fb;
 }
@@ -201,6 +208,10 @@
     transition: all 0.3s ease-in;
 }
 
+.exp-lbl2 {
+    color: #002B46 !important;
+}
+
 .exp-lbl img {
     max-width: 55px !important;
 }
@@ -213,7 +224,7 @@
     display: none;
 }
 
-input[type="radio"]:checked ~ label {
+input[type="radio"]:checked~label {
     background-color: #3fd4fb;
     border: 2px solid #3fd4fb;
 }
@@ -234,13 +245,22 @@ input[type="radio"]:checked ~ label {
     transition: 0.3s ease-in;
 }
 
+.filesLbl2 {
+    color: #002B46 !important;
+    border: 1px dashed #ccc;
+}
+
 .filesLbl:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
+.filesLbl2:hover {
+    background: rgba(204, 204, 204, 0.2);
+}
+
 /* RESPONSIVE TABLET FIXES */
 @media only screen and (max-width: 991px),
-    only screen and (max-device-width: 991px) {
+only screen and (max-device-width: 991px) {
     .rpl-modal-content {
         padding: 30px;
     }
@@ -258,7 +278,7 @@ input[type="radio"]:checked ~ label {
 
 /* RESPONSIVE MOBILE FIXES */
 @media only screen and (max-width: 767px),
-    only screen and (max-device-width: 767px) {
+only screen and (max-device-width: 767px) {
     .rpl-modal-content {
         padding: 25px;
     }
@@ -342,6 +362,7 @@ Success
     opacity: 0;
     transition: 0.3s ease-in-out;
 }
+
 .load-scrn::after {
     content: "";
 }
@@ -353,4 +374,68 @@ Success
 
 .load-scrn h4 {
     padding: 10px 0px;
+}
+
+.box {
+    width: 100%;
+    display: block;
+    border: 1px solid #d2d2d2;
+    margin: 25px auto;
+    padding: 25px;
+    position: relative;
+}
+
+.box-header {
+    width: 100%;
+    border-bottom: 2px dotted #ddd;
+}
+
+.box-header h3 {
+    font-size: 20px;
+    color: #002B46;
+}
+
+.box-header p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.box-header h3 strong {
+    background-color: #002B46;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.box-content .form-group label {
+    margin: 10px auto;
+
+}
+
+.info-box {
+    text-align: center;
+    padding: 15px;
+    line-height: 2;
+    margin: 15px auto;
+}
+
+.info-box i {
+    font-size: 2.5rem;
+}
+
+.info-box h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5px;
 }
