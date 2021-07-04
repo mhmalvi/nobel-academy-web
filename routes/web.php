@@ -46,7 +46,7 @@ Route::post('/upload', [AdminBlogController::class, 'uploadFile']);
  * Pages That should only made for
  * lead generation
  */
-Route::view('check-your-rpl-elgibility', 'pages.rpl-eligibility');
+Route::view('check-your-rpl-eligibility', 'pages.rpl-eligibility');
 
 
 /**

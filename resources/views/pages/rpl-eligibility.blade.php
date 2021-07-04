@@ -23,6 +23,8 @@
                                         <option value>Select the qualification you looking for...</option>
                                         <option value="SHB50115 - Diploma of Beauty Therapy">SHB50115 - Diploma of Beauty Therapy</option>
                                         <option value="HLT52015 - Diploma of Remedial Massage">HLT52015 - Diploma of Remedial Massage</option>
+                                        <option value="SHB30416 - Certificate III in Hairdressing">SHB30416 - Certificate III in Hairdressing</option>
+                                        <option value="SHB40115 - Certificate IV in Beauty Therapy">SHB40115 - Certificate IV in Beauty Therapy</option>
                                     </select>
                                 </div>
                             </div>
