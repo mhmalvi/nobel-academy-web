@@ -38,6 +38,7 @@
                 <li><a href="{{route('policyFile', 'Complaint-and-appeal-policy')}}">Complaints and Appeals Policy and Procedure</a></li>
                 <li><a href="{{route('policyFile', 'Fees-Charges-and-Refund-Policy')}}"> Fees, Charges and Refund Policy and Procedure</a></li>
                 <li><a href="{{route('policyFile', 'Student-Handbook-2019')}}">Students Handbook</a></li>
+                <li><a href="{{ route('check-your-rpl-eligibility') }}">Check Your Eligibility</a></li>
               </ul>
             </li>
             <li><a href="http://elearning.nta.nsw.edu.au/login/index.php">E-Learning</a></li>
