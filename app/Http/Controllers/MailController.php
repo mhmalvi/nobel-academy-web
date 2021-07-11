@@ -103,7 +103,8 @@ class MailController extends Controller
                 }
             }
 
-            Mail::to('enquiries@nta.nsw.edu.au')->cc('info@quadque.tech')->send(new RplEligibilityMail($data, $filePath));
+            // Mail::to('enquiries@nta.nsw.edu.au')->cc('info@quadque.tech')->send(new RplEligibilityMail($data, $filePath));
+            Mail::to('dev.quadque@gmail.com')->cc('tousif@quadque.tech')->send(new RplEligibilityMail($data, $filePath));
 
             if ($request->hasFile('files') && count($request->file('files')) > 0) {
                 Storage::deleteDirectory('public/' . $directory);
