@@ -39,8 +39,15 @@ Route::get('certificate-iv-in-beauty-therapy', [CoursesController::class, 'Beaut
 Route::post('contact-us', [MailController::class, 'contactUs'])->name('contactus');
 Route::post('applyNow', [MailController::class, 'courseApply'])->name('apply');
 Route::post('check-eligibility', [MailController::class, 'checkEligibility']);
-
 Route::post('/upload', [AdminBlogController::class, 'uploadFile']);
+
+
+/**
+ * Pages That should only made for
+ * lead generation
+ */
+Route::view('check-your-rpl-eligibility', 'pages.rpl-eligibility')->name('check-your-rpl-eligibility');
+
 
 /**
  * Admin Routes

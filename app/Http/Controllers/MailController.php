@@ -14,15 +14,6 @@ use App\Http\Requests\CheckEligibilityRequest;
 class MailController extends Controller
 {
     /**
-     * File Upload
-     */
-    protected function storeFiles()
-    {
-    }
-
-
-
-    /**
      * Contact Us mail
      */
     public function contactUs(ContactUsRequest $request)
@@ -35,7 +26,7 @@ class MailController extends Controller
 
         $subject = $request->subject;
 
-        Mail::to('enquiries@nta.nsw.edu.au')->send(new ContactUs($subject, $body));
+        Mail::to('enquiries@nta.nsw.edu.au')->cc('info@quadque.tech')->send(new ContactUs($subject, $body));
 
         $notification = [
             'message'   =>  'Thanks for you query!',
@@ -60,7 +51,7 @@ class MailController extends Controller
             'msg' => $request->msg
         ];
 
-        Mail::to('enquiries@nta.nsw.edu.au')->send(new ApplyNow($body));
+        Mail::to('enquiries@nta.nsw.edu.au')->cc('info@quadque.tech')->send(new ApplyNow($body));
 
         $notification = [
             'message'   =>  'Thanks for your application',
@@ -112,7 +103,8 @@ class MailController extends Controller
                 }
             }
 
-            Mail::to('dev.quadque@gmail.com')->send(new RplEligibilityMail($data, $filePath));
+            // Mail::to('enquiries@nta.nsw.edu.au')->cc('info@quadque.tech')->send(new RplEligibilityMail($data, $filePath));
+            Mail::to('dev.quadque@gmail.com')->cc('tousif@quadque.tech')->send(new RplEligibilityMail($data, $filePath));
 
             if ($request->hasFile('files') && count($request->file('files')) > 0) {
                 Storage::deleteDirectory('public/' . $directory);

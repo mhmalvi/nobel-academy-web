@@ -109,6 +109,7 @@ function fileUpload(event) {
 
 /**
  * Form Submit
+ * Modal
  */
 $(document).ready(function() {
     $("#msform").on("submit", function(e) {
@@ -123,9 +124,7 @@ $(document).ready(function() {
         fd.append("experience", $("input[name=experience]").val());
         fd.append("work_location", $("input[name=work_location]").val());
         fd.append("remark", $("#remark").val());
-
         var files = $("#files").prop("files");
-
         if (files.length > 0) {
             $.each(files, function(key, value) {
                 fd.append("files[]", value);
@@ -154,6 +153,58 @@ $(document).ready(function() {
                 $(".load-scrn").toggleClass("visible");
                 alert("Invalid request. Please try again!");
             }
+        });
+    });
+
+    /**
+     * Seo page
+     */
+    $("#rplEligibilityForm").on("submit", function(e) {
+        e.preventDefault();
+        const fd = new FormData();
+
+        fd.append("qualification", $("#qualification").val());
+        fd.append("experience", $("input[name=relevant]").val());
+        fd.append("work_location", $("input[name=work_location]").val());
+        fd.append("location", $("input[name=location]").val());
+        fd.append("name", $("#name").val());
+        fd.append("email", $("#email").val());
+        fd.append("contact", $("#phone").val());
+        fd.append("remark", $("#remark").val());
+        var files = $("#files").prop("files");
+        if (files.length > 0) {
+            $.each(files, function(key, value) {
+                fd.append("files[]", value);
+            });
+        }
+
+        $.ajax({
+            url: "check-eligibility",
+            method: "POST",
+            data: fd,
+            dataType: "json",
+            processData: false,
+            contentType: false,
+            beforeSend: function() {
+                $("#lds-wrapper").toggleClass("show-lds");
+            },
+            success: function(data) {
+                if (data.success == "success") {
+                    $("#rplEligibilityForm").trigger("reset");
+                    $("#lds-wrapper").toggleClass("show-lds");
+                    alert(
+                        "Your response successfully submitted. You will be redirect to our website shortly."
+                    );
+                }
+            },
+            error: function(err) {
+                $("#lds-wrapper").toggleClass("show-lds");
+                alert("Invalid request. Please try again!");
+            }
+        }).done(function() {
+            setTimeout(() => {
+                location.href = "https://nta.nsw.edu.au";
+            }, 1000);
         });
     });
 });

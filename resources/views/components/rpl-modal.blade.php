@@ -40,7 +40,7 @@
                                 <div class="fieldlabels">How many years of relevant work experience do you have? *</div>
                                 <div class="row">
                                     <div class="col-sm-3 col-xs-6">
-                                        <input type="radio" name="experience" id="one" value="1 - 2 years" />
+                                        <input type="radio" name="relevant" id="one" value="1 - 2 years" />
                                         <label for="one" class="exp-lbl">
                                             <div>1 - 2 <br> Years</div>
                                         </label>
