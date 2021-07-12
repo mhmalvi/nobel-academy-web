@@ -4,10 +4,14 @@
     background: #ebeff2;
 }
 .rpl-btn {
-    padding: 0px 50px;
+    padding: 0px 25px;
     border: 2px solid #3fd4fb;
     border-radius: 0px;
     transition: 0.4s;
+}
+.rpl-btn-default {
+    width: 100%;
+    margin-bottom: 25px;
 }
 .lord-icon-size {
     width: 50px !important;

@@ -71,7 +71,7 @@ class MailController extends Controller
     }
 
 
-    public function checkEligibility(CheckEligibilityRequest $request)
+    public function checkEligibility(Request $request)
     {
         $directory = "temp/" . uniqid() . "/";
         $filePath = [];

@@ -209,6 +209,15 @@
                 </div>
                 <aside class="col-sm-4 wow fadeIn" data-wow-delay="400ms">
                     <div class="widget heading_space">
+                        <button type="button" class="rpl-btn rpl-btn-default" data-toggle="rpl-modal" id="toggle-modal">
+                            <lord-icon
+                                src="https://cdn.lordicon.com//pndvzexs.json"
+                                trigger="loop"
+                                colors="primary:#002B46,secondary:#002B46"
+                                class="lord-icon-size">
+                            </lord-icon>
+                            Click Here For Your Free Skill Check
+                        </button>
                         <h3 class="bottom20">Core units</h3>
                         <div class="media">
                             <div class="media-body">

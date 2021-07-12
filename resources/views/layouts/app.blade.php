@@ -7,6 +7,11 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
 <title>NTA - Noble Training Academy</title>
+
+{{-- Global SEO --}}
+@include('layouts.seo')
+{{-- Global SEO --}}
+
 @stack('seo')
 
 <link rel="icon" href="{{asset('assets/images/logo/favicon.png')}}">
@@ -34,6 +39,7 @@
         @include('components.navBar')
     @endif
     @yield('content')
+    @include('components.rpl-modal')
     @include('components.footer')
     @include('partials.scripts')
     @livewireScripts
