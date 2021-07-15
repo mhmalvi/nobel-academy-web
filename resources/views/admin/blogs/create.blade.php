@@ -20,6 +20,15 @@
                             @enderror
                         </div>
                         <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="slug">https://nta.nsw.edu.au/blog/</span>
+                                </div>
+                                <input type="text" class="form-control" id="url-slug" name="urlSlug" aria-describedby="slug">
+                            </div>
+                            <cite class="tex-light" style="font-size: 8px; display: block;">*URL Slug</cite>
+                        </div>
+                        <div class="form-group">
                             <textarea name="summary" rows="3" class="form-control @error('summary') is-invalid @enderror" style="resize: none;" placeholder="Lets add a summery...">{{old('summary')}}</textarea>
                             <cite class="tex-light" style="font-size: 8px; display: block;">*Max 255 characters</cite>
                             @error('summary')

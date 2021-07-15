@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Blog;
 use App\Models\Category;
+use Illuminate\Support\Str;
 
 class BlogController extends Controller
 {
@@ -45,7 +46,7 @@ class BlogController extends Controller
     public function store(BlogRequest $request)
     {
         $file = null;
-        $slug = SlugService::createSlug(Blog::class, 'blog_slug', $request->title);
+        $slug = Str::slug($request->title);
 
         $category = $request->category;
 
@@ -75,7 +76,7 @@ class BlogController extends Controller
         $data = [
             'user_id' => Auth::id(),
             'blog_title' => $request->title,
-            'blog_slug' => $slug,
+            'blog_slug' => ($request->has('urlSlug')) ? $request->urlSlug : $slug,
             'category_id' => $category,
             'blog_summery' => $request->summary,
             'blog_details' => $request->summernote,
@@ -143,10 +144,8 @@ class BlogController extends Controller
         try {
             $data = Blog::firstWhere('id', $id);
 
-            $slug = SlugService::createSlug(Blog::class, 'blog_slug', $request->title);
-
             $data->blog_title = $request->title;
-            $data->blog_slug = $slug;
+            $data->blog_slug = ($request->has('urlSlug')) ? $request->urlSlug : Str::slug($request->title);
             $data->blog_summery = $request->summary;
             $data->blog_details = $request->summernote;
             $data->category_id = $request->category;
