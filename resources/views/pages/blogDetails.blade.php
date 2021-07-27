@@ -1,24 +1,31 @@
 @extends('layouts.app')
 
-@push('seo')
-    <meta name="tags" content="{{$blog->meta_tags}}"/>
-    <meta name="tags" content="{{$blog->meta_keys}}"/>
-    <meta property="og:tags" content="{{$blog->meta_tags}}">
-    <meta property="og:keywords" content="{{$blog->meta_keys}}">
-    <meta property="og:description" content="{{$blog->meta_desc}}">
-    <meta property="og:url" content="https://nta.nsw.edu.au/blogs/{{$blog->blog_slug}}">
-    <meta property="og:title" content="{{ $blog->blog_title }}" />
-    <meta property="og:image" content="{{asset('storage/app/public/blogs/'.$blog->thumbnail)}}" />
-@endpush
+@section('title', $blog->blog_title)
 
-@push('css')
-    <style>
-      .at-resp-share-element .at-share-btn{
-        margin-bottom: 0px !important;
-      }
-    </style>
-@endpush
+    @push('seo')
+        <meta name="tags" content="{{ $blog->meta_tags }}" />
+        <meta name="keywords" content="{{ $blog->meta_keys }}" />
+    @endpush
 
+
+    @push('og')
+        <meta property="og:tags" content="{{ $blog->meta_tags }}">
+        <meta property="og:keywords" content="{{ $blog->meta_keys }}">
+        <meta property="og:description" content="{{ $blog->meta_desc }}">
+        <meta property="og:image" content="{{ asset('storage/blogs/' . $blog->thumbnail) }}" />
+    @endpush
+
+
+    @push('css')
+
+        <style>
+            .at-resp-share-element .at-share-btn {
+                margin-bottom: 0px !important;
+            }
+
+        </style>
+
+    @endpush
 @section('content')
     <!--Page Header-->
 <section class="page_header padding-top">

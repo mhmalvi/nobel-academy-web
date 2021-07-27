@@ -1,8 +1,11 @@
 @extends('layouts.app')
-@push('seo')
-    <meta name="description"
-        content="With this hairdressing course certification, you can get started on your way to a promising career in hairdressing. Which will help you to work as a hairdresser in a salon with confidence" />
-@endpush
+@section('title', 'Certificate IV in Beauty Therapy')
+    @push('seo')
+
+        <meta name="description"
+            content="With this hairdressing course certification, you can get started on your way to a promising career in hairdressing. Which will help you to work as a hairdresser in a salon with confidence" />
+
+    @endpush
 @section('content')
     <!--Page Header-->
     <section class="page_header padding-top">

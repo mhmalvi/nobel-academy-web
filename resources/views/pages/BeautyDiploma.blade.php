@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Diploma of Beauty Therapy')
 @section('content')
     <!--Page Header-->
     <section class="page_header padding-top">

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'About Us')
 @push('css')
     <style>
         .item h3 a{

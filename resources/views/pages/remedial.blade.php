@@ -1,8 +1,11 @@
 @extends('layouts.app')
-@push('seo')
-    <meta name="description"
-        content="With a Diploma of Remedial Massage course at Noble Training Academy, develop essential skills to work across a range of industries from sport to rehabilitation" />
-@endpush
+@section('title', 'Diploma of Remedial Massage')
+    @push('seo')
+
+        <meta name="description"
+            content="With a Diploma of Remedial Massage course at Noble Training Academy, develop essential skills to work across a range of industries from sport to rehabilitation" />
+
+    @endpush
 @section('content')
     <!--Page Header-->
     <section class="page_header padding-top">

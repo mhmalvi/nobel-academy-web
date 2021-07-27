@@ -1,4 +1,17 @@
 @extends('layouts.app')
+@section('title', 'Noble Training Academy')
+
+    @push('seo')
+        <meta name="description"
+            content="Noble Training Academy was established in 2016 and is privately operated Registered Training Organisation. Our courses are provided within Australia." />
+    @endpush
+
+    @push('og')
+        <meta property="og:keywords"
+            content="beauty therapy,remedial massage,hair dressing,certificate iii,diploma,colleges in australia,certificate ii">
+        <meta property="og:description"
+            content="Noble Training Academy was established in 2016 and is privately operated Registered Training Organisation. Our courses are provided within Australia.">
+    @endpush
 
 @section('content')
     @include('components.slider')

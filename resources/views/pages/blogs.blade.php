@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Blogs')
 @section('content')
 <!--Page Header-->
 <section class="page_header padding-top">
