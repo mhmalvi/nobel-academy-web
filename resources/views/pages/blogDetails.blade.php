@@ -32,8 +32,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 page-content">
-          <h1>Our Blog</h1>
-          <p>We offer the most complete house renovating services in the country</p>
+          <h1>{{$blog->blog_title}}</h1>
           <div class="page_nav">
         <span>You are here:</span> <a href="{{route('home')}}">Home</a> <span><i class="fa fa-angle-double-right"></i>Blog</span>
         </div>
@@ -58,7 +57,6 @@
                     <div class="image bottom25">
                     <img src="{{asset('storage/app/public/blogs/'.$blog->thumbnail)}}" alt="blog" style="max-width: 822px; max-height: 480px;">
                     </div>
-                    <h3>{{$blog->blog_title}}</h3>
                     <hr>
                     <ul class="comment margin10">
                         <li><a href="javascript:void(0)"><i class="icon-user"></i>&nbsp; by &nbsp; <span class="text-primary">{{$blog->user->name}}</span></a></li>
