@@ -55,7 +55,7 @@
                 @endphp 
                 <article class="blog_item padding-bottom-half heading_space" style="border:none;">
                     <div class="image bottom25">
-                    <img src="{{asset('storage/app/public/blogs/'.$blog->thumbnail)}}" alt="blog" style="max-width: 822px; max-height: 480px;">
+                    <img src="{{asset('storage/blogs/'.$blog->thumbnail)}}" alt="{{$blog->thumbnail_alt ? $blog->thumbnail_alt : $blog->blog_slug}}" style="max-width: 822px; max-height: 480px;">
                     </div>
                     <hr>
                     <ul class="comment margin10">

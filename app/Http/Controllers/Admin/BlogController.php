@@ -2,16 +2,14 @@
 
 namespace App\Http\Controllers\Admin;
 
-use \Cviebrock\EloquentSluggable\Services\SlugService;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\BlogRequest;
+use App\Http\Requests\BlogCreateRequest;
+use App\Http\Requests\BlogUpdateRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
-use Illuminate\Support\Facades\Auth;
 use App\Models\Blog;
 use App\Models\Category;
-use Illuminate\Support\Str;
 
 class BlogController extends Controller
 {
@@ -43,54 +41,13 @@ class BlogController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(BlogRequest $request)
+    public function store(BlogCreateRequest $request)
     {
-        $file = null;
-        $slug = Str::slug($request->title);
-
-        $category = $request->category;
-
-        if (is_null($request->category)) {
-            $category = null;
-        }
-
-        if ($request->hasFile('image')) {
-            //check if directory exist or not
-            if (!Storage::exists("public/blogs")) {
-                Storage::makeDirectory("public/blogs");
-            }
-
-            $image = $request->file('image');
-            $imgExtension = $image->getClientOriginalExtension();
-
-            $file = date('dmy-hms') . '.' . $imgExtension;
-
-            //store image into storage directory
-            Storage::putFileAs(
-                'public/blogs',
-                $image,
-                $file
-            );
-        }
-
-        $data = [
-            'user_id' => Auth::id(),
-            'blog_title' => $request->title,
-            'blog_slug' => ($request->has('urlSlug')) ? $request->urlSlug : $slug,
-            'category_id' => $category,
-            'blog_summery' => $request->summary,
-            'blog_details' => $request->summernote,
-            'meta_tags' => $request->meta_tags,
-            'meta_keys' => $request->meta_keys,
-            'meta_desc' => $request->meta_desc,
-            'thumbnail' => $file
-        ];
-
         try {
-            Blog::create($data);
+            $request->save();
 
             $notification = [
-                'message'   =>  'nothing went wrong',
+                'message'   =>  'Successfully saved',
                 'alert-type'    =>  'success'
             ];
 
@@ -139,39 +96,14 @@ class BlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(BlogUpdateRequest $request, $id)
     {
+        $request->update(Blog::findOrFail($id));
+
         try {
-            $data = Blog::firstWhere('id', $id);
-
-            $data->blog_title = $request->title;
-            $data->blog_slug = ($request->has('urlSlug')) ? $request->urlSlug : Str::slug($request->title);
-            $data->blog_summery = $request->summary;
-            $data->blog_details = $request->summernote;
-            $data->category_id = $request->category;
-            $data->meta_tags = $request->meta_tags;
-            $data->meta_keys = $request->meta_keys;
-            $data->meta_desc = $request->meta_desc;
-
-            if ($request->hasFile('image')) {
-                //delete the old image first
-                Storage::delete('public/blogs/' . $data->thumbnail);
-
-                $image = $request->file('image');
-                $imgExtension = $image->getClientOriginalExtension();
-
-                $file = date('dmy-hms') . '.' . $imgExtension;
-
-                $data->thumbnail = $file;
-
-                //store image into storage directory
-                Storage::putFileAs('public/blogs', $image, $file);
-            }
-
-            $data->save();
 
             $notification = [
-                'message'   =>  'nothing went wrong',
+                'message'   =>  'Successfully Saved',
                 'alert-type'    =>  'success'
             ];
 
@@ -211,10 +143,7 @@ class BlogController extends Controller
     public function uploadFile(Request $request)
     {
         if ($request->hasFile('file')) {
-            $originName = $request->file('file')->getClientOriginalName();
-            $fileName = pathinfo($originName, PATHINFO_FILENAME);
-            $extension = $request->file('file')->getClientOriginalExtension();
-            $fileName = time() . '.' . $extension;
+            $fileName = pathinfo($request->file('file')->getClientOriginalName(), PATHINFO_FILENAME);
 
             $request->file('file')->move(public_path('blogImages'), $fileName);
 

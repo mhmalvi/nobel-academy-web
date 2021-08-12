@@ -89,6 +89,19 @@
                             </div>
                             <div class="col-lg-6">
                                 <div id="image"></div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="img_title" value="{{ old('img_title') }}" placeholder="Optionally you can put image title..">
+                                    @error('img_title')
+                                        <small class="text-danger">{{ $message }}</small>
+                                    @enderror
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="img_alt" value="{{ old('img_alt') }}" placeholder="Optionally you can put image alt..">
+                                    @error('img_alt')
+                                        <small class="text-danger">{{ $message }}</small>
+                                    @enderror
+                                </div>
                             </div>
                         </div>
                     </div>
