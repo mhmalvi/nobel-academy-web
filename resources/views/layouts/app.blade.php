@@ -38,7 +38,7 @@
     @livewireStyles
 </head>
 
-<body class="pushmenu-push">
+<body class="pushmenu-push" id="app">
     <a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
     <!--Loader-->
     <div class="loader">

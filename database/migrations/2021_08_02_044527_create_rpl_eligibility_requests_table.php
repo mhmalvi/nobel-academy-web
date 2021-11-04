@@ -20,7 +20,7 @@ class CreateRplEligibilityRequestsTable extends Migration
             $table->string('contact');
             $table->string('location');
             $table->string('qualification');
-            $table->string('relevant');
+            $table->string('experience');
             $table->string('work_location');
             $table->string('designation');
             $table->string('industry');

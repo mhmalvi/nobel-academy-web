@@ -22,7 +22,7 @@
             width: 100%;
             padding-bottom: 25px !important;
             border: none;
-            border-spacing: 0; 
+            border-spacing: 0;
         }
         thead tr th{
             text-align: center;
@@ -102,6 +102,38 @@
                                 <h4>Remarks</h4>
                                 <p>{{$data['remark']}}</p>
                             </div>
+                            <div>
+                                <h4>Question 1</h4>
+                                <p>{{$data['q1']}}</p>
+                            </div>
+                            <div>
+                                <h4>Question 2</h4>
+                                <p>{{$data['q2']}}</p>
+                            </div>
+                            <div>
+                                <h4>Question 3</h4>
+                                <p>{{$data['q3']}}</p>
+                            </div>
+                            <div>
+                                <h4>Question 4</h4>
+                                <p>{{$data['q4']}}</p>
+                            </div>
+                            <div>
+                                <h4>Question 5</h4>
+                                <p>{{$data['q5']}}</p>
+                            </div>
+                            <div>
+                                <h4>Question 6</h4>
+                                <p>{{$data['q6']}}</p>
+                            </div>
+                            <div>
+                                <h4>Question 7</h4>
+                                <p>{{$data['q7']}}</p>
+                            </div>
+                            <div>
+                                <h4>Question 8</h4>
+                                <p>{{$data['q8']}}</p>
+                            </div>
                         </td>
                     </tr>
                 </tbody>
@@ -111,7 +143,7 @@
                             <small>
                                 Noble Training Academy
                             </small>
-                            <small>  
+                            <small>
                                 Level 1, 7 Greenfield Pde Bankstown, NSW 2200, Sydney, Australia
                                 1300 535 922
                                 enquiries@nta.nsw.edu.au

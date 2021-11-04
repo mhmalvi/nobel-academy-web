@@ -154,7 +154,11 @@ class MailController extends Controller
 
                 'work_location' => $request->work_location,
 
-                'remark' => $request->remark
+                'remark' => $request->remark,
+                'designation' => '',
+                'industry' => '',
+                'course' => '',
+
 
             ];
 
@@ -162,6 +166,18 @@ class MailController extends Controller
 
             RplEligibilityRequest::create($data);
 
+            $more_data = [
+                'q1' => $request->q1,
+                'q2' => $request->q2,
+                'q3' => $request->q3,
+                'q4' => $request->q4,
+                'q5' => $request->q5,
+                'q6' => $request->q6,
+                'q7' => $request->q7,
+                'q8' => $request->q8,
+            ];
+
+            $data = array_merge($data, $more_data);
 
 
             if ($request->hasFile('files') && count($request->file('files')) > 0) {
