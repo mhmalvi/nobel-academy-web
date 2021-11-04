@@ -6,7 +6,7 @@
     <div class="container">
         <div class="form-wrapper">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <form method="post" id="rplEligibilityForm">
                         <div class="box">
                             <div class="box-header">
@@ -216,40 +216,219 @@
                                     <input type="file" class="form-control files" id="files" onchange="fileUpload(event)" multiple/>
                                 </div>
                             </div>
-
-                            <div class="text-center">
-                                <button type="submit" class="button-rpl">
-                                    Submit
-                                </button>
-                            </div>
                         </div>
                     </form>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="box">
-                        <div class="info-box">
-                            <div>
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            </div>
-                            <h4>Address</h4>
-                            <p>Level 1, 7 Greenfield Pde Bankstown, NSW 2200, Sydney, Australia</p>
+                        <div class="box-header">
+                            <h3>
+                                <strong>6</strong>
+                                RPL Checklist
+                            </h3>
+                            <br>
+                            <p>Tick, if you can demonstrate evidence</p>
                         </div>
-                        <div class="info-box">
-                            <div>
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+                        <div class="box-content">
+                            <div class="radio">
+                                <label class="p-0">Can you provide three different referees who can support your RPL Assessment? <a href="#abc">Information</a> on type of Referees is explained below.**</label>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <input type="radio" name="q1" id="q1_1" value="Yes" />
+                                        <label for="q1_1" class="exp-lbl exp-lbl2">
+                                            <div>Yes</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <input type="radio" name="q1" id="q1_2" value="No">
+                                        <label for="q1_2" class="exp-lbl exp-lbl2">
+                                            <div>No</div>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                            <h4>Email</h4>
-                            <p>enquiries@nta.nsw.edu.au</p>
+
+                            <div class="radio">
+                                <label class="p-0">
+                                    Are you an employee or an employer? Can you support it by an evidence eg. a letter from your employer or company registration details in case you are an employer.
+                                </label>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <input type="radio" name="q2" id="q2_1" value="Yes" />
+                                        <label for="q2_1" class="exp-lbl exp-lbl2">
+                                            <div>Yes</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <input type="radio" name="q2" id="q2_2" value="No">
+                                        <label for="q2_2" class="exp-lbl exp-lbl2">
+                                            <div>No</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="radio">
+                                <label class="p-0">
+                                    Do you have any license specific to the industry?
+                                </label>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <input type="radio" name="q3" id="q3_1" value="Yes" />
+                                        <label for="q3_1" class="exp-lbl exp-lbl2">
+                                            <div>Yes</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <input type="radio" name="q3" id="q3_2" value="No">
+                                        <label for="q3_2" class="exp-lbl exp-lbl2">
+                                            <div>No</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="radio">
+                                <label class="p-0">
+                                    Do you accept that the RPL process is fee for service and you have to pay for the RPL Assessment? Please read the fees structure outlined in the RPL information booklet.
+                                </label>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <input type="radio" name="q4" id="q4_1" value="Yes" />
+                                        <label for="q4_1" class="exp-lbl exp-lbl2">
+                                            <div>Yes</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <input type="radio" name="q4" id="q4_2" value="No">
+                                        <label for="q4_2" class="exp-lbl exp-lbl2">
+                                            <div>No</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="radio">
+                                <label class="p-0">
+                                    Do you accept that there will be many different type of evidences you have to supply for RPL Assessment, will you be able to supply the documents when requested?
+                                </label>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <input type="radio" name="q5" id="q5_1" value="Yes" />
+                                        <label for="q5_1" class="exp-lbl exp-lbl2">
+                                            <div>Yes</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <input type="radio" name="q5" id="q5_2" value="No">
+                                        <label for="q5_2" class="exp-lbl exp-lbl2">
+                                            <div>No</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="radio">
+                                <label class="p-0">
+                                    During the RPL process, we may request you for some video or photo evidences, are you comfortable in supplying such evidences?
+                                </label>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <input type="radio" name="q6" id="q6_1" value="Yes" />
+                                        <label for="q6_1" class="exp-lbl exp-lbl2">
+                                            <div>Yes</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <input type="radio" name="q6" id="q6_2" value="No">
+                                        <label for="q6_2" class="exp-lbl exp-lbl2">
+                                            <div>No</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="radio">
+                                <label class="p-0">
+                                    What type of evidences are you comfortable in supplying, depending on the Unit of Competency requirements?
+                                </label>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <input type="radio" name="q8" id="q8_1" value="Yes" />
+                                        <label for="q8_1" class="exp-lbl exp-lbl2">
+                                            <div>Yes</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <input type="radio" name="q8" id="q8_2" value="No">
+                                        <label for="q8_2" class="exp-lbl exp-lbl2">
+                                            <div>No</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="radio">
+                                <label class="p-0">
+                                    Are you ready to fill out the application form and begin the RPL Assessment immediately?
+                                </label>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <input type="radio" name="q9" id="q9_1" value="Yes" />
+                                        <label for="q9_1" class="exp-lbl exp-lbl2">
+                                            <div>Yes</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <input type="radio" name="q9" id="q9_2" value="No">
+                                        <label for="q9_2" class="exp-lbl exp-lbl2">
+                                            <div>No</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="info-box">
-                            <div>
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                            </div>
-                            <h4>Telephone</h4>
-                            <p>1300 616 123</p>
+                    </div>
+
+                    <div class="box" id="abc">
+                        <div class="box-header">
+                            <h3>
+                                <strong>*</strong>
+                                Type of Referees
+                            </h3>
+                            <br>
+                            <p>Who are eligible Referees that can assess your skill and knowledge?</p>
+                        </div>
+                        <div class="box-body">
+                            <br>
+                            <p>
+                                For the RPL process an applicant must provide at least three referee details. Out of the three: 
+                                one of your referee must be a Supervisor at work, who is referred to as ‘Testimonial Referee’ and the other two must be ‘Nominated Referees’, 
+                                whom your Assessor will contact for reference check. One of your Nominated Referee should be able to provide you with ‘Third Party Report'. 
+                                The detail explanation of the type of referees are given below:
+                            </p>
+                            <br>
+                            <p>
+                                <strong>Testimonial Referee:&nbsp;</strong>
+                                'Testimonial Referees' are mostly your Employer, Supervisor, Managers who can provide you with a testimonial letter declaring that they know you 
+                                for more than 1 year and who can declare that you have sufficient job experience to meet the qualification requirements.
+                            </p>
+                            <br>
+                            <p>
+                                <strong>Nominated Referee:&nbsp;</strong>
+                                You should have two Nominated referee who could either be your colleague, supervisor, manager and other relevant person, who has worked with you 
+                                and can assess your skill and knowledge in relevance to each unit of competency. 
+                            </p>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="button-rpl">
+                    Submit
+                </button>
             </div>
         </div>
         <div class="loader-wrapper" id="lds-wrapper"area-hidden='true'>
