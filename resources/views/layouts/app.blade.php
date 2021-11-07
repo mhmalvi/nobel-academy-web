@@ -38,7 +38,7 @@
     @livewireStyles
 </head>
 
-<body class="pushmenu-push" id="app">
+<body class="pushmenu-push">
     <a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
     <!--Loader-->
     <div class="loader">
@@ -56,9 +56,16 @@
     @else
         @include('components.navBar')
     @endif
-    @yield('content')
+
+    <div id="app">
+        @yield('content')
+    </div>
+
     @include('components.rpl-modal')
     @include('components.footer')
+
+
+    <script src="{{ asset('js/app.js') }}"></script>
     @include('partials.scripts')
     @livewireScripts
     @include('components.applyNow')

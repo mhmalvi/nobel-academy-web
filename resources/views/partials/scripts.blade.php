@@ -17,8 +17,6 @@
 <script src="{{asset('assets/js/wow.min.js')}}"></script>
 <script src="{{asset('assets/js/functions.js')}}"></script>
 
-<script src="{{ asset('js/app.js') }}"></script>
-
 <script src="{{asset('assets/js/custom.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.js" defer></script>
 <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
