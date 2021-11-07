@@ -701,6 +701,9 @@
       </div>
     </form>
   </div>
+  <div class="loader-wrapper" :class="isLoading && 'show-lds'" id="lds-wrapper" area-hidden='true' v-if="isLoading">
+    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
 </template>
 
 <script>
@@ -709,6 +712,8 @@ import axios from "axios";
 
 export default {
   setup() {
+    const isLoading = ref(false);
+
     const form = reactive({
       qualification: "",
       experience: "",
@@ -729,7 +734,7 @@ export default {
     });
 
     function handleFormSubmit() {
-      console.log("form", form);
+      isLoading.value = true;
 
       const fd = new FormData();
 
