@@ -159,14 +159,6 @@ class MailController extends Controller
                 'industry' => '',
                 'course' => '',
 
-
-            ];
-
-
-
-            RplEligibilityRequest::create($data);
-
-            $more_data = [
                 'q1' => $request->q1,
                 'q2' => $request->q2,
                 'q3' => $request->q3,
@@ -177,7 +169,9 @@ class MailController extends Controller
                 'q8' => $request->q8,
             ];
 
-            $data = array_merge($data, $more_data);
+
+
+            RplEligibilityRequest::create($data);
 
 
             if ($request->hasFile('files') && count($request->file('files')) > 0) {

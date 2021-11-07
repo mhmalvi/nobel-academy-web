@@ -18943,6 +18943,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
     function handleFormSubmit() {
+      isLoading.value = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(true);
       var fd = new FormData();
       Object.keys(form).forEach(function (key) {
         fd.append(key, form[key]);
@@ -18958,8 +18959,10 @@ __webpack_require__.r(__webpack_exports__);
       axios__WEBPACK_IMPORTED_MODULE_1___default().post("/check-eligibility", fd).then(function (res) {
         $("#rplEligibilityForm").trigger("reset");
         $("#lds-wrapper").toggleClass("show-lds");
+        isLoading.value = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(false);
         alert("Your response successfully submitted. You will be redirect to our website shortly.");
       })["catch"](function (err) {
+        isLoading.value = false;
         errors.messages = err.response.data.errors;
       });
     }
@@ -18971,7 +18974,8 @@ __webpack_require__.r(__webpack_exports__);
       form: form,
       handleFormSubmit: handleFormSubmit,
       errors: errors,
-      isValid: isValid
+      isValid: isValid,
+      isLoading: isLoading
     };
   }
 });
@@ -19028,7 +19032,7 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVN
 var _hoisted_14 = [_hoisted_9];
 var _hoisted_15 = {
   key: 0,
-  "class": "text-warning"
+  "class": "text-danger"
 };
 var _hoisted_16 = {
   "class": "box"
@@ -19106,7 +19110,7 @@ var _hoisted_30 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 
 var _hoisted_31 = {
   key: 0,
-  "class": "text-warning"
+  "class": "text-danger"
 };
 var _hoisted_32 = {
   "class": "radio p-0"
@@ -19156,7 +19160,7 @@ var _hoisted_40 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 
 var _hoisted_41 = {
   key: 0,
-  "class": "text-warning"
+  "class": "text-danger"
 };
 var _hoisted_42 = {
   "class": "box"
@@ -19304,7 +19308,7 @@ var _hoisted_65 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 
 var _hoisted_66 = {
   key: 0,
-  "class": "text-warning"
+  "class": "text-danger"
 };
 var _hoisted_67 = {
   "class": "box"
@@ -19331,7 +19335,7 @@ var _hoisted_71 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 
 var _hoisted_72 = {
   key: 0,
-  "class": "text-warning"
+  "class": "text-danger"
 };
 var _hoisted_73 = {
   "class": "form-group"
@@ -19345,7 +19349,7 @@ var _hoisted_74 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 
 var _hoisted_75 = {
   key: 0,
-  "class": "text-warning"
+  "class": "text-danger"
 };
 var _hoisted_76 = {
   "class": "form-group"
@@ -19359,7 +19363,7 @@ var _hoisted_77 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 
 var _hoisted_78 = {
   key: 0,
-  "class": "text-warning"
+  "class": "text-danger"
 };
 var _hoisted_79 = {
   "class": "box"
@@ -19455,7 +19459,7 @@ var _hoisted_95 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 
 var _hoisted_96 = {
   key: 0,
-  "class": "text-warning"
+  "class": "text-danger"
 };
 var _hoisted_97 = {
   "class": "radio"
@@ -19494,7 +19498,7 @@ var _hoisted_103 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElemen
 
 var _hoisted_104 = {
   key: 0,
-  "class": "text-warning"
+  "class": "text-danger"
 };
 var _hoisted_105 = {
   "class": "radio"
@@ -19533,7 +19537,7 @@ var _hoisted_111 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElemen
 
 var _hoisted_112 = {
   key: 0,
-  "class": "text-warning"
+  "class": "text-danger"
 };
 var _hoisted_113 = {
   "class": "radio"
@@ -19572,7 +19576,7 @@ var _hoisted_119 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElemen
 
 var _hoisted_120 = {
   key: 0,
-  "class": "text-warning"
+  "class": "text-danger"
 };
 var _hoisted_121 = {
   "class": "radio"
@@ -19611,7 +19615,7 @@ var _hoisted_127 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElemen
 
 var _hoisted_128 = {
   key: 0,
-  "class": "text-warning"
+  "class": "text-danger"
 };
 var _hoisted_129 = {
   "class": "radio"
@@ -19650,7 +19654,7 @@ var _hoisted_135 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElemen
 
 var _hoisted_136 = {
   key: 0,
-  "class": "text-warning"
+  "class": "text-danger"
 };
 var _hoisted_137 = {
   "class": "radio"
@@ -19689,7 +19693,7 @@ var _hoisted_143 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElemen
 
 var _hoisted_144 = {
   key: 0,
-  "class": "text-warning"
+  "class": "text-danger"
 };
 var _hoisted_145 = {
   "class": "radio"
@@ -19728,26 +19732,29 @@ var _hoisted_151 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElemen
 
 var _hoisted_152 = {
   key: 0,
-  "class": "text-warning"
+  "class": "text-danger"
 };
 
 var _hoisted_153 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"box\" id=\"abc\"><div class=\"box-header\"><h3><strong>*</strong> Type of Referees </h3><br><p> Who are eligible Referees that can assess your skill and knowledge? </p></div><div class=\"box-body\"><br><p> For the RPL process an applicant must provide at least three referee details. Out of the three: one of your referee must be a Supervisor at work, who is referred to as ‘Testimonial Referee’ and the other two must be ‘Nominated Referees’, whom your Assessor will contact for reference check. One of your Nominated Referee should be able to provide you with ‘Third Party Report&#39;. The detail explanation of the type of referees are given below: </p><br><p><strong>Testimonial Referee: </strong> &#39;Testimonial Referees&#39; are mostly your Employer, Supervisor, Managers who can provide you with a testimonial letter declaring that they know you for more than 1 year and who can declare that you have sufficient job experience to meet the qualification requirements. </p><br><p><strong>Nominated Referee: </strong> You should have two Nominated referee who could either be your colleague, supervisor, manager and other relevant person, who has worked with you and can assess your skill and knowledge in relevance to each unit of competency. </p></div></div>", 1);
 
-var _hoisted_154 = {
+var _hoisted_154 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "d-flex justify-content-center"
-};
-var _hoisted_155 = ["disabled"];
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  type: "submit",
+  "class": "button-rpl"
+}, " Submit ")], -1
+/* HOISTED */
+);
 
-var _hoisted_156 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_155 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "lds-spinner"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div")], -1
 /* HOISTED */
 );
 
-var _hoisted_157 = [_hoisted_156];
+var _hoisted_156 = [_hoisted_155];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
-    method: "post",
     onSubmit: _cache[36] || (_cache[36] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
       return $setup.handleFormSubmit && $setup.handleFormSubmit.apply($setup, arguments);
     }, ["prevent"]))
@@ -20139,20 +20146,14 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* NEED_PATCH */
   ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q8]]), _hoisted_151])]), $setup.errors.messages.q8.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_152, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.errors.messages.q8[0]), 1
   /* TEXT */
-  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])]), _hoisted_153])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_154, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    type: "submit",
-    "class": "button-rpl",
-    disabled: !$setup.isValid
-  }, " Submit ", 8
-  /* PROPS */
-  , _hoisted_155)])], 32
+  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])]), _hoisted_153])]), _hoisted_154], 32
   /* HYDRATE_EVENTS */
-  )]), _ctx.isLoading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+  )]), $setup.isLoading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
     key: 0,
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["loader-wrapper", _ctx.isLoading && 'show-lds']),
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["loader-wrapper", $setup.isLoading && 'show-lds']),
     id: "lds-wrapper",
     "area-hidden": "true"
-  }, _hoisted_157, 2
+  }, _hoisted_156, 2
   /* CLASS */
   )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 64
   /* STABLE_FRAGMENT */

@@ -1,6 +1,6 @@
 <template>
   <div class="form-wrapper">
-    <form method="post" @submit.prevent="handleFormSubmit">
+    <form @submit.prevent="handleFormSubmit">
       <div class="row">
         <div class="col-md-6">
           <div class="box">
@@ -39,7 +39,7 @@
                   </option>
                 </select>
                 <div
-                  class="text-warning"
+                  class="text-danger"
                   v-if="errors.messages.qualification.length > 0"
                 >
                   {{ errors.messages.qualification[0] }}
@@ -126,7 +126,7 @@
                     </div>
                   </div>
                   <div
-                    class="text-warning"
+                    class="text-danger"
                     v-if="errors.messages.experience.length > 0"
                   >
                     {{ errors.messages.experience[0] }}
@@ -173,7 +173,7 @@
                     </div>
                   </div>
                   <div
-                    class="text-warning"
+                    class="text-danger"
                     v-if="errors.messages.work_location.length > 0"
                   >
                     {{ errors.messages.work_location[0] }}
@@ -305,7 +305,7 @@
                   </div>
 
                   <div
-                    class="text-warning"
+                    class="text-danger"
                     v-if="errors.messages.location.length > 0"
                   >
                     {{ errors.messages.location[0] }}
@@ -334,7 +334,7 @@
                   v-model="form.name"
                 />
                 <div
-                  class="text-warning"
+                  class="text-danger"
                   v-if="errors.messages.name.length > 0"
                 >
                   {{ errors.messages.name[0] }}
@@ -350,7 +350,7 @@
                   v-model="form.email"
                 />
                 <div
-                  class="text-warning"
+                  class="text-danger"
                   v-if="errors.messages.email.length > 0"
                 >
                   {{ errors.messages.email[0] }}
@@ -366,7 +366,7 @@
                   v-model="form.contact"
                 />
                 <div
-                  class="text-warning"
+                  class="text-danger"
                   v-if="errors.messages.contact.length > 0"
                 >
                   {{ errors.messages.contact[0] }}
@@ -456,7 +456,7 @@
                     </label>
                   </div>
                 </div>
-                <div class="text-warning" v-if="errors.messages.q1.length > 0">
+                <div class="text-danger" v-if="errors.messages.q1.length > 0">
                   {{ errors.messages.q1[0] }}
                 </div>
               </div>
@@ -493,7 +493,7 @@
                     </label>
                   </div>
                 </div>
-                <div class="text-warning" v-if="errors.messages.q2.length > 0">
+                <div class="text-danger" v-if="errors.messages.q2.length > 0">
                   {{ errors.messages.q2[0] }}
                 </div>
               </div>
@@ -528,7 +528,7 @@
                     </label>
                   </div>
                 </div>
-                <div class="text-warning" v-if="errors.messages.q3.length > 0">
+                <div class="text-danger" v-if="errors.messages.q3.length > 0">
                   {{ errors.messages.q3[0] }}
                 </div>
               </div>
@@ -565,7 +565,7 @@
                     </label>
                   </div>
                   <div
-                    class="text-warning"
+                    class="text-danger"
                     v-if="errors.messages.q4.length > 0"
                   >
                     {{ errors.messages.q4[0] }}
@@ -605,7 +605,7 @@
                     </label>
                   </div>
                 </div>
-                <div class="text-warning" v-if="errors.messages.q5.length > 0">
+                <div class="text-danger" v-if="errors.messages.q5.length > 0">
                   {{ errors.messages.q5[0] }}
                 </div>
               </div>
@@ -642,7 +642,7 @@
                     </label>
                   </div>
                 </div>
-                <div class="text-warning" v-if="errors.messages.q6.length > 0">
+                <div class="text-danger" v-if="errors.messages.q6.length > 0">
                   {{ errors.messages.q6[0] }}
                 </div>
               </div>
@@ -678,7 +678,7 @@
                     </label>
                   </div>
                 </div>
-                <div class="text-warning" v-if="errors.messages.q6.length > 0">
+                <div class="text-danger" v-if="errors.messages.q6.length > 0">
                   {{ errors.messages.q6[0] }}
                 </div>
               </div>
@@ -714,7 +714,7 @@
                     </label>
                   </div>
                 </div>
-                <div class="text-warning" v-if="errors.messages.q8.length > 0">
+                <div class="text-danger" v-if="errors.messages.q8.length > 0">
                   {{ errors.messages.q8[0] }}
                 </div>
               </div>
@@ -767,7 +767,7 @@
       </div>
 
       <div class="d-flex justify-content-center">
-        <button type="submit" class="button-rpl" :disabled="!isValid">
+        <button type="submit" class="button-rpl">
           Submit
         </button>
       </div>
@@ -805,6 +805,7 @@ export default {
       q7: "",
       q8: "",
     });
+
     const errors = reactive({
       messages: {
         qualification: "",
@@ -826,6 +827,8 @@ export default {
     });
 
     function handleFormSubmit() {
+      isLoading.value = ref(true);
+
       const fd = new FormData();
 
       Object.keys(form).forEach((key) => {
@@ -843,11 +846,13 @@ export default {
         .then((res) => {
           $("#rplEligibilityForm").trigger("reset");
           $("#lds-wrapper").toggleClass("show-lds");
+          isLoading.value = ref(false);
           alert(
             "Your response successfully submitted. You will be redirect to our website shortly."
           );
         })
         .catch((err) => {
+          isLoading.value = false;
           errors.messages = err.response.data.errors;
         });
     }
@@ -878,6 +883,7 @@ export default {
       handleFormSubmit,
       errors,
       isValid,
+      isLoading
     };
   },
 };
