@@ -821,8 +821,6 @@ export default {
     });
 
     function handleFormSubmit() {
-      console.log("form", form);
-
       const fd = new FormData();
 
       Object.keys(form).forEach((key) => {
@@ -846,7 +844,6 @@ export default {
         })
         .catch((err) => {
           errors.messages = err.response.data.errors;
-          console.log(errors);
         });
     }
 

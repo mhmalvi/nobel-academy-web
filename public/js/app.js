@@ -18942,7 +18942,6 @@ __webpack_require__.r(__webpack_exports__);
     });
 
     function handleFormSubmit() {
-      console.log("form", form);
       var fd = new FormData();
       Object.keys(form).forEach(function (key) {
         fd.append(key, form[key]);
@@ -18961,7 +18960,6 @@ __webpack_require__.r(__webpack_exports__);
         alert("Your response successfully submitted. You will be redirect to our website shortly.");
       })["catch"](function (err) {
         errors.messages = err.response.data.errors;
-        console.log(errors);
       });
     }
 
