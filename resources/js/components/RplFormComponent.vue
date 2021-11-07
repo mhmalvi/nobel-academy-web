@@ -38,6 +38,12 @@
                     SHB40115 - Certificate IV in Beauty Therapy
                   </option>
                 </select>
+                <div
+                  class="text-warning"
+                  v-if="errors.messages.qualification.length > 0"
+                >
+                  {{ errors.messages.qualification[0] }}
+                </div>
               </div>
             </div>
           </div>
@@ -119,6 +125,12 @@
                       </label>
                     </div>
                   </div>
+                  <div
+                    class="text-warning"
+                    v-if="errors.messages.experience.length > 0"
+                  >
+                    {{ errors.messages.experience[0] }}
+                  </div>
                 </div>
                 <div class="radio p-0">
                   <label class="p-0">Where is your work experience? *</label>
@@ -159,6 +171,12 @@
                         <div>Other</div>
                       </label>
                     </div>
+                  </div>
+                  <div
+                    class="text-warning"
+                    v-if="errors.messages.work_location.length > 0"
+                  >
+                    {{ errors.messages.work_location[0] }}
                   </div>
                 </div>
               </div>
@@ -285,6 +303,13 @@
                       </label>
                     </div>
                   </div>
+
+                  <div
+                    class="text-warning"
+                    v-if="errors.messages.location.length > 0"
+                  >
+                    {{ errors.messages.location[0] }}
+                  </div>
                 </div>
               </div>
             </div>
@@ -308,6 +333,12 @@
                   placeholder="Please enter your full name"
                   v-model="form.name"
                 />
+                <div
+                  class="text-warning"
+                  v-if="errors.messages.name.length > 0"
+                >
+                  {{ errors.messages.name[0] }}
+                </div>
               </div>
               <div class="form-group">
                 <label for="email">Email Address *</label>
@@ -318,6 +349,12 @@
                   placeholder="example@email.com"
                   v-model="form.email"
                 />
+                <div
+                  class="text-warning"
+                  v-if="errors.messages.email.length > 0"
+                >
+                  {{ errors.messages.email[0] }}
+                </div>
               </div>
               <div class="form-group">
                 <label for="phone">Contact Number *</label>
@@ -328,6 +365,12 @@
                   placeholder="Enter your contact number"
                   v-model="form.contact"
                 />
+                <div
+                  class="text-warning"
+                  v-if="errors.messages.contact.length > 0"
+                >
+                  {{ errors.messages.contact[0] }}
+                </div>
               </div>
             </div>
           </div>
@@ -413,6 +456,9 @@
                     </label>
                   </div>
                 </div>
+                <div class="text-warning" v-if="errors.messages.q1.length > 0">
+                  {{ errors.messages.q1[0] }}
+                </div>
               </div>
 
               <div class="radio">
@@ -447,6 +493,9 @@
                     </label>
                   </div>
                 </div>
+                <div class="text-warning" v-if="errors.messages.q2.length > 0">
+                  {{ errors.messages.q2[0] }}
+                </div>
               </div>
 
               <div class="radio">
@@ -478,6 +527,9 @@
                       <div>No</div>
                     </label>
                   </div>
+                </div>
+                <div class="text-warning" v-if="errors.messages.q3.length > 0">
+                  {{ errors.messages.q3[0] }}
                 </div>
               </div>
 
@@ -511,6 +563,12 @@
                     <label for="q4_2" class="exp-lbl exp-lbl2">
                       <div>No</div>
                     </label>
+                  </div>
+                  <div
+                    class="text-warning"
+                    v-if="errors.messages.q4.length > 0"
+                  >
+                    {{ errors.messages.q4[0] }}
                   </div>
                 </div>
               </div>
@@ -547,6 +605,9 @@
                     </label>
                   </div>
                 </div>
+                <div class="text-warning" v-if="errors.messages.q5.length > 0">
+                  {{ errors.messages.q5[0] }}
+                </div>
               </div>
 
               <div class="radio">
@@ -581,6 +642,9 @@
                     </label>
                   </div>
                 </div>
+                <div class="text-warning" v-if="errors.messages.q6.length > 0">
+                  {{ errors.messages.q6[0] }}
+                </div>
               </div>
 
               <div class="radio">
@@ -614,6 +678,9 @@
                     </label>
                   </div>
                 </div>
+                <div class="text-warning" v-if="errors.messages.q6.length > 0">
+                  {{ errors.messages.q6[0] }}
+                </div>
               </div>
 
               <div class="radio">
@@ -646,6 +713,9 @@
                       <div>No</div>
                     </label>
                   </div>
+                </div>
+                <div class="text-warning" v-if="errors.messages.q8.length > 0">
+                  {{ errors.messages.q8[0] }}
                 </div>
               </div>
             </div>
@@ -697,15 +767,18 @@
       </div>
 
       <div class="d-flex justify-content-center">
-        <button type="submit" class="button-rpl">Submit</button>
+        <button type="submit" class="button-rpl" :disabled="!isValid">
+          Submit
+        </button>
       </div>
     </form>
   </div>
 </template>
 
 <script>
-import { reactive, ref } from "vue";
+import { reactive, ref, computed } from "vue";
 import axios from "axios";
+import Validators from "../Validators";
 
 export default {
   setup() {
@@ -726,6 +799,25 @@ export default {
       q6: "",
       q7: "",
       q8: "",
+    });
+    const errors = reactive({
+      messages: {
+        qualification: "",
+        experience: "",
+        work_location: "",
+        location: "",
+        name: "",
+        email: "",
+        contact: "",
+        q1: "",
+        q2: "",
+        q3: "",
+        q4: "",
+        q5: "",
+        q6: "",
+        q7: "",
+        q8: "",
+      },
     });
 
     function handleFormSubmit() {
@@ -753,15 +845,37 @@ export default {
           );
         })
         .catch((err) => {
-          alert("Something went wrong");
+          errors.messages = err.response.data.errors;
+          console.log(errors);
         });
     }
 
-    const isSubmitting = ref(false);
+    const isValid = computed(() => {
+      return (
+        form.qualification.length > 0 &&
+        form.experience.length > 0 &&
+        form.location.length > 0 &&
+        form.work_location.length > 0 &&
+        form.name.length > 0 &&
+        Validators().email(form.email) &&
+        form.email.length > 0 &&
+        form.contact.length > 0 &&
+        form.q1.length > 0 &&
+        form.q2.length > 0 &&
+        form.q3.length > 0 &&
+        form.q4.length > 0 &&
+        form.q5.length > 0 &&
+        form.q6.length > 0 &&
+        form.q7.length > 0 &&
+        form.q8.length > 0
+      );
+    });
 
     return {
       form,
       handleFormSubmit,
+      errors,
+      isValid,
     };
   },
 };
