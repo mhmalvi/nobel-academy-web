@@ -564,3 +564,11 @@ Success
         opacity: 0;
     }
 }
+
+.blog_item ul {
+    list-style: square inside !important;
+}
+
+.scrollToTop i {
+    color: #fff !important;
+}

@@ -4343,7 +4343,7 @@ function stringifyDynamicPropNames(props) {
     return propsNamesString + `]`;
 }
 function isComponentTag(tag) {
-    return tag[0].toLowerCase() + tag.slice(1) === 'component';
+    return tag === 'component' || tag === 'Component';
 }
 
 ( true)
@@ -7138,6 +7138,7 @@ function emit(event, ...args) {
     }
 }
 function setDevtoolsHook(hook, target) {
+    var _a, _b;
     devtools = hook;
     if (devtools) {
         devtools.enabled = true;
@@ -7150,7 +7151,10 @@ function setDevtoolsHook(hook, target) {
     // (#4815)
     // eslint-disable-next-line no-restricted-globals
     typeof window !== 'undefined' &&
-        !navigator.userAgent.includes('jsdom')) {
+        // some envs mock window but not fully
+        window.HTMLElement &&
+        // also exclude jsdom
+        !((_b = (_a = window.navigator) === null || _a === void 0 ? void 0 : _a.userAgent) === null || _b === void 0 ? void 0 : _b.includes('jsdom'))) {
         const replay = (target.__VUE_DEVTOOLS_HOOK_REPLAY__ =
             target.__VUE_DEVTOOLS_HOOK_REPLAY__ || []);
         replay.push((newHook) => {
@@ -11913,8 +11917,8 @@ function invokeVNodeHook(hook, instance, vnode, prevVNode = null) {
  *
  * #2080
  * Inside keyed `template` fragment static children, if a fragment is moved,
- * the children will always moved so that need inherit el form previous nodes
- * to ensure correct moved position.
+ * the children will always be moved. Therefore, in order to ensure correct move
+ * position, el should be inherited from previous nodes.
  */
 function traverseStaticChildren(n1, n2, shallow = false) {
     const ch1 = n1.children;
@@ -12699,7 +12703,8 @@ function mergeProps(...args) {
             else if ((0,_vue_shared__WEBPACK_IMPORTED_MODULE_1__.isOn)(key)) {
                 const existing = ret[key];
                 const incoming = toMerge[key];
-                if (existing !== incoming) {
+                if (existing !== incoming &&
+                    !((0,_vue_shared__WEBPACK_IMPORTED_MODULE_1__.isArray)(existing) && existing.includes(incoming))) {
                     ret[key] = existing
                         ? [].concat(existing, incoming)
                         : incoming;
@@ -14598,7 +14603,7 @@ function isMemoSame(cached, memo) {
 }
 
 // Core API ------------------------------------------------------------------
-const version = "3.2.21";
+const version = "3.2.22";
 const _ssrUtils = {
     createComponentInstance,
     setupComponent,
@@ -48600,13 +48605,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _RplFormComponent_vue_vue_type_template_id_1f306b94__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./RplFormComponent.vue?vue&type=template&id=1f306b94 */ "./resources/js/components/RplFormComponent.vue?vue&type=template&id=1f306b94");
 /* harmony import */ var _RplFormComponent_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RplFormComponent.vue?vue&type=script&lang=js */ "./resources/js/components/RplFormComponent.vue?vue&type=script&lang=js");
-/* harmony import */ var E_Rajin_nobelacademy_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var F_Laravel_nobelacademy_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,E_Rajin_nobelacademy_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_RplFormComponent_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_RplFormComponent_vue_vue_type_template_id_1f306b94__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/RplFormComponent.vue"]])
+const __exports__ = /*#__PURE__*/(0,F_Laravel_nobelacademy_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_RplFormComponent_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_RplFormComponent_vue_vue_type_template_id_1f306b94__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/RplFormComponent.vue"]])
 /* hot reload */
 if (false) {}
 

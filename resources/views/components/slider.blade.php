@@ -5,7 +5,7 @@
         <!-- SLIDE  -->
             <!--Slider 01-->
             <li data-transition="fade">
-                <img src="{{asset('assets/images/slider/HD.jpg')}}"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgparallax="10" class="rev-slidebg">
+                <img src="{{asset('assets/images/slider/HD.webp')}}"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgparallax="10" class="rev-slidebg">
                 
                 <!--text large screen-->
                 <div class="tp-caption tp-resizeme" 							
@@ -64,7 +64,7 @@
             
             <!--Slider 02-->
             <li data-transition="fade">
-                <img src="{{asset('assets/images/slider/Hr.jpg')}}"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgparallax="10" class="rev-slidebg">
+                <img src="{{asset('assets/images/slider/Hr.webp')}}"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgparallax="10" class="rev-slidebg">
                 
                 <!--Large screen text-->
                 <div class="tp-caption tp-resizeme" 							
@@ -124,7 +124,7 @@
             <!--Slider 03-->
             <li data-transition="fade">
                 <!-- MAIN IMAGE -->
-                <img src="{{asset('assets/images/slider/BT.jpg')}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgparallax="10" class="rev-slidebg">
+                <img src="{{asset('assets/images/slider/BT.webp')}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgparallax="10" class="rev-slidebg">
                 
                 <!-- Large screen text -->
                 <div class="tp-caption tp-resizeme" 							

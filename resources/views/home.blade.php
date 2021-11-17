@@ -134,7 +134,7 @@
                     </div>
                 </div>
                 <div class="col-md-5 col-sm-6 wow fadeInRight">
-                    <img src="{{ asset('assets/images/about/about01.jpg') }}" alt="our priorties" class="img-responsive"
+                    <img src="{{ asset('assets/images/about/about01.webp') }}" alt="our priorties" class="img-responsive"
                         style="width:100%; padding-top:75px;">
                 </div>
             </div>
@@ -165,7 +165,7 @@
                         <div id="course_slider" class="owl-carousel">
                             <div class="item">
                                 <div class="image bottom20">
-                                    <img src="{{ asset('assets/images/courses/thumb01.jpg') }}" alt="Courses"
+                                    <img src="{{ asset('assets/images/courses/thumb01.webp') }}" alt="Courses"
                                         class="img-responsive border_radius">
                                 </div>
                                 <h3 class="bottom15"><a href="{{ route('diplomaInBeauty') }}" class="course_name">SHB50115
@@ -179,7 +179,7 @@
                             </div>
                             <div class="item">
                                 <div class="image bottom20">
-                                    <img src="{{ asset('assets/images/courses/thumb02.jpg') }}" alt="Courses"
+                                    <img src="{{ asset('assets/images/courses/thumb02.webp') }}" alt="Courses"
                                         class="img-responsive border_radius">
                                 </div>
                                 <h3 class="bottom15"><a href="{{ route('beautyTherapy') }}" class="course_name">SHB40115
@@ -193,7 +193,7 @@
                             </div>
                             <div class="item">
                                 <div class="image bottom20">
-                                    <img src="{{ asset('assets/images/courses/thumb03.jpg') }}" alt="Courses"
+                                    <img src="{{ asset('assets/images/courses/thumb03.webp') }}" alt="Courses"
                                         class="img-responsive border_radius">
                                 </div>
                                 <h3 class="bottom15"><a href="{{ route('hairdressing') }}" class="course_name">SHB30416 -
@@ -205,7 +205,7 @@
                             </div>
                             <div class="item">
                                 <div class="image bottom20">
-                                    <img src="{{ asset('assets/images/courses/thumb04.jpg') }}" alt="Courses"
+                                    <img src="{{ asset('assets/images/courses/thumb04.webp') }}" alt="Courses"
                                         class="img-responsive border_radius">
                                 </div>
                                 <h3 class="bottom15"><a href="{{ route('diplomaInRemedial') }}"
@@ -240,17 +240,17 @@
             </div>
             <div class="row">
                 <!--<div class="col-md-3 d-flex justify-content-center" style="padding: 15px 0px;">-->
-                <!--    <img src="{{ asset('assets/images/logo/ATMS.png') }}" alt="ATMS" class="img-responsive border_radius" style="max-width: 150px; max-height: 150px;">-->
+                <!--    <img src="{{ asset('assets/images/logo/ATMS.webp') }}" alt="ATMS" class="img-responsive border_radius" style="max-width: 150px; max-height: 150px;">-->
                 <!--</div>-->
                 <!--<div class="col-md-3 d-flex justify-content-center" style="padding: 15px 0px;">-->
-                <!--    <img src="{{ asset('assets/images/logo/MYT.png') }}" alt="MYT" class="img-responsive border_radius" style="max-width: 150px; max-height: 150px;">-->
+                <!--    <img src="{{ asset('assets/images/logo/MYT.webp') }}" alt="MYT" class="img-responsive border_radius" style="max-width: 150px; max-height: 150px;">-->
                 <!--</div>-->
                 <div class="col-md-6 d-flex justify-content-center" style="padding: 15px 0px;">
-                    <img src="{{ asset('assets/images/logo/FCMA.png') }}" alt="FCMA" class="img-responsive border_radius"
+                    <img src="{{ asset('assets/images/logo/FCMA.webp') }}" alt="FCMA" class="img-responsive border_radius"
                         style="max-width: 150px; max-height: 150px;">
                 </div>
                 <div class="col-md-6 d-flex justify-content-center" style="padding: 15px 0px;">
-                    <img src="{{ asset('assets/images/logo/MAA.png') }}" alt="MAA" class="img-responsive border_radius"
+                    <img src="{{ asset('assets/images/logo/MAA.webp') }}" alt="MAA" class="img-responsive border_radius"
                         style="max-width: 150px; max-height: 150px;">
                 </div>
             </div>
@@ -263,7 +263,7 @@
             <div class="card mb-3" style="border: 0px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="{{ asset('assets/images/form/form.jpg') }}" class="card-img" alt="contact from">
+                        <img src="{{ asset('assets/images/form/form.webp') }}" class="card-img" alt="contact from">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body" style="padding: 0px;">
