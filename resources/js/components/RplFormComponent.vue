@@ -205,7 +205,10 @@
                         v-model="form.location"
                       />
                       <label for="locOne" class="exp-lbl exp-lbl2 p-1">
-                        <img src="/assets/images/maps/01.png" alt="nsw" />
+                        <img
+                          src="../../../public/assets/images/maps/01.webp"
+                          alt="nsw"
+                        />
                         <div>NSW</div>
                       </label>
                     </div>
@@ -218,7 +221,10 @@
                         v-model="form.location"
                       />
                       <label for="locTwo" class="exp-lbl exp-lbl2 p-1">
-                        <img src="/assets/images/maps/02.png" alt="vic" />
+                        <img
+                          src="../../../public/assets/images/maps/02.webp"
+                          alt="vic"
+                        />
                         <div>VIC</div>
                       </label>
                     </div>
@@ -231,7 +237,10 @@
                         v-model="form.location"
                       />
                       <label for="locThree" class="exp-lbl exp-lbl2 p-1">
-                        <img src="/assets/images/maps/03.png" alt="qld" />
+                        <img
+                          src="../../../public/assets/images/maps/03.webp"
+                          alt="qld"
+                        />
                         <div>QLDs</div>
                       </label>
                     </div>
@@ -244,7 +253,10 @@
                         v-model="form.location"
                       />
                       <label for="locFour" class="exp-lbl exp-lbl2 p-1">
-                        <img src="/assets/images/maps/04.png" alt="sa" />
+                        <img
+                          src="../../../public/assets/images/maps/04.webp"
+                          alt="sa"
+                        />
                         <div>SA</div>
                       </label>
                     </div>
@@ -259,7 +271,10 @@
                         v-model="form.location"
                       />
                       <label for="locFive" class="exp-lbl exp-lbl2 p-1">
-                        <img src="/assets/images/maps/05.png" alt="wa" />
+                        <img
+                          src="../../../public/assets/images/maps/05.webp"
+                          alt="wa"
+                        />
                         <div>WA</div>
                       </label>
                     </div>
@@ -272,7 +287,10 @@
                         v-model="form.location"
                       />
                       <label for="locSix" class="exp-lbl exp-lbl2 p-1">
-                        <img src="/assets/images/maps/06.png" alt="act" />
+                        <img
+                          src="../../../public/assets/images/maps/06.webp"
+                          alt="act"
+                        />
                         <div>ACT</div>
                       </label>
                     </div>
@@ -285,7 +303,10 @@
                         v-model="form.location"
                       />
                       <label for="locSeven" class="exp-lbl exp-lbl2 p-1">
-                        <img src="/assets/images/maps/07.png" alt="nt" />
+                        <img
+                          src="../../../public/assets/images/maps/07.webp"
+                          alt="nt"
+                        />
                         <div>NT</div>
                       </label>
                     </div>
@@ -298,7 +319,10 @@
                         v-model="form.location"
                       />
                       <label for="locEight" class="exp-lbl exp-lbl2 p-1">
-                        <img src="/assets/images/maps/08.png" alt="tas" />
+                        <img
+                          src="../../../public/assets/images/maps/08.webp"
+                          alt="tas"
+                        />
                         <div>TAS</div>
                       </label>
                     </div>
@@ -333,10 +357,7 @@
                   placeholder="Please enter your full name"
                   v-model="form.name"
                 />
-                <div
-                  class="text-danger"
-                  v-if="errors.messages.name.length > 0"
-                >
+                <div class="text-danger" v-if="errors.messages.name.length > 0">
                   {{ errors.messages.name[0] }}
                 </div>
               </div>
@@ -425,11 +446,11 @@
 
             <div class="box-content">
               <div class="radio">
-                <label class="p-0"
-                  >Can you provide three different referees who can support your
-                  RPL Assessment? <a href="#abc">Information</a> on type of
-                  Referees is explained below.**</label
-                >
+                <label class="p-0">
+                  Can you provide referees who can support your RPL Assessment?
+                  <a href="#abc">Information</a> on type of Referees is
+                  explained below.**
+                </label>
                 <div class="row">
                   <div class="col-xs-6">
                     <input
@@ -463,44 +484,8 @@
 
               <div class="radio">
                 <label class="p-0">
-                  Are you an employee or an employer? Can you support it by an
-                  evidence eg. a letter from your employer or company
-                  registration details in case you are an employer.
-                </label>
-                <div class="row">
-                  <div class="col-xs-6">
-                    <input
-                      type="radio"
-                      name="q2"
-                      id="q2_1"
-                      value="Yes"
-                      v-model="form.q2"
-                    />
-                    <label for="q2_1" class="exp-lbl exp-lbl2">
-                      <div>Yes</div>
-                    </label>
-                  </div>
-                  <div class="col-xs-6">
-                    <input
-                      type="radio"
-                      name="q2"
-                      id="q2_2"
-                      value="No"
-                      v-model="form.q2"
-                    />
-                    <label for="q2_2" class="exp-lbl exp-lbl2">
-                      <div>No</div>
-                    </label>
-                  </div>
-                </div>
-                <div class="text-danger" v-if="errors.messages.q2.length > 0">
-                  {{ errors.messages.q2[0] }}
-                </div>
-              </div>
-
-              <div class="radio">
-                <label class="p-0">
-                  Do you have any license specific to the industry?
+                  Do you have any past academic qualification you have obtained
+                  in Australia ?
                 </label>
                 <div class="row">
                   <div class="col-xs-6">
@@ -530,46 +515,6 @@
                 </div>
                 <div class="text-danger" v-if="errors.messages.q3.length > 0">
                   {{ errors.messages.q3[0] }}
-                </div>
-              </div>
-
-              <div class="radio">
-                <label class="p-0">
-                  Do you accept that the RPL process is fee for service and you
-                  have to pay for the RPL Assessment? Please read the fees
-                  structure outlined in the RPL information booklet.
-                </label>
-                <div class="row">
-                  <div class="col-xs-6">
-                    <input
-                      type="radio"
-                      name="q4"
-                      id="q4_1"
-                      value="Yes"
-                      v-model="form.q4"
-                    />
-                    <label for="q4_1" class="exp-lbl exp-lbl2">
-                      <div>Yes</div>
-                    </label>
-                  </div>
-                  <div class="col-xs-6">
-                    <input
-                      type="radio"
-                      name="q4"
-                      id="q4_2"
-                      value="No"
-                      v-model="form.q4"
-                    />
-                    <label for="q4_2" class="exp-lbl exp-lbl2">
-                      <div>No</div>
-                    </label>
-                  </div>
-                  <div
-                    class="text-danger"
-                    v-if="errors.messages.q4.length > 0"
-                  >
-                    {{ errors.messages.q4[0] }}
-                  </div>
                 </div>
               </div>
 
@@ -638,42 +583,6 @@
                       v-model="form.q6"
                     />
                     <label for="q6_2" class="exp-lbl exp-lbl2">
-                      <div>No</div>
-                    </label>
-                  </div>
-                </div>
-                <div class="text-danger" v-if="errors.messages.q6.length > 0">
-                  {{ errors.messages.q6[0] }}
-                </div>
-              </div>
-
-              <div class="radio">
-                <label class="p-0">
-                  What type of evidences are you comfortable in supplying,
-                  depending on the Unit of Competency requirements?
-                </label>
-                <div class="row">
-                  <div class="col-xs-6">
-                    <input
-                      type="radio"
-                      name="q8"
-                      id="q8_1"
-                      value="Yes"
-                      v-model="form.q7"
-                    />
-                    <label for="q8_1" class="exp-lbl exp-lbl2">
-                      <div>Yes</div>
-                    </label>
-                  </div>
-                  <div class="col-xs-6">
-                    <input
-                      type="radio"
-                      name="q8"
-                      id="q8_2"
-                      value="No"
-                      v-model="form.q7"
-                    />
-                    <label for="q8_2" class="exp-lbl exp-lbl2">
                       <div>No</div>
                     </label>
                   </div>
@@ -763,18 +672,32 @@
               </p>
             </div>
           </div>
+          <button type="submit" class="button-rpl">Submit</button>
         </div>
-      </div>
-
-      <div class="d-flex justify-content-center">
-        <button type="submit" class="button-rpl">
-          Submit
-        </button>
       </div>
     </form>
   </div>
-  <div class="loader-wrapper" :class="isLoading && 'show-lds'" id="lds-wrapper" area-hidden='true' v-if="isLoading">
-    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  <div
+    class="loader-wrapper"
+    :class="isLoading && 'show-lds'"
+    id="lds-wrapper"
+    area-hidden="true"
+    v-if="isLoading"
+  >
+    <div class="lds-spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
 </template>
 
@@ -797,12 +720,9 @@ export default {
       contact: "",
       remark: "",
       q1: "",
-      q2: "",
       q3: "",
-      q4: "",
       q5: "",
       q6: "",
-      q7: "",
       q8: "",
     });
 
@@ -816,12 +736,9 @@ export default {
         email: "",
         contact: "",
         q1: "",
-        q2: "",
         q3: "",
-        q4: "",
         q5: "",
         q6: "",
-        q7: "",
         q8: "",
       },
     });
@@ -850,10 +767,13 @@ export default {
           alert(
             "Your response successfully submitted. You will be redirect to our website shortly."
           );
+          location.href = "https://nta.nsw.edu.au";
         })
         .catch((err) => {
           isLoading.value = false;
+          $("#lds-wrapper").toggleClass("show-lds");
           errors.messages = err.response.data.errors;
+          alert("Invalid response. Try again!");
         });
     }
 
@@ -868,12 +788,9 @@ export default {
         form.email.length > 0 &&
         form.contact.length > 0 &&
         form.q1.length > 0 &&
-        form.q2.length > 0 &&
         form.q3.length > 0 &&
-        form.q4.length > 0 &&
         form.q5.length > 0 &&
         form.q6.length > 0 &&
-        form.q7.length > 0 &&
         form.q8.length > 0
       );
     });
@@ -883,7 +800,7 @@ export default {
       handleFormSubmit,
       errors,
       isValid,
-      isLoading
+      isLoading,
     };
   },
 };

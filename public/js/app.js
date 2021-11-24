@@ -18919,12 +18919,9 @@ __webpack_require__.r(__webpack_exports__);
       contact: "",
       remark: "",
       q1: "",
-      q2: "",
       q3: "",
-      q4: "",
       q5: "",
       q6: "",
-      q7: "",
       q8: ""
     });
     var errors = (0,vue__WEBPACK_IMPORTED_MODULE_0__.reactive)({
@@ -18937,12 +18934,9 @@ __webpack_require__.r(__webpack_exports__);
         email: "",
         contact: "",
         q1: "",
-        q2: "",
         q3: "",
-        q4: "",
         q5: "",
         q6: "",
-        q7: "",
         q8: ""
       }
     });
@@ -18966,14 +18960,17 @@ __webpack_require__.r(__webpack_exports__);
         $("#lds-wrapper").toggleClass("show-lds");
         isLoading.value = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(false);
         alert("Your response successfully submitted. You will be redirect to our website shortly.");
+        location.href = "https://nta.nsw.edu.au";
       })["catch"](function (err) {
         isLoading.value = false;
+        $("#lds-wrapper").toggleClass("show-lds");
         errors.messages = err.response.data.errors;
+        alert("Invalid response. Try again!");
       });
     }
 
     var isValid = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
-      return form.qualification.length > 0 && form.experience.length > 0 && form.location.length > 0 && form.work_location.length > 0 && form.name.length > 0 && (0,_Validators__WEBPACK_IMPORTED_MODULE_2__["default"])().email(form.email) && form.email.length > 0 && form.contact.length > 0 && form.q1.length > 0 && form.q2.length > 0 && form.q3.length > 0 && form.q4.length > 0 && form.q5.length > 0 && form.q6.length > 0 && form.q7.length > 0 && form.q8.length > 0;
+      return form.qualification.length > 0 && form.experience.length > 0 && form.location.length > 0 && form.work_location.length > 0 && form.name.length > 0 && (0,_Validators__WEBPACK_IMPORTED_MODULE_2__["default"])().email(form.email) && form.email.length > 0 && form.contact.length > 0 && form.q1.length > 0 && form.q3.length > 0 && form.q5.length > 0 && form.q6.length > 0 && form.q8.length > 0;
     });
     return {
       form: form,
@@ -18999,6 +18996,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _public_assets_images_maps_01_webp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../public/assets/images/maps/01.webp */ "./public/assets/images/maps/01.webp");
+/* harmony import */ var _public_assets_images_maps_02_webp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../public/assets/images/maps/02.webp */ "./public/assets/images/maps/02.webp");
+/* harmony import */ var _public_assets_images_maps_03_webp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../public/assets/images/maps/03.webp */ "./public/assets/images/maps/03.webp");
+/* harmony import */ var _public_assets_images_maps_04_webp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../public/assets/images/maps/04.webp */ "./public/assets/images/maps/04.webp");
+/* harmony import */ var _public_assets_images_maps_05_webp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../public/assets/images/maps/05.webp */ "./public/assets/images/maps/05.webp");
+/* harmony import */ var _public_assets_images_maps_06_webp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../public/assets/images/maps/06.webp */ "./public/assets/images/maps/06.webp");
+/* harmony import */ var _public_assets_images_maps_07_webp__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../public/assets/images/maps/07.webp */ "./public/assets/images/maps/07.webp");
+/* harmony import */ var _public_assets_images_maps_08_webp__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../public/assets/images/maps/08.webp */ "./public/assets/images/maps/08.webp");
+
+
+
+
+
+
+
+
 
 var _hoisted_1 = {
   "class": "form-wrapper"
@@ -19204,7 +19217,7 @@ var _hoisted_50 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   "for": "locOne",
   "class": "exp-lbl exp-lbl2 p-1"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "/assets/images/maps/01.png",
+  src: _public_assets_images_maps_01_webp__WEBPACK_IMPORTED_MODULE_1__["default"],
   alt: "nsw"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "NSW")], -1
 /* HOISTED */
@@ -19218,7 +19231,7 @@ var _hoisted_52 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   "for": "locTwo",
   "class": "exp-lbl exp-lbl2 p-1"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "/assets/images/maps/02.png",
+  src: _public_assets_images_maps_02_webp__WEBPACK_IMPORTED_MODULE_2__["default"],
   alt: "vic"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "VIC")], -1
 /* HOISTED */
@@ -19232,7 +19245,7 @@ var _hoisted_54 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   "for": "locThree",
   "class": "exp-lbl exp-lbl2 p-1"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "/assets/images/maps/03.png",
+  src: _public_assets_images_maps_03_webp__WEBPACK_IMPORTED_MODULE_3__["default"],
   alt: "qld"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "QLDs")], -1
 /* HOISTED */
@@ -19246,7 +19259,7 @@ var _hoisted_56 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   "for": "locFour",
   "class": "exp-lbl exp-lbl2 p-1"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "/assets/images/maps/04.png",
+  src: _public_assets_images_maps_04_webp__WEBPACK_IMPORTED_MODULE_4__["default"],
   alt: "sa"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "SA")], -1
 /* HOISTED */
@@ -19263,7 +19276,7 @@ var _hoisted_59 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   "for": "locFive",
   "class": "exp-lbl exp-lbl2 p-1"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "/assets/images/maps/05.png",
+  src: _public_assets_images_maps_05_webp__WEBPACK_IMPORTED_MODULE_5__["default"],
   alt: "wa"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "WA")], -1
 /* HOISTED */
@@ -19277,7 +19290,7 @@ var _hoisted_61 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   "for": "locSix",
   "class": "exp-lbl exp-lbl2 p-1"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "/assets/images/maps/06.png",
+  src: _public_assets_images_maps_06_webp__WEBPACK_IMPORTED_MODULE_6__["default"],
   alt: "act"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "ACT")], -1
 /* HOISTED */
@@ -19291,7 +19304,7 @@ var _hoisted_63 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   "for": "locSeven",
   "class": "exp-lbl exp-lbl2 p-1"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "/assets/images/maps/07.png",
+  src: _public_assets_images_maps_07_webp__WEBPACK_IMPORTED_MODULE_7__["default"],
   alt: "nt"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "NT")], -1
 /* HOISTED */
@@ -19305,7 +19318,7 @@ var _hoisted_65 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   "for": "locEight",
   "class": "exp-lbl exp-lbl2 p-1"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "/assets/images/maps/08.png",
+  src: _public_assets_images_maps_08_webp__WEBPACK_IMPORTED_MODULE_8__["default"],
   alt: "tas"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "TAS")], -1
 /* HOISTED */
@@ -19431,9 +19444,9 @@ var _hoisted_89 = {
 
 var _hoisted_90 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "class": "p-0"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Can you provide three different referees who can support your RPL Assessment? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Can you provide referees who can support your RPL Assessment? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: "#abc"
-}, "Information"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" on type of Referees is explained below.**")], -1
+}, "Information"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" on type of Referees is explained below.** ")], -1
 /* HOISTED */
 );
 
@@ -19472,7 +19485,7 @@ var _hoisted_97 = {
 
 var _hoisted_98 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "class": "p-0"
-}, " Are you an employee or an employer? Can you support it by an evidence eg. a letter from your employer or company registration details in case you are an employer. ", -1
+}, " Do you have any past academic qualification you have obtained in Australia ? ", -1
 /* HOISTED */
 );
 
@@ -19484,7 +19497,7 @@ var _hoisted_100 = {
 };
 
 var _hoisted_101 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "q2_1",
+  "for": "q3_1",
   "class": "exp-lbl exp-lbl2"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "Yes")], -1
 /* HOISTED */
@@ -19495,7 +19508,7 @@ var _hoisted_102 = {
 };
 
 var _hoisted_103 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "q2_2",
+  "for": "q3_2",
   "class": "exp-lbl exp-lbl2"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "No")], -1
 /* HOISTED */
@@ -19511,7 +19524,7 @@ var _hoisted_105 = {
 
 var _hoisted_106 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "class": "p-0"
-}, " Do you have any license specific to the industry? ", -1
+}, " Do you accept that there will be many different type of evidences you have to supply for RPL Assessment, will you be able to supply the documents when requested? ", -1
 /* HOISTED */
 );
 
@@ -19523,7 +19536,7 @@ var _hoisted_108 = {
 };
 
 var _hoisted_109 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "q3_1",
+  "for": "q5_1",
   "class": "exp-lbl exp-lbl2"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "Yes")], -1
 /* HOISTED */
@@ -19534,7 +19547,7 @@ var _hoisted_110 = {
 };
 
 var _hoisted_111 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "q3_2",
+  "for": "q5_2",
   "class": "exp-lbl exp-lbl2"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "No")], -1
 /* HOISTED */
@@ -19550,7 +19563,7 @@ var _hoisted_113 = {
 
 var _hoisted_114 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "class": "p-0"
-}, " Do you accept that the RPL process is fee for service and you have to pay for the RPL Assessment? Please read the fees structure outlined in the RPL information booklet. ", -1
+}, " During the RPL process, we may request you for some video or photo evidences, are you comfortable in supplying such evidences? ", -1
 /* HOISTED */
 );
 
@@ -19562,7 +19575,7 @@ var _hoisted_116 = {
 };
 
 var _hoisted_117 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "q4_1",
+  "for": "q6_1",
   "class": "exp-lbl exp-lbl2"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "Yes")], -1
 /* HOISTED */
@@ -19573,7 +19586,7 @@ var _hoisted_118 = {
 };
 
 var _hoisted_119 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "q4_2",
+  "for": "q6_2",
   "class": "exp-lbl exp-lbl2"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "No")], -1
 /* HOISTED */
@@ -19589,7 +19602,7 @@ var _hoisted_121 = {
 
 var _hoisted_122 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "class": "p-0"
-}, " Do you accept that there will be many different type of evidences you have to supply for RPL Assessment, will you be able to supply the documents when requested? ", -1
+}, " Are you ready to fill out the application form and begin the RPL Assessment immediately? ", -1
 /* HOISTED */
 );
 
@@ -19601,7 +19614,7 @@ var _hoisted_124 = {
 };
 
 var _hoisted_125 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "q5_1",
+  "for": "q9_1",
   "class": "exp-lbl exp-lbl2"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "Yes")], -1
 /* HOISTED */
@@ -19612,7 +19625,7 @@ var _hoisted_126 = {
 };
 
 var _hoisted_127 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "q5_2",
+  "for": "q9_2",
   "class": "exp-lbl exp-lbl2"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "No")], -1
 /* HOISTED */
@@ -19622,145 +19635,19 @@ var _hoisted_128 = {
   key: 0,
   "class": "text-danger"
 };
-var _hoisted_129 = {
-  "class": "radio"
-};
 
-var _hoisted_130 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "class": "p-0"
-}, " During the RPL process, we may request you for some video or photo evidences, are you comfortable in supplying such evidences? ", -1
-/* HOISTED */
-);
+var _hoisted_129 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"box\" id=\"abc\"><div class=\"box-header\"><h3><strong>*</strong> Type of Referees </h3><br><p> Who are eligible Referees that can assess your skill and knowledge? </p></div><div class=\"box-body\"><br><p> For the RPL process an applicant must provide at least three referee details. Out of the three: one of your referee must be a Supervisor at work, who is referred to as ‘Testimonial Referee’ and the other two must be ‘Nominated Referees’, whom your Assessor will contact for reference check. One of your Nominated Referee should be able to provide you with ‘Third Party Report&#39;. The detail explanation of the type of referees are given below: </p><br><p><strong>Testimonial Referee: </strong> &#39;Testimonial Referees&#39; are mostly your Employer, Supervisor, Managers who can provide you with a testimonial letter declaring that they know you for more than 1 year and who can declare that you have sufficient job experience to meet the qualification requirements. </p><br><p><strong>Nominated Referee: </strong> You should have two Nominated referee who could either be your colleague, supervisor, manager and other relevant person, who has worked with you and can assess your skill and knowledge in relevance to each unit of competency. </p></div></div><button type=\"submit\" class=\"button-rpl\">Submit</button>", 2);
 
-var _hoisted_131 = {
-  "class": "row"
-};
-var _hoisted_132 = {
-  "class": "col-xs-6"
-};
-
-var _hoisted_133 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "q6_1",
-  "class": "exp-lbl exp-lbl2"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "Yes")], -1
-/* HOISTED */
-);
-
-var _hoisted_134 = {
-  "class": "col-xs-6"
-};
-
-var _hoisted_135 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "q6_2",
-  "class": "exp-lbl exp-lbl2"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "No")], -1
-/* HOISTED */
-);
-
-var _hoisted_136 = {
-  key: 0,
-  "class": "text-danger"
-};
-var _hoisted_137 = {
-  "class": "radio"
-};
-
-var _hoisted_138 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "class": "p-0"
-}, " What type of evidences are you comfortable in supplying, depending on the Unit of Competency requirements? ", -1
-/* HOISTED */
-);
-
-var _hoisted_139 = {
-  "class": "row"
-};
-var _hoisted_140 = {
-  "class": "col-xs-6"
-};
-
-var _hoisted_141 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "q8_1",
-  "class": "exp-lbl exp-lbl2"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "Yes")], -1
-/* HOISTED */
-);
-
-var _hoisted_142 = {
-  "class": "col-xs-6"
-};
-
-var _hoisted_143 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "q8_2",
-  "class": "exp-lbl exp-lbl2"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "No")], -1
-/* HOISTED */
-);
-
-var _hoisted_144 = {
-  key: 0,
-  "class": "text-danger"
-};
-var _hoisted_145 = {
-  "class": "radio"
-};
-
-var _hoisted_146 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "class": "p-0"
-}, " Are you ready to fill out the application form and begin the RPL Assessment immediately? ", -1
-/* HOISTED */
-);
-
-var _hoisted_147 = {
-  "class": "row"
-};
-var _hoisted_148 = {
-  "class": "col-xs-6"
-};
-
-var _hoisted_149 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "q9_1",
-  "class": "exp-lbl exp-lbl2"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "Yes")], -1
-/* HOISTED */
-);
-
-var _hoisted_150 = {
-  "class": "col-xs-6"
-};
-
-var _hoisted_151 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "q9_2",
-  "class": "exp-lbl exp-lbl2"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "No")], -1
-/* HOISTED */
-);
-
-var _hoisted_152 = {
-  key: 0,
-  "class": "text-danger"
-};
-
-var _hoisted_153 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"box\" id=\"abc\"><div class=\"box-header\"><h3><strong>*</strong> Type of Referees </h3><br><p> Who are eligible Referees that can assess your skill and knowledge? </p></div><div class=\"box-body\"><br><p> For the RPL process an applicant must provide at least three referee details. Out of the three: one of your referee must be a Supervisor at work, who is referred to as ‘Testimonial Referee’ and the other two must be ‘Nominated Referees’, whom your Assessor will contact for reference check. One of your Nominated Referee should be able to provide you with ‘Third Party Report&#39;. The detail explanation of the type of referees are given below: </p><br><p><strong>Testimonial Referee: </strong> &#39;Testimonial Referees&#39; are mostly your Employer, Supervisor, Managers who can provide you with a testimonial letter declaring that they know you for more than 1 year and who can declare that you have sufficient job experience to meet the qualification requirements. </p><br><p><strong>Nominated Referee: </strong> You should have two Nominated referee who could either be your colleague, supervisor, manager and other relevant person, who has worked with you and can assess your skill and knowledge in relevance to each unit of competency. </p></div></div>", 1);
-
-var _hoisted_154 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "d-flex justify-content-center"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-  type: "submit",
-  "class": "button-rpl"
-}, " Submit ")], -1
-/* HOISTED */
-);
-
-var _hoisted_155 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_131 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "lds-spinner"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div")], -1
 /* HOISTED */
 );
 
-var _hoisted_156 = [_hoisted_155];
+var _hoisted_132 = [_hoisted_131];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
-    onSubmit: _cache[36] || (_cache[36] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
+    onSubmit: _cache[30] || (_cache[30] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
       return $setup.handleFormSubmit && $setup.handleFormSubmit.apply($setup, arguments);
     }, ["prevent"]))
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
@@ -19999,166 +19886,100 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* TEXT */
   )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_97, [_hoisted_98, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_99, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_100, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "radio",
-    name: "q2",
-    id: "q2_1",
-    value: "Yes",
-    "onUpdate:modelValue": _cache[22] || (_cache[22] = function ($event) {
-      return $setup.form.q2 = $event;
-    })
-  }, null, 512
-  /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q2]]), _hoisted_101]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_102, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-    type: "radio",
-    name: "q2",
-    id: "q2_2",
-    value: "No",
-    "onUpdate:modelValue": _cache[23] || (_cache[23] = function ($event) {
-      return $setup.form.q2 = $event;
-    })
-  }, null, 512
-  /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q2]]), _hoisted_103])]), $setup.errors.messages.q2.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_104, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.errors.messages.q2[0]), 1
-  /* TEXT */
-  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_105, [_hoisted_106, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_107, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_108, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-    type: "radio",
     name: "q3",
     id: "q3_1",
     value: "Yes",
-    "onUpdate:modelValue": _cache[24] || (_cache[24] = function ($event) {
+    "onUpdate:modelValue": _cache[22] || (_cache[22] = function ($event) {
       return $setup.form.q3 = $event;
     })
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q3]]), _hoisted_109]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_110, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q3]]), _hoisted_101]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_102, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "radio",
     name: "q3",
     id: "q3_2",
     value: "No",
-    "onUpdate:modelValue": _cache[25] || (_cache[25] = function ($event) {
+    "onUpdate:modelValue": _cache[23] || (_cache[23] = function ($event) {
       return $setup.form.q3 = $event;
     })
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q3]]), _hoisted_111])]), $setup.errors.messages.q3.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_112, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.errors.messages.q3[0]), 1
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q3]]), _hoisted_103])]), $setup.errors.messages.q3.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_104, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.errors.messages.q3[0]), 1
   /* TEXT */
-  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_113, [_hoisted_114, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_115, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_116, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-    type: "radio",
-    name: "q4",
-    id: "q4_1",
-    value: "Yes",
-    "onUpdate:modelValue": _cache[26] || (_cache[26] = function ($event) {
-      return $setup.form.q4 = $event;
-    })
-  }, null, 512
-  /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q4]]), _hoisted_117]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_118, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-    type: "radio",
-    name: "q4",
-    id: "q4_2",
-    value: "No",
-    "onUpdate:modelValue": _cache[27] || (_cache[27] = function ($event) {
-      return $setup.form.q4 = $event;
-    })
-  }, null, 512
-  /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q4]]), _hoisted_119]), $setup.errors.messages.q4.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_120, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.errors.messages.q4[0]), 1
-  /* TEXT */
-  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_121, [_hoisted_122, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_123, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_124, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_105, [_hoisted_106, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_107, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_108, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "radio",
     name: "q5",
     id: "q5_1",
     value: "Yes",
-    "onUpdate:modelValue": _cache[28] || (_cache[28] = function ($event) {
+    "onUpdate:modelValue": _cache[24] || (_cache[24] = function ($event) {
       return $setup.form.q5 = $event;
     })
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q5]]), _hoisted_125]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_126, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q5]]), _hoisted_109]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_110, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "radio",
     name: "q5",
     id: "q5_2",
     value: "No",
-    "onUpdate:modelValue": _cache[29] || (_cache[29] = function ($event) {
+    "onUpdate:modelValue": _cache[25] || (_cache[25] = function ($event) {
       return $setup.form.q5 = $event;
     })
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q5]]), _hoisted_127])]), $setup.errors.messages.q5.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_128, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.errors.messages.q5[0]), 1
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q5]]), _hoisted_111])]), $setup.errors.messages.q5.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_112, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.errors.messages.q5[0]), 1
   /* TEXT */
-  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_129, [_hoisted_130, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_131, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_132, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_113, [_hoisted_114, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_115, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_116, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "radio",
     name: "q6",
     id: "q6_1",
     value: "Yes",
-    "onUpdate:modelValue": _cache[30] || (_cache[30] = function ($event) {
+    "onUpdate:modelValue": _cache[26] || (_cache[26] = function ($event) {
       return $setup.form.q6 = $event;
     })
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q6]]), _hoisted_133]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_134, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q6]]), _hoisted_117]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_118, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "radio",
     name: "q6",
     id: "q6_2",
     value: "No",
-    "onUpdate:modelValue": _cache[31] || (_cache[31] = function ($event) {
+    "onUpdate:modelValue": _cache[27] || (_cache[27] = function ($event) {
       return $setup.form.q6 = $event;
     })
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q6]]), _hoisted_135])]), $setup.errors.messages.q6.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_136, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.errors.messages.q6[0]), 1
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q6]]), _hoisted_119])]), $setup.errors.messages.q6.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_120, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.errors.messages.q6[0]), 1
   /* TEXT */
-  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_137, [_hoisted_138, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_139, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_140, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-    type: "radio",
-    name: "q8",
-    id: "q8_1",
-    value: "Yes",
-    "onUpdate:modelValue": _cache[32] || (_cache[32] = function ($event) {
-      return $setup.form.q7 = $event;
-    })
-  }, null, 512
-  /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q7]]), _hoisted_141]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_142, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-    type: "radio",
-    name: "q8",
-    id: "q8_2",
-    value: "No",
-    "onUpdate:modelValue": _cache[33] || (_cache[33] = function ($event) {
-      return $setup.form.q7 = $event;
-    })
-  }, null, 512
-  /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q7]]), _hoisted_143])]), $setup.errors.messages.q6.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_144, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.errors.messages.q6[0]), 1
-  /* TEXT */
-  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_145, [_hoisted_146, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_147, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_148, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_121, [_hoisted_122, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_123, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_124, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "radio",
     name: "q9",
     id: "q9_1",
     value: "Yes",
-    "onUpdate:modelValue": _cache[34] || (_cache[34] = function ($event) {
+    "onUpdate:modelValue": _cache[28] || (_cache[28] = function ($event) {
       return $setup.form.q8 = $event;
     })
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q8]]), _hoisted_149]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_150, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q8]]), _hoisted_125]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_126, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "radio",
     name: "q9",
     id: "q9_2",
     value: "No",
-    "onUpdate:modelValue": _cache[35] || (_cache[35] = function ($event) {
+    "onUpdate:modelValue": _cache[29] || (_cache[29] = function ($event) {
       return $setup.form.q8 = $event;
     })
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q8]]), _hoisted_151])]), $setup.errors.messages.q8.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_152, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.errors.messages.q8[0]), 1
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.q8]]), _hoisted_127])]), $setup.errors.messages.q8.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_128, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.errors.messages.q8[0]), 1
   /* TEXT */
-  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])]), _hoisted_153])]), _hoisted_154], 32
+  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])]), _hoisted_129])])], 32
   /* HYDRATE_EVENTS */
   )]), $setup.isLoading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
     key: 0,
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["loader-wrapper", $setup.isLoading && 'show-lds']),
     id: "lds-wrapper",
     "area-hidden": "true"
-  }, _hoisted_156, 2
+  }, _hoisted_132, 2
   /* CLASS */
   )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 64
   /* STABLE_FRAGMENT */
@@ -20256,6 +20077,126 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./public/assets/images/maps/01.webp":
+/*!*******************************************!*\
+  !*** ./public/assets/images/maps/01.webp ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/01.webp?c4b48f815e3e01091c550a4f870111e6");
+
+/***/ }),
+
+/***/ "./public/assets/images/maps/02.webp":
+/*!*******************************************!*\
+  !*** ./public/assets/images/maps/02.webp ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/02.webp?5c30fea2c7f04559824c1ab57eb62279");
+
+/***/ }),
+
+/***/ "./public/assets/images/maps/03.webp":
+/*!*******************************************!*\
+  !*** ./public/assets/images/maps/03.webp ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/03.webp?0e90e1a455fa2db83e3f85c12fa444a2");
+
+/***/ }),
+
+/***/ "./public/assets/images/maps/04.webp":
+/*!*******************************************!*\
+  !*** ./public/assets/images/maps/04.webp ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/04.webp?41bc2453d2927869d4ec19513d68d101");
+
+/***/ }),
+
+/***/ "./public/assets/images/maps/05.webp":
+/*!*******************************************!*\
+  !*** ./public/assets/images/maps/05.webp ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/05.webp?a82316d723bc11febd0f5eebf3efb823");
+
+/***/ }),
+
+/***/ "./public/assets/images/maps/06.webp":
+/*!*******************************************!*\
+  !*** ./public/assets/images/maps/06.webp ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/06.webp?1b89b5ddca973173b0ae931370cbf1c4");
+
+/***/ }),
+
+/***/ "./public/assets/images/maps/07.webp":
+/*!*******************************************!*\
+  !*** ./public/assets/images/maps/07.webp ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/07.webp?99aa2457625624cff285f1a2220d2b62");
+
+/***/ }),
+
+/***/ "./public/assets/images/maps/08.webp":
+/*!*******************************************!*\
+  !*** ./public/assets/images/maps/08.webp ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/08.webp?8a971be3b20b977cb5b43ddb373dfa20");
 
 /***/ }),
 

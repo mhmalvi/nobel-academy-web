@@ -107,16 +107,8 @@
                                 <p>{{$data['q1']}}</p>
                             </div>
                             <div>
-                                <h4>Are you an employee or an employer? Can you support it by an evidence eg. a letter from your employer or company registration details in case you are an employer.</h4>
-                                <p>{{$data['q2']}}</p>
-                            </div>
-                            <div>
                                 <h4>Do you have any license specific to the industry?</h4>
                                 <p>{{$data['q3']}}</p>
-                            </div>
-                            <div>
-                                <h4>Do you accept that the RPL process is fee for service and you have to pay for the RPL Assessment? Please read the fees structure outlined in the RPL information booklet.</h4>
-                                <p>{{$data['q4']}}</p>
                             </div>
                             <div>
                                 <h4>Do you accept that there will be many different type of evidences you have to supply for RPL Assessment, will you be able to supply the documents when requested?</h4>
@@ -125,10 +117,6 @@
                             <div>
                                 <h4>During the RPL process, we may request you for some video or photo evidences, are you comfortable in supplying such evidences?</h4>
                                 <p>{{$data['q6']}}</p>
-                            </div>
-                            <div>
-                                <h4>What type of evidences are you comfortable in supplying, depending on the Unit of Competency requirements?</h4>
-                                <p>{{$data['q7']}}</p>
                             </div>
                             <div>
                                 <h4>Are you ready to fill out the application form and begin the RPL Assessment immediately?</h4>

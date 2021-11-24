@@ -160,18 +160,15 @@ class MailController extends Controller
                 'course' => '',
 
                 'q1' => $request->q1,
-                'q2' => $request->q2,
                 'q3' => $request->q3,
-                'q4' => $request->q4,
                 'q5' => $request->q5,
                 'q6' => $request->q6,
-                'q7' => $request->q7,
                 'q8' => $request->q8,
             ];
 
 
 
-            RplEligibilityRequest::create($data);
+            // RplEligibilityRequest::create($data);
 
 
             if ($request->hasFile('files') && count($request->file('files')) > 0) {
@@ -219,7 +216,7 @@ class MailController extends Controller
 
 
 
-            Mail::to('enquiries@nta.nsw.edu.au')->cc('tousif@quadque.tech')->send(new RplEligibilityMail($data, $filePath));
+            Mail::to('dev.quadque@gmail.com')->send(new RplEligibilityMail($data, $filePath));
 
 
 
