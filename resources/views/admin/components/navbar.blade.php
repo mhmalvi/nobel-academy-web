@@ -33,6 +33,13 @@
                     <li class="{{ (Route::currentRouteName() == 'admin.blog.index') ? 'active' : '' }}"><a href="{{route('admin.blog.index')}}">Manage Blogs</a></li>
                 </ul>
             </li>
+            <li class="{{ (request()->segment(1) == 'manage-users') ? 'active' : '' }}">
+                <a href="javascript:void(0)"><i class="fa fa-users"></i> <span class="nav-label">Manage Users</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li class="{{ (Route::currentRouteName() == 'admin.manage_users.index') ? 'active' : '' }}"><a href="{{route('admin.manage_users.index')}}">User List</a></li>
+                    <li class="{{ (Route::currentRouteName() == 'admin.blog.create') ? 'active' : '' }}"><a href="{{route('admin.manage_users.create')}}">Create User</a></li>
+                </ul>
+            </li>
             <li class="{{ (request()->segment(1) == 'settings') ? 'active' : '' }}">
                 <a href="javascript:void(0)"><i class="fa fa-cogs"></i> <span class="nav-label">Settings</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">

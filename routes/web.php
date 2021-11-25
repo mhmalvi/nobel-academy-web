@@ -3,7 +3,7 @@
 use App\Http\Controllers\Admin\HomeController as AdminHomeController;
 use App\Http\Controllers\Admin\BlogController as AdminBlogController;
 use App\Http\Controllers\Admin\CategoryController;
-
+use App\Http\Controllers\Admin\ManageUsersController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\HomeController;
@@ -72,5 +72,13 @@ Route::middleware(['auth:sanctum', 'verified'])->name('admin.')->group(function 
         //Profile
         Route::get('profile', [AdminHomeController::class, 'profile'])->name('userProfile');
         Route::post('profile', [AdminHomeController::class, 'profileUpdate'])->name('userProfileUpdate');
+    });
+
+    // Manage users
+    Route::prefix('manage-users')->name('manage_users.')->group(function () {
+        Route::get('/', [ManageUsersController::class, 'index'])->name('index');
+        Route::get('list', [ManageUsersController::class, 'getPaginatedList'])->name('paginatedList');
+        Route::get('create', [ManageUsersController::class, 'create'])->name('create');
+        Route::post('store', [ManageUsersController::class, 'store'])->name('store');
     });
 });

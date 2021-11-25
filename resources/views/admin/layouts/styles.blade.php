@@ -12,3 +12,4 @@
 <link href="{{asset('assets/admin/css/animate.css')}}" rel="stylesheet">
 <link href="{{asset('assets/admin/css/style.css')}}" rel="stylesheet">
 
+<link rel="stylesheet" href="{{ asset('css/app.css') }}">

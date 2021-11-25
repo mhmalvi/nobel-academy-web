@@ -20,7 +20,9 @@
 
                 @include('admin.components.breadcrumbs')
 
-                @yield('content')
+                <div id="app">
+                    @yield('content')
+                </div>
 
             </div>
         </div>
