@@ -9,10 +9,16 @@
 
     <title>@yield('title') - NTA</title>
     <link rel="icon" href="{{ asset('assets/images/logo/favicon.png') }}">
-
+    
+    <link rel="preload" href="{{asset('assets/fonts/museo_slab_0-webfont.woff2')}}" as="font" type="font/woff2" crossorigin> 
+    <link rel="preload" href="{{asset('assets/fonts/museo_slab_0-webfont.woff')}}" as="font" type="font/woff" crossorigin> 
+    <link rel="preload" href="{{asset('assets/fonts/museo_slab_1-webfont.woff2')}}" as="font" type="font/woff2" crossorigin> 
+    <link rel="preload" href="{{asset('assets/fonts/museo_slab_1-webfont.woff')}}" as="font" type="font/woff" crossorigin> 
+    
     <link rel="canonical" href="{{ URL::current() }}" />
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <meta name="title" content="@yield('title') - NTA" />
+    
     @stack('seo')
 
     {{-- Open Graph --}}
@@ -34,6 +40,7 @@
     <meta name="ahrefs-site-verification" content="c6df018699d9864e4f9c1521bf9ee15e4f9385ca41191ae25fe13bc86a28c0ec">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFG86J3Y2L"></script>
+
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -42,22 +49,20 @@
     gtag('config', 'G-ZFG86J3Y2L');
     </script>
 
-
     @include('partials.styles')
-    @livewireStyles
 </head>
 
 <body class="pushmenu-push">
     <a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
     <!--Loader-->
     <div class="loader">
-    <div class="bouncybox">
-        <div class="bouncy"></div>
+        <div class="bouncybox">
+            <div class="bouncy"></div>
         </div>
     </div>
     @auth
         <div class="d-flex justify-content-center bg-light">
-            <a href="{{route('admin.home')}}"><i class="fa fa-pencil-square"></i> Back to dashboard!</a>
+            <a href="{{ route('admin.home') }}"><i class="fa fa-pencil-square"></i> Back to dashboard!</a>
         </div>
     @endauth
     @if (Route::currentRouteName() == 'home')
@@ -65,18 +70,17 @@
     @else
         @include('components.navBar')
     @endif
-
+    
     <div id="app">
         @yield('content')
     </div>
-
+    
     @include('components.rpl-modal')
     @include('components.footer')
-
-
+    
     <script src="{{ asset('js/app.js') }}"></script>
     @include('partials.scripts')
-    @livewireScripts
     @include('components.applyNow')
 </body>
+
 </html>
