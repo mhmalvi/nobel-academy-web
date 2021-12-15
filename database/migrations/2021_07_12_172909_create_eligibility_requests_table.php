@@ -18,12 +18,17 @@ class CreateEligibilityRequestsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('contact');
-            $table->string('course_industry')->nullable();
-            $table->string('course');
-            $table->string('experience');
+            $table->string('industry');
+            $table->string('qualification');
+            $table->string('work_experience');
             $table->string('work_location');
-            $table->string('state');
-            $table->text('remarks');
+            $table->string('living_state');
+            $table->enum('qus1', ['yes', 'no']);
+            $table->enum('qus2', ['yes', 'no']);
+            $table->enum('qus3', ['yes', 'no']);
+            $table->enum('qus4', ['yes', 'no']);
+            $table->enum('qus5', ['yes', 'no']);
+            $table->longText('remark')->nullable();
             $table->timestamps();
         });
     }
