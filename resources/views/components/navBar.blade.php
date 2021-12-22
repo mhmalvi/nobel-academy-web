@@ -51,6 +51,7 @@
                     </li>
                     <li><a href="{{ route('blogs') }}">Blogs</a></li>
                     <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                    <li><a href="{{ route('faq') }}">FAQs</a></li>
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Policies & Forms</a>
                         <ul class="dropdown-menu">

@@ -9,16 +9,16 @@
 
     <title>@yield('title') - NTA</title>
     <link rel="icon" href="{{ asset('assets/images/logo/favicon.png') }}">
-    
-    <link rel="preload" href="{{asset('assets/fonts/museo_slab_0-webfont.woff2')}}" as="font" type="font/woff2" crossorigin> 
-    <link rel="preload" href="{{asset('assets/fonts/museo_slab_0-webfont.woff')}}" as="font" type="font/woff" crossorigin> 
-    <link rel="preload" href="{{asset('assets/fonts/museo_slab_1-webfont.woff2')}}" as="font" type="font/woff2" crossorigin> 
-    <link rel="preload" href="{{asset('assets/fonts/museo_slab_1-webfont.woff')}}" as="font" type="font/woff" crossorigin> 
-    
+
+    <link rel="preload" href="{{asset('assets/fonts/museo_slab_0-webfont.woff2')}}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{asset('assets/fonts/museo_slab_0-webfont.woff')}}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{asset('assets/fonts/museo_slab_1-webfont.woff2')}}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{asset('assets/fonts/museo_slab_1-webfont.woff')}}" as="font" type="font/woff" crossorigin>
+
     <link rel="canonical" href="{{ URL::current() }}" />
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <meta name="title" content="@yield('title') - NTA" />
-    
+
     @stack('seo')
 
     {{-- Open Graph --}}
@@ -50,6 +50,8 @@
     </script>
 
     @include('partials.styles')
+
+    @method("css")
 </head>
 
 <body class="pushmenu-push">
@@ -70,14 +72,14 @@
     @else
         @include('components.navBar')
     @endif
-    
+
     <div id="app">
         @yield('content')
     </div>
-    
+
     @include('components.rpl-modal')
     @include('components.footer')
-    
+
     <script src="{{ asset('js/app.js') }}"></script>
     @include('partials.scripts')
     @include('components.applyNow')
