@@ -76,4 +76,4 @@ Route::middleware(['auth:sanctum', 'verified'])->name('admin.')->group(function 
     });
 });
 
-Route::get('faq', [FAQController::class, 'index'])->name('faq');
+Route::get('faq', [HomeController::class, 'faqPage'])->name('faq');

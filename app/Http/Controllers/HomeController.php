@@ -9,7 +9,8 @@ class HomeController extends Controller
     /**
      * Home
      */
-    public function index(){
+    public function index()
+    {
         return view('home');
     }
 
@@ -17,7 +18,8 @@ class HomeController extends Controller
     /**
      * About us
      */
-    public function about(){
+    public function about()
+    {
         return view('pages.about');
     }
 
@@ -25,15 +27,25 @@ class HomeController extends Controller
     /**
      * policies & forms
      */
-    public function ourPolicies(){
-        return view ('pages.policies&Froms');
+    public function ourPolicies()
+    {
+        return view('pages.policies&Froms');
     }
 
 
     /**
      * Contact us
      */
-    public function contactNta(){
-        return view ('pages.contact');
+    public function contactNta()
+    {
+        return view('pages.contact');
+    }
+
+    /**
+     * FAQ page
+     */
+    public function faqPage()
+    {
+        return view('pages.faq');
     }
 }
