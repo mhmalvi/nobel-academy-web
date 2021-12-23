@@ -80,19 +80,28 @@
 
                                 <div class="col-md-4">
                                     <div class="card learn-more-faq">
-                                        <h3 class="card-header">
+                                        <p class="card-header">
                                             Looking for answer you can't find?
-                                        </h3>
+                                        </p>
                                         <div class="card-body">
                                             <div class="row">
-                                                <div class="col-xs-8">
-                                                    Contact our hotline -
-                                                    <a href="tel:1300 616 123">
-                                                        1300 616 123
-                                                    </a>
-                                                </div>
-                                                <div class="col-xs-4">
+                                                <div class="col-xs-4 col-xs-offset-4">
                                                     <img src="/assets/images/headphone.png" alt="call us">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 text-center learn-more-card-content">
+                                                    <p>Our experts are always here to help.</p>
+                                                    <p>
+                                                        <b>
+                                                            <a href="tel:1300 616 123">1300 616 123</a>
+                                                        </b>
+                                                    </p>
+                                                    <p class="get-in-touch-wrapper">
+                                                        <a href="tel:1300 616 123" class="btn btn-primary btn-block">
+                                                            Get in touch now!
+                                                        </a>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -163,6 +172,29 @@
 
         .learn-more-faq .card-body img {
             width: 100%;
+        }
+
+        .learn-more-faq .card-header {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .learn-more-faq .btn.btn-primary {
+            background: #3fd4fb;
+            border-width: 0;
+        }
+
+        .learn-more-card-content {
+            margin-top: 10px;
+        }
+
+        .get-in-touch-wrapper {
+            margin-top: 20px;
+        }
+
+        .get-in-touch-wrapper a {
+            color: #fff !important;
+            font-weight: bold;
         }
     </style>
 @endpush
