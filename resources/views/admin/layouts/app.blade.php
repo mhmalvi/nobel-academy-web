@@ -1,30 +1,58 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>NTA - Noble Trainning Academy</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        {{-- Style Sheets --}}
-        @include('admin.layouts.styles')
+    <title>NTA - Noble Trainning Academy</title>
 
-    </head>
-    <body>
-        <div id="wrapper">
-            {{-- Navbar --}}
-            @include('admin.components.navbar')
-            <div id="page-wrapper" class="gray-bg dashbard-1">
-                @include('admin.components.header')
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
 
-                @include('admin.components.breadcrumbs')
+    {{-- Style Sheets --}}
+    @include('admin.layouts.styles')
 
-                @yield('content')
+</head>
+
+<body>
+    <div class="app" id="app">
+        <div class="layout">
+            <!-- Header START -->
+            @include('admin.layouts.header')
+            <!-- Header END -->
+
+            <!-- Side Nav START -->
+            <div class="side-nav">
+                @include('admin.layouts.sidebar')
+            </div>
+            <!-- Side Nav END -->
+
+            <!-- Page Container START -->
+            <div class="page-container">
+                
+
+                <!-- Content Wrapper START -->
+                <div class="main-content">
+                    @yield('content')
+                </div>
+                <!-- Content Wrapper END -->
+
+                <!-- Footer START -->
+                <footer class="footer">
+                    @include('admin.layouts.footer')
+                </footer>
+                <!-- Footer END -->
 
             </div>
+            <!-- Page Container END -->
         </div>
+    </div>
 
-        @include('admin.layouts.scripts')
-    </body>
+    <script src="{{asset('js/app.js')}}" defer></script>
+    @include('admin.layouts.scripts')
+</body>
+
 </html>
+
