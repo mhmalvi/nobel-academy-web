@@ -177,7 +177,7 @@
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-xs-4 col-xs-offset-4">
-                                                    <img src="/assets/images/headphone.png" alt="call us">
+                                                    <img src="{{asset('assets/images/headphone.png')}}" alt="call us">
                                                 </div>
                                             </div>
                                             <div class="row">
