@@ -15,21 +15,26 @@ class CreateBlogsTable extends Migration
     {
         Schema::create('blogs', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id');
-            $table->string('blog_title', 100);
-            $table->string('blog_slug', 100);
-
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users')
+                ->onDelete('set null')
+                ->onUpdate('cascade');
+            $table->string('title');
+            $table->string('slug');
             $table->unsignedBigInteger('category_id')->nullable();
             $table->foreign('category_id')
-            ->references('id')
-            ->on('categories')
-            ->onDelete('set null')
-            ->onUpdate('cascade');
-
-            $table->string('blog_summery');
-            $table->text('blog_details');
-            $table->string('thumbnail', 100);
+                ->references('id')
+                ->on('categories')
+                ->onDelete('set null')
+                ->onUpdate('cascade');
+            $table->longText('details')->nullable();
+            $table->string('thumbnail')->nullable();
             $table->boolean('published')->default('0');
+            $table->string('meta_tags')->nullable();
+            $table->string('meta_keys')->nullable();
+            $table->string('meta_desc')->nullable();
             $table->timestamps();
         });
     }
