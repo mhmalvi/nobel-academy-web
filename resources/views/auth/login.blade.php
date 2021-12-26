@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>ITEC - International Training & Educational Counsel</title>
+    <title>NTA - Nobel Training Academy</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
@@ -43,14 +43,14 @@
                                         <div class="form-group">
                                             <label class="font-weight-semibold" for="email">Email:</label>
                                             <div class="input-affix">
-                                                <i class="prefix-icon anticon anticon-user"></i>
+                                                <i class="bi bi-envelope-open prefix-icon"></i>
                                                 <input type="text" name="email" class="form-control" id="email" value="{{old('email')}}" placeholder="your email address ..." required autofocus>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="font-weight-semibold" for="password">Password:</label>
                                             <div class="input-affix m-b-10">
-                                                <i class="prefix-icon anticon anticon-lock"></i>
+                                                <i class="bi bi-shield-lock prefix-icon"></i>
                                                 <input type="password" name="password" class="form-control" id="password" placeholder="Password" autocomplete="current-password" required>
                                             </div>
                                         </div>
