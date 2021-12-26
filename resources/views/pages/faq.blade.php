@@ -222,6 +222,7 @@
             padding: 15px;
             text-decoration: none;
             transition: 0.15s all ease-in-out;
+            font-family: "Source Sans Pro";
         }
 
         .panel-heading h3 a:hover, .panel-heading h3 a:not(.collapsed) {
