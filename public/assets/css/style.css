@@ -27,14 +27,14 @@
 -.topbar
 	-.social_top
 
--header		
+-header
 	-.header_top
 		-.company_info
 	-.navbar-sticky
 		-.attr-nav
 		-.navbar-menu
--#search		
--.rev_slider_wrapper 
+-#search
+-.rev_slider_wrapper
 -owl-slider
 
 -#about
@@ -117,7 +117,7 @@
 	-.shopping_box
 		-.shop_content
 			-.price_product
-	-.shop_info	
+	-.shop_info
 		-.quote
 		-.tag_cate
 		-.share
@@ -130,7 +130,7 @@
 					-.comment-content
 				-.rating
 				-.review-form
-	-.related_pro		
+	-.related_pro
 	-.cart_table
 		-.table-responsive
 			-.product-name
@@ -139,7 +139,7 @@
 	-.totals
 		-.total_form
 			-.select
-			
+
 -#testinomila_page
 	-.js-grid-masonry
 	-.cbp
@@ -2005,7 +2005,7 @@ body.pushmenu-push-toright .wrap-sticky nav.navbar.bootsnav.sticked {
     background: url(../images/parallax/parallax01.jpg) no-repeat;
 }
 .page_header {
-    background: url(../images/courses/banner.jpg) no-repeat;
+    background: url(../images/courses/banner.webp) no-repeat;
 }
 #counter {
     background: url(../images/counter.jpg) no-repeat;

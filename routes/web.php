@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\CategoryController;
 
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CoursesController;
+use App\Http\Controllers\FAQController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\PolicyController;
@@ -74,3 +75,5 @@ Route::middleware(['auth:sanctum', 'verified'])->name('admin.')->group(function 
         Route::post('profile', [AdminHomeController::class, 'profileUpdate'])->name('userProfileUpdate');
     });
 });
+
+Route::get('faq', [HomeController::class, 'faqPage'])->name('faq');
