@@ -34,7 +34,7 @@
             </div>
             <div class="col-md-4 col-sm-4 footer_panel bottom25">
                 <h3 class="heading bottom25">Contact Us <span class="divider-left"></span></h3>
-                <p class="address"><i class="icon-map-pin"></i>Level 1, 7 Greenfield Pde Bankstown, NSW 2200,<br>Sydney,
+                <p class="address"><i class="icon-map-pin"></i>Level 1, 7 Greenfield Parade <br> Bankstown, NSW 2200,<br>Sydney,
                     Australia</p>
                 <p class="address"><i class="icon-phone"></i>1300 616 123</p>
                 <p class="address"><i class="icon-mail"></i><a
