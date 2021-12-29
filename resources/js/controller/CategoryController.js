@@ -3,7 +3,7 @@ import Axios from "axios";
 export default class CategoryController {
     static async getRaw() {
         return new Promise((resolve, reject) => {
-            Axios.get("/admin/categories/raw")
+            Axios.get("/admin/categories/list")
                 .then((res) => {
                     resolve(res.data);
                 })
@@ -15,7 +15,7 @@ export default class CategoryController {
 
     static async store(data) {
         return new Promise((resolve, reject) => {
-            Axios.post("/admin/categories/store", data)
+            Axios.post("/admin/categories/create", data)
                 .then((res) => {
                     resolve(res);
                 })
@@ -41,7 +41,7 @@ export default class CategoryController {
 
     static async update(slug, data) {
         return new Promise((resolve, reject) => {
-            Axios.patch("/admin/categories/edit/" + slug, data)
+            Axios.put("/admin/categories/update/" + slug, data)
                 .then((res) => {
                     resolve(res);
                 })
@@ -53,7 +53,7 @@ export default class CategoryController {
 
     static async delete(slug) {
         return new Promise((resolve, reject) => {
-            Axios.delete("/admin/categories/delete/" + slug)
+            Axios.delete("/admin/categories/remove/" + slug)
                 .then((res) => {
                     resolve(res.data);
                 })

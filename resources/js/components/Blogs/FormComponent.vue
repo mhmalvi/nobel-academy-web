@@ -38,7 +38,7 @@
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="slug-url"
-                >https://itecounsel.com/blog/</span
+                >https://nta.nsw.edu.au/blog/</span
               >
             </div>
             <input
@@ -162,15 +162,22 @@
                 >Click here to upload image</label
               >
               <div class="img-wrapper">
-                <img :src="form.formData.featured_image" class="img-fluid" />
-                <a
-                  href="javascript:void(0)"
-                  @click.prevent="imgDeleteHandler(null, 'featured_image')"
-                  class="d-block img-remove"
-                  v-if="form.formData.featured_image"
-                >
-                  <i class="bi bi-trash"></i>
-                </a>
+                <transition name="fade">
+                  <div v-if="form.formData.featured_image.length > 0">
+                    <img
+                      :src="form.formData.featured_image"
+                      class="img-fluid"
+                    />
+                    <a
+                      href="javascript:void(0)"
+                      @click.prevent="imgDeleteHandler(null, 'featured_image')"
+                      class="d-block img-remove"
+                      v-if="form.formData.featured_image"
+                    >
+                      <i class="bi bi-trash"></i>
+                    </a>
+                  </div>
+                </transition>
                 <input
                   type="file"
                   class="form-control"
@@ -212,15 +219,20 @@
                 >Click here to upload image</label
               >
               <div class="img-wrapper">
-                <img :src="form.formData.thumbnail" class="img-fluid" />
-                <a
-                  href="javascript:void(0)"
-                  @click.prevent="imgDeleteHandler(null, 'thumbnail')"
-                  class="d-block img-remove"
-                  v-if="form.formData.thumbnail"
-                >
-                  <i class="bi bi-trash"></i>
-                </a>
+                <transition name="fade">
+                  <div v-if="form.formData.thumbnail.length > 0">
+                    <img :src="form.formData.thumbnail" class="img-fluid" />
+                    <a
+                      href="javascript:void(0)"
+                      @click.prevent="imgDeleteHandler(null, 'thumbnail')"
+                      class="d-block img-remove"
+                      v-if="form.formData.thumbnail"
+                    >
+                      <i class="bi bi-trash"></i>
+                    </a>
+                  </div>
+                </transition>
+
                 <input
                   type="file"
                   class="form-control"
@@ -445,8 +457,12 @@ export default {
     const imgDeleteHandler = (index, type) => {
       if (type == "featured_image") {
         form.formData.featured_image = "";
+        form.formData.featured_image_title = "";
+        form.formData.featured_image_alt = "";
       } else if (type == "thumbnail") {
         form.formData.thumbnail = "";
+        form.formData.thumbnail_title = "";
+        form.formData.thumbnail_alt = "";
       }
     };
     const generateSlug = (title) => {
@@ -476,3 +492,49 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.ql-container {
+  height: 500px !important;
+}
+.img-container {
+  border: 1px dashed;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-container label {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.img-container label:hover {
+  color: #30419b;
+}
+
+.img-wrapper {
+  position: relative;
+  padding: 5px;
+}
+
+.img-remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px 15px;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

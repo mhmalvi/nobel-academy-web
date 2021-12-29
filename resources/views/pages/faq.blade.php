@@ -166,6 +166,102 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading p-3 mb-3" role="tab" id="faq9">
+                                                <h3 class="panel-title">
+                                                <a class="collapsed" role="button" title="" data-toggle="collapse" href="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                                                    How do I get RPL in Australia?
+                                                    <i class="pull-right fa fa-plus"></i>
+                                                </a>
+                                                </h3>
+                                            </div>
+                                            <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq9">
+                                                <div class="panel-body px-3 mb-4">
+                                                    All registered training organisation (RTO) provide RPL assessments. So, you can contact local TAFE, RTO, or colleges include UCT, NTA, ATR, etc., to get help in this regard. You can also contact any good agency like ITEC for guidelines, and the Department of Employment, Small Business,, and Training on 1300 369 935 to discuss your RPL options.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading p-3 mb-3" role="tab" id="faq10">
+                                                <h3 class="panel-title">
+                                                <a class="collapsed" role="button" title="" data-toggle="collapse" href="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                                                    How much does RPL cost in Australia?
+                                                    <i class="pull-right fa fa-plus"></i>
+                                                </a>
+                                                </h3>
+                                            </div>
+                                            <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq10">
+                                                <div class="panel-body px-3 mb-4">
+                                                    Under state training initiatives, the Australian Government provides funds for eligible students, and for the RPL process, they don’t need any additional cost. But if you are a self-funded student and enrolled as a Fee-For-Service student, then you have to pay the fee for it. The cost normally depends on your experience, level of qualification, course duration, etc. You can find all guidelines at ITEC that will help you save your valuable time.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading p-3 mb-3" role="tab" id="faq11">
+                                                <h3 class="panel-title">
+                                                <a class="collapsed" role="button" title="" data-toggle="collapse" href="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                                                    What is RPL eligibility?
+                                                    <i class="pull-right fa fa-plus"></i>
+                                                </a>
+                                                </h3>
+                                            </div>
+                                            <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq11">
+                                                <div class="panel-body px-3 mb-4">
+                                                    To gain RPL accreditation, one must have to be eligible. Anyone who has previous knowledge, experience, or skills relevant to the course they want to complete can apply for this process. Whether your training or experience was paid and voluntary work, was in Australia or overseas, you can apply. Of course, you must provide evidence of the skills and knowledge you have pursued. 
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading p-3 mb-3" role="tab" id="faq12">
+                                                <h3 class="panel-title">
+                                                <a class="collapsed" role="button" title="" data-toggle="collapse" href="#collapse12" aria-expanded="true" aria-controls="collapse12">
+                                                    Who qualifies for RPL?   
+                                                    <i class="pull-right fa fa-plus"></i>
+                                                </a>
+                                                </h3>
+                                            </div>
+                                            <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq12">
+                                                <div class="panel-body px-3 mb-4">
+                                                    Anyone who has previous knowledge, experience, or skills relevant to the course they want to complete can apply for RPL. Whether your training or experience was paid and voluntary work, was in Australia or overseas, you can apply. Of course, you must provide evidence of the skills and knowledge you have gained.  
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading p-3 mb-3" role="tab" id="faq13">
+                                                <h3 class="panel-title">
+                                                <a class="collapsed" role="button" title="" data-toggle="collapse" href="#collapse13" aria-expanded="true" aria-controls="collapse13">
+                                                    Who qualifies for RPL?   
+                                                    <i class="pull-right fa fa-plus"></i>
+                                                </a>
+                                                </h3>
+                                            </div>
+                                            <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq13">
+                                                <div class="panel-body px-3 mb-4">
+                                                    Anyone who has previous knowledge, experience, or skills relevant to the course they want to complete can apply for RPL. Whether your training or experience was paid and voluntary work, was in Australia or overseas, you can apply. Of course, you must provide evidence of the skills and knowledge you have gained.  
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading p-3 mb-3" role="tab" id="faq14">
+                                                <h3 class="panel-title">
+                                                <a class="collapsed" role="button" title="" data-toggle="collapse" href="#collapse14" aria-expanded="true" aria-controls="collapse14">
+                                                    Do you have to pay for RPL?
+                                                    <i class="pull-right fa fa-plus"></i>
+                                                </a>
+                                                </h3>
+                                            </div>
+                                            <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq14">
+                                                <div class="panel-body px-3 mb-4">
+                                                    Students funded by the Australian Government under state training initiatives don’t need to pay, but self-funded students need to pay for RPL. However, agencies normally don’t take any initial assessment fee. For example, ITEC offers free, no-obligation, RPL skills check.
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -218,7 +314,7 @@
             background: #fff;
             display: block;
             font-size: 18px;
-            font-weight: bold;
+            font-weight: 400;
             padding: 15px;
             text-decoration: none;
             transition: 0.15s all ease-in-out;

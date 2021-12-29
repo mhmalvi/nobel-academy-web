@@ -1,10 +1,7 @@
 <template>
-  <div class="card">
-    <div class="card-body">
-      <h4>Add New Category</h4>
-
-      <CategoryFormComponent ref="form_component" @formSubmit="handleSubmit" />
-    </div>
+  <div>
+    <h4>Add New Category</h4>
+    <CategoryFormComponent ref="form_component" @formSubmit="handleSubmit" />
   </div>
 </template>
 

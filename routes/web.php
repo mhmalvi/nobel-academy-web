@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\Admin\HomeController as AdminHomeController;
 use App\Http\Controllers\Admin\BlogController as AdminBlogController;
+use App\Http\Controllers\Admin\BlogsController;
+use App\Http\Controllers\Admin\CategoriesController;
 use App\Http\Controllers\Admin\CategoryController;
-
+use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\FAQController;
@@ -54,7 +56,20 @@ Route::view('check-your-rpl-eligibility', 'pages.rpl-eligibility')->name('check-
  * Admin Routes
  */
 Route::middleware(['auth:sanctum', 'verified'])->name('admin.')->group(function () {
-    Route::get('/dashboard', [AdminHomeController::class, 'index'])->name('home');
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+    Route::prefix('admin/blogs')->group(function () {
+        Route::get('/', [BlogsController::class, "index"])->name('blogs');
+    });
+
+    Route::prefix('admin/categories')->group(function () {
+        Route::get('/', [CategoriesController::class, "index"])->name('categories');
+        Route::get('list', [CategoriesController::class, "getCategories"]);
+        Route::post('create', [CategoriesController::class, "store"]);
+        Route::get('edit/{category}', [CategoriesController::class, "edit"])->name('category.edit');
+        Route::put('update/{category}', [CategoriesController::class, "update"]);
+        Route::delete('remove/{category}', [CategoriesController::class, "destroy"]);
+    });
 
     //Blogs
     Route::resource('blog', AdminBlogController::class);
