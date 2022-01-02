@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use App\Models\Blog;
+use App\Models\Post;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
 
@@ -26,32 +27,26 @@ class BlogCreateRequest extends BlogRequest
     public function rules()
     {
         return [
-            'title' => 'required|max:255|unique:App\Models\Blog,blog_title',
-            'blog_slug' => 'unique:App\Models\Blog,blog_slug',
-            'summary' => 'required|max:255',
-            'summernote' => 'required',
-            'meta_desc' => 'max:255',
-            'image' => 'required|mimes:png,jpg,jpeg|max:2048|dimensions:min_width=822,min_height=480'
+            'title' => 'required|string',
         ];
     }
 
 
     public function save()
     {
-        $slug = Str::slug($this->title);
+        if ($this->category_id == 0) $this->category_id = null;
 
-        $blog = Blog::create([
-            'user_id' => Auth::id(),
-            'blog_title' => $this->title,
-            'blog_slug' => ($this->has('urlSlug')) ? $this->urlSlug : $slug,
-            'category_id' => is_null($this->category) ? $this->category : null,
-            'blog_summery' => $this->summary,
-            'blog_details' => $this->summernote,
+        $blog = Post::create([
+            'user_id ' => Auth::id(),
+            'category_id ' => $this->category_id,
+            'title' => $this->title,
+            'slug' => $this->has('slug') ? $this->slug : Str::slug($this->title),
+            'details' => $this->description,
+            'meta_desc' => $this->meta_description,
             'meta_tags' => $this->meta_tags,
             'meta_keys' => $this->meta_keys,
-            'meta_desc' => $this->meta_desc,
-            'thumbnail' => $this->hasFile('image') ? $this->saveImage() : '',
-            'thumbnail_alt' => $this->has('img_alt') ? $this->img_alt : ''
+            'thumbnail' => $this->filled('thumbnail') ? $this->saveThumbnail() : "",
+            'published' => $this->isPublished,
         ]);
 
         return $blog;

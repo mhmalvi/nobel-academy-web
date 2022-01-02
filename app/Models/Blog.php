@@ -5,14 +5,13 @@ namespace App\Models;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\User;
-use App\Models\Category;
 
 class Blog extends Model
 {
     use HasFactory, Sluggable;
 
     protected $guarded = [];
+<<<<<<< Updated upstream
 
     /**
      * Return the sluggable configuration array for this model.
@@ -43,4 +42,6 @@ class Blog extends Model
     {
         return $this->belongsTo(Category::class);
     }
+=======
+>>>>>>> Stashed changes
 }

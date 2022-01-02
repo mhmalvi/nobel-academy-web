@@ -55,11 +55,14 @@
         <div class="bouncy"></div>
         </div>
     </div>
+<<<<<<< Updated upstream
     @auth
         <div class="d-flex justify-content-center bg-light">
             <a href="{{route('admin.home')}}"><i class="fa fa-pencil-square"></i> Back to dashboard!</a>
         </div>
     @endauth
+=======
+>>>>>>> Stashed changes
     @if (Route::currentRouteName() == 'home')
         @include('components.header')
     @else
