@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="app" id="app">
+    <div class="app">
         <div class="layout">
             <!-- Header START -->
             @include('admin.layouts.header')
@@ -34,7 +34,7 @@
                 
 
                 <!-- Content Wrapper START -->
-                <div class="main-content">
+                <div class="main-content" id="app">
                     @yield('content')
                 </div>
                 <!-- Content Wrapper END -->
@@ -44,7 +44,6 @@
                     @include('admin.layouts.footer')
                 </footer>
                 <!-- Footer END -->
-
             </div>
             <!-- Page Container END -->
         </div>
