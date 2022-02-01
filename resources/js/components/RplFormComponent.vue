@@ -673,6 +673,16 @@
             </div>
           </div>
           <button type="submit" class="button-rpl">Submit</button>
+
+          <div class="card card-custom">
+                <h5 class="card-title card-title-custom">Looking for answer you can't find?</h5>
+                <div class="card-body">
+                  <img src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-headphone-devices-icongeek26-linear-colour-icongeek26-1.png"/>
+                  <p class="card-text">Our expert are always here to help!</p>
+                  <p class="card-text card-text-number">1300 616 123</p>
+                  <a href="#" class="btn btn-primary btn-primary-custom">Get in touch now!</a>
+                </div>
+            </div>
         </div>
       </div>
     </form>
@@ -805,3 +815,33 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.card-custom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #E0E0E0;
+    text-align: center;
+}
+
+.card-title-custom{
+    margin-bottom: 0.75rem;
+    background: #46D6FB;
+    padding: 10px 0px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.card-text-number{
+    color: #46D6FB;
+    font-weight: 900;
+}
+
+.btn-primary-custom{
+    width: 100%;
+    background: #46D6FB;
+    color: #fff !important;
+    font-weight: 700;
+    border: none;
+}
+</style>

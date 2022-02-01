@@ -7,3 +7,4 @@
         <rpl-form-component />
     </div>
 @endsection
+

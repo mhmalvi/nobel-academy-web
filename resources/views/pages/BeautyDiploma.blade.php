@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 course_detail wow fadeIn" data-wow-delay="400ms">
-                    <img src="{{ asset('assets/images/courses/course01.jpg') }}" alt="Course"
+                    <img src="{{ asset('assets/images/courses/Diploma-of-Beauty-Therapy.webp') }}" alt="Course"
                         class=" border_radius img-responsive bottom15">
                     <div class="row">
                         <div class="col-sm-12">
@@ -51,6 +51,9 @@
                                 who understand the industry and its requirements.
                             </p>
                             <br>
+                           <div style="width:100%; text-align:center;">
+                                <a href="{{url('/check-your-rpl-eligibility')}}" target="_blank" class="btn btn-lg btn-primary btn-custom-in-content" role="button">Check Your Eligibility For RPL</a>
+                           </div>
                             <p>
                                 <strong>Entry and Enrolment Process:</strong>
                             </p>
@@ -208,15 +211,17 @@
                 </div>
                 <aside class="col-sm-4 wow fadeIn" data-wow-delay="400ms">
                     <div class="widget heading_space">
-                        <button type="button" class="rpl-btn rpl-btn-default" data-toggle="rpl-modal" id="toggle-modal">
+                        {{-- <button type="button" class="button-43 rpl-btn-default" data-toggle="rpl-modal" id="toggle-modal">
                             <lord-icon
                                 src="https://cdn.lordicon.com//pndvzexs.json"
                                 trigger="loop"
                                 colors="primary:#002B46,secondary:#002B46"
                                 class="lord-icon-size">
                             </lord-icon>
-                            Click Here For Your Free Skill Check
-                        </button>
+                            Check Your Eligibility For RPL
+                        </button> --}}
+                        <a href="{{url('/check-your-rpl-eligibility')}}" target="_blank" class="btn btn-lg btn-primary btn-custom" role="button">Check Your Eligibility For RPL</a>
+                        
                         <h3 class="bottom20">Core units</h3>
                         <div class="media">
                             <div class="media-body">
@@ -469,9 +474,84 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="card card-custom">
+                        <h5 class="card-title card-title-custom">Looking for answer you can't find?</h5>
+                        <div class="card-body">
+                          <img src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-headphone-devices-icongeek26-linear-colour-icongeek26-1.png"/>
+                          <p class="card-text">Our expert are always here to help!</p>
+                          <p class="card-text card-text-number">1300 616 123</p>
+                          <a href="#" class="btn btn-primary btn-primary-custom">Get in touch now!</a>
+                        </div>
+                      </div>
                 </aside>
             </div>
         </div>
     </section>
     <!-- Courses -->
 @endsection
+
+@push('css')
+<style>
+.btn-custom{
+    border: none;
+    background: #3FD4FB;
+    color: #fff !important;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    /* height: 43px; */
+    padding: 15px;
+}
+.btn-custom-in-content{
+    border: none;
+    background: #3FD4FB;
+    color: #fff !important;
+    text-transform: uppercase;
+    padding: 15px 55px !important;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    /* height: 43px; */
+    padding: 15px;
+}
+
+
+
+
+
+.card-custom {
+    border: 1px solid #E0E0E0;
+    text-align: center;
+}
+
+.card-title-custom{
+    margin-bottom: 0.75rem;
+    background: #46D6FB;
+    padding: 10px 0px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.card-text-number{
+    color: #46D6FB;
+    font-weight: 900;
+}
+
+
+.btn-primary-custom{
+    width: 100%;
+    background: #46D6FB;
+    color: #fff !important;
+    font-weight: 700;
+    border: none;
+}
+
+
+
+
+
+   </style>
+@endpush

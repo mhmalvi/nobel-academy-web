@@ -30,7 +30,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 course_detail wow fadeIn" data-wow-delay="400ms">
-                    <img src="{{ asset('assets/images/courses/course03.jpg') }}" alt="Course"
+                    <img src="{{ asset('assets/images/courses/3.Certificate-III-in-Hairdressing.webp') }}" alt="Course"
                         class=" border_radius img-responsive bottom15">
                     <div class="row">
                         <div class="col-sm-12">
@@ -66,6 +66,9 @@
                                 need to start your hairdressing career.
                             </p>
                             <br>
+                            <div style="width:100%; text-align:center;">
+                                <a href="{{url('/check-your-rpl-eligibility')}}" target="_blank" class="btn btn-lg btn-primary btn-custom-in-content" role="button">Check Your Eligibility For RPL</a>
+                           </div>
                             <div>
                                 <p><strong>Learn New Skills</strong></p>
                                 <p>Through your on-the-job experience and course work, you will learn:</p>
@@ -213,7 +216,7 @@
                 </div>
                 <aside class="col-sm-4 wow fadeIn" data-wow-delay="400ms">
                     <div class="widget heading_space">
-                        <button type="button" class="rpl-btn rpl-btn-default" data-toggle="rpl-modal" id="toggle-modal">
+                        {{-- <button type="button" class="rpl-btn rpl-btn-default" data-toggle="rpl-modal" id="toggle-modal">
                             <lord-icon
                                 src="https://cdn.lordicon.com//pndvzexs.json"
                                 trigger="loop"
@@ -221,7 +224,8 @@
                                 class="lord-icon-size">
                             </lord-icon>
                             Click Here For Your Free Skill Check
-                        </button>
+                        </button> --}}
+                        <a href="{{url('/check-your-rpl-eligibility')}}" target="_blank" class="btn btn-lg btn-primary btn-custom" role="button">Check Your Eligibility For RPL</a>
                         <h3 class="bottom20">Core units</h3>
                         <div class="media">
                             <div class="media-body">
@@ -498,3 +502,32 @@
     </section>
     <!-- Courses -->
 @endsection
+
+@push('css')
+    <style>
+        .btn-custom{
+    border: none;
+    background: #3FD4FB;
+    color: #fff !important;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    /* height: 43px; */
+    padding: 15px;
+}
+.btn-custom-in-content{
+    border: none;
+    background: #3FD4FB;
+    color: #fff !important;
+    text-transform: uppercase;
+    padding: 15px 55px !important;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    /* height: 43px; */
+    padding: 15px;
+}
+    </style>
+@endpush
