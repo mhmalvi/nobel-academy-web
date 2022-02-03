@@ -175,39 +175,24 @@ class MailController extends Controller
 
                 $files = $request->file('files');
 
-
-
                 foreach ($files as $file) {
 
                     $fileName = $file->getClientOriginalName();
 
                     /**
-
                      * Check if derectory exist or not
-
                      * Create a new directory if not exist
-
                      */
-
-
-
                     if (!Storage::exists('public/' . $directory)) {
-
                         Storage::makeDirectory('public/' . $directory);
                     }
 
 
-
                     //store image into storage directory
-
                     Storage::putFileAs('public/' . $directory, $file, $fileName);
 
-
-
                     //store all the file name into the array
-
                     //so that we can pass it to mailable class
-
                     //mailable class will get the files and send it to mail
 
                     array_push($filePath, public_path('storage/' . $directory . $fileName));
