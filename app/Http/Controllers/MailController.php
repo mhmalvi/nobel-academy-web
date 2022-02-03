@@ -130,6 +130,7 @@ class MailController extends Controller
 
     {
 
+        // return $request->all();
         $directory = "temp/" . uniqid() . "/";
 
         $filePath = [];
@@ -216,7 +217,7 @@ class MailController extends Controller
 
 
 
-            Mail::to('dev.quadque@gmail.com')->send(new RplEligibilityMail($data, $filePath));
+            Mail::to('shere1895@gmail.com')->send(new RplEligibilityMail($data, $filePath));
 
 
 

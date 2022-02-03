@@ -816,32 +816,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.card-custom {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #E0E0E0;
-    text-align: center;
-}
 
-.card-title-custom{
-    margin-bottom: 0.75rem;
-    background: #46D6FB;
-    padding: 10px 0px;
-    color: #fff;
-    font-weight: 900;
-}
-
-.card-text-number{
-    color: #46D6FB;
-    font-weight: 900;
-}
-
-.btn-primary-custom{
-    width: 100%;
-    background: #46D6FB;
-    color: #fff !important;
-    font-weight: 700;
-    border: none;
-}
-</style>

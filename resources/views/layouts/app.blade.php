@@ -73,16 +73,17 @@
         @include('components.navBar')
     @endif
 
-    <div id="app">
+    {{-- <div id="app"> --}}
         @yield('content')
-    </div>
+    {{-- </div> --}}
 
     @include('components.rpl-modal')
     @include('components.footer')
 
-    <script src="{{ asset('js/app.js') }}"></script>
+    {{-- <script src="{{ asset('js/app.js') }}"></script> --}}
     @include('partials.scripts')
     @include('components.applyNow')
+    
 </body>
 
 </html>
