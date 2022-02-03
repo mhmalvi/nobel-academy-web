@@ -1,4 +1,5 @@
 <script src="{{asset('assets/js/jquery-2.2.3.js')}}"></script>
+<script defer src="{{ asset('js/app.js') }}"></script>
 <script src="{{asset('assets/js/toastr.min.js')}}"></script>
 <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('assets/js/bootsnav.js')}}"></script>

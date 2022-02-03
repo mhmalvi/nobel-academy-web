@@ -11,6 +11,5 @@
 <link rel="stylesheet" type="text/css" href="{{asset('assets/css/loader.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('assets/css/toastr.min.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('assets/css/custom.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('assets/css/custom-button.css')}}">
 
 @stack('css')
