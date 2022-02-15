@@ -417,17 +417,15 @@
                                 <div id="A" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
                                         <ul>
-                                            <li class="nta_course"><strong>SHBHCUT006</strong> - Create combined haircut
-                                                structures</li>
-                                            <li class="nta_course"><strong>SHBHCUT007</strong> - Create combined traditional
-                                                and classic men’s haircut structures</li>
-                                            <li class="nta_course"><strong>SHBHDES004</strong> - Create classic long hair
-                                                up-styles</li>
+                                            <li class="nta_course"><strong>SHBHCUT006</strong> - Create combined haircut structures</li>
+                                            <li class="nta_course"><strong>SHBHCUT007</strong> - Create combined traditional and classic men’s haircut structures</li>
+                                            <li class="nta_course"><strong>SHBHDES004</strong> - Create classic long hair up-styles</li>
+                                                   
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="panel panel-default">
+                            {{-- <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingTwo">
                                     <h4 class="panel-title">
                                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
@@ -444,10 +442,12 @@
                                             <li class="nta_course"><strong>SHBHCUT011</strong> - Design and maintain beards
                                                 and moustaches</li>
                                             <li class="nta_course"><strong>SHBHCUT012</strong> - Shave heads and faces</li>
+
+                                            
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingTwo">
                                     <h4 class="panel-title">
@@ -460,36 +460,11 @@
                                 <div id="C" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                     <div class="panel-body">
                                         <ul>
-                                            <li class="nta_course"><strong>SHBHBAS002</strong> - Provide head, neck and
-                                                shoulder massages for relaxation</li>
-                                            <li class="nta_course"><strong>SHBHCCS001</strong> - Plan hair services for
-                                                special events</li>
-                                            <li class="nta_course"><strong>SHBHCUT006</strong> - Create combined haircut
-                                                structures</li>
-                                            <li class="nta_course"><strong>SHBHCUT011</strong> - Design and maintain beards
-                                                and moustaches</li>
-                                            <li class="nta_course"><strong>SHBHCUT012</strong> - Shave heads and faces</li>
+                                            <li class="nta_course"><strong>SHBHCCS001</strong> - Plan hair services for special events</li>
+                                            <li class="nta_course"><strong>SHBHBAS002</strong> - Provide head, neck, and shoulder massages for relaxation</li>
                                             <li class="nta_course"><strong>SHBHDES002</strong> - Braid hair</li>
-                                            <li class="nta_course"><strong>SHBHDES004</strong> - Create classic long hair
-                                                up-styles</li>
-                                            <li class="nta_course"><strong>SHBHDES005</strong> - Select and apply hair
-                                                extensions</li>
-                                            <li class="nta_course"><strong>SHBHCUT006</strong> - Create combined haircut
-                                                structures</li>
-                                            <li class="nta_course"><strong>SHBHIND002</strong> - Research and use
-                                                hairdressing industry information</li>
-                                            <li class="nta_course"><strong>SHBHIND004</strong> - Participate in session
-                                                styling teams</li>
-                                            <li class="nta_course"><strong>SHBHREF001</strong> - Curl and volumise hair with
-                                                chemical treatments</li>
-                                            <li class="nta_course"><strong>SHBHREF003</strong> - Straighten and relax hair
-                                                with protein treatments</li>
-                                            <li class="nta_course"><strong>SHBXCCS004</strong> - Recommend products and
-                                                services</li>
-                                            <li class="nta_course"><strong>SIRRINV001</strong> - Receive and handle retail
-                                                stock</li>
-                                            <li class="nta_course"><strong>SIRRMER001</strong> - Produce visual merchandise
-                                                displays</li>
+                                            <li class="nta_course"><strong>SHBXCCS004</strong> - Recommend products and services</li>
+ 
                                         </ul>
                                     </div>
                                 </div>

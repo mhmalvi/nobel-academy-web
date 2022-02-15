@@ -24,7 +24,8 @@
                         </div>
                         <div class="box-content">
                             <div class="form-group">
-                                <label for="qualification">What qualification are you looking for? *</label>
+                                <label for="qualification" >What qualification are you looking for? *</label>
+                                
                                 <select class="form-control" id="qualification" name="qualification">
                                     <option value>
                                         Select the qualification you looking for...
@@ -62,6 +63,7 @@
                                 <div class="radio p-0">
                                     <label for="" class="p-0">How many years of relevant work experience do you have?
                                         *</label>
+                                    <div id="experience"></div>
                                     <div class="row">
                                         <div class="col-sm-3 col-xs-6">
                                             <input type="radio" name="experience" id="one" value="1 - 2 years"
@@ -110,6 +112,7 @@
                                 </div>
                                 <div class="radio p-0">
                                     <label class="p-0">Where is your work experience? *</label>
+                                    <div id="work_location"></div>
                                     <div class="row">
                                         <div class="col-sm-4 col-xs-12">
                                             <input type="radio" name="work_location" id="wlOne" value="australia"
@@ -153,6 +156,7 @@
                             <div class="form-card form-group">
                                 <div class="radio p-0">
                                     <label class="p-0">What state do you live in? *</label>
+                                    <div id="location"></div>
                                     <div class="row">
                                         <div class="col-sm-3 col-6 col-xs-6">
                                             <input type="radio" name="location" id="locOne" value="NSW"
@@ -307,15 +311,16 @@
                                     <a href="#abc">Information</a> on type of Referees is
                                     explained below.**
                                 </label>
+                                <div id="q1"></div>
                                 <div class="row">
                                     <div class="col-xs-6">
-                                        <input type="radio" name="q1" id="q1_1" value="Yes" name="q1" />
+                                        <input type="radio" name="q1" id="q1_1" value="Yes"/>
                                         <label for="q1_1" class="exp-lbl exp-lbl2">
                                             <div>Yes</div>
                                         </label>
                                     </div>
                                     <div class="col-xs-6">
-                                        <input type="radio" name="q1" id="q1_2" value="No" name="q1" />
+                                        <input type="radio" name="q1" id="q1_2" value="No"/>
                                         <label for="q1_2" class="exp-lbl exp-lbl2">
                                             <div>No</div>
                                         </label>
@@ -331,15 +336,16 @@
                                     Do you have any past academic qualification you have obtained
                                     in Australia ?
                                 </label>
+                                <div id="q3"></div>
                                 <div class="row">
                                     <div class="col-xs-6">
-                                        <input type="radio" name="q3" id="q3_1" value="Yes" name="q3" />
+                                        <input type="radio" name="q3" id="q3_1" value="Yes"/>
                                         <label for="q3_1" class="exp-lbl exp-lbl2">
                                             <div>Yes</div>
                                         </label>
                                     </div>
                                     <div class="col-xs-6">
-                                        <input type="radio" name="q3" id="q3_2" value="No" name="q3" />
+                                        <input type="radio" name="q3" id="q3_2" value="No"/>
                                         <label for="q3_2" class="exp-lbl exp-lbl2">
                                             <div>No</div>
                                         </label>
@@ -356,15 +362,16 @@
                                     evidences you have to supply for RPL Assessment, will you be
                                     able to supply the documents when requested?
                                 </label>
+                                <div id="q5"></div>
                                 <div class="row">
                                     <div class="col-xs-6">
-                                        <input type="radio" name="q5" id="q5_1" value="Yes" name="q5" />
+                                        <input type="radio" name="q5" id="q5_1" value="Yes"/>
                                         <label for="q5_1" class="exp-lbl exp-lbl2">
                                             <div>Yes</div>
                                         </label>
                                     </div>
                                     <div class="col-xs-6">
-                                        <input type="radio" name="q5" id="q5_2" value="No" name="q5" />
+                                        <input type="radio" name="q5" id="q5_2" value="No"/>
                                         <label for="q5_2" class="exp-lbl exp-lbl2">
                                             <div>No</div>
                                         </label>
@@ -381,15 +388,16 @@
                                     photo evidences, are you comfortable in supplying such
                                     evidences?
                                 </label>
+                                <div id="q6"></div>
                                 <div class="row">
                                     <div class="col-xs-6">
-                                        <input type="radio" name="q6" id="q6_1" value="Yes" name="q6" />
+                                        <input type="radio" name="q6" id="q6_1" value="Yes"/>
                                         <label for="q6_1" class="exp-lbl exp-lbl2">
                                             <div>Yes</div>
                                         </label>
                                     </div>
                                     <div class="col-xs-6">
-                                        <input type="radio" name="q6" id="q6_2" value="No" name="q6" />
+                                        <input type="radio" name="q6" id="q6_2" value="No"/>
                                         <label for="q6_2" class="exp-lbl exp-lbl2">
                                             <div>No</div>
                                         </label>
@@ -405,6 +413,7 @@
                                     Are you ready to fill out the application form and begin the
                                     RPL Assessment immediately?
                                 </label>
+                                <div id="q8"></div>
                                 <div class="row">
                                     <div class="col-xs-6">
                                         <input type="radio" name="q8" id="q9_1" value="Yes"/>
@@ -536,10 +545,13 @@
                             if (dataofconfirm.success == 'success') {
 
                                 $('#alert').show();
-                                $('#alert-success').text('Your eligibility RPL form is submitted successfully.');
+                                $('#alert-success').text('Thank you one of our consultants will be in touch with you soon.');
 
                                 $('#is_submit_button').show()
                                 $('#is_spinner').hide()
+
+                                // document.getElementById('rplForm').reset()
+                                $('#rplForm').trigger("reset");
 
                             }
                         },
@@ -555,6 +567,62 @@
                                     let input = jQuery(document).find('input[name="'+item+'"]')
                                     let inputAfter = jQuery(document).find('input[name="'+item+'"] + span')
 
+                                    
+                                    if(item == 'experience' | item == 'work_location' | item == 'location' | item == 'qualification' | item == 'q1' | item == 'q3' | item == 'q5' | item == 'q6' | item == 'q8'){
+
+                                        if(item == 'qualification'){
+                                            
+                                            $('#qualification').after('<span class="text-danger">'+error.responseJSON.errors[item]+'</span>')
+
+                                        }
+
+                                        if(item == 'experience'){
+                                            
+                                            $('#experience').after('<span class="text-danger">'+error.responseJSON.errors[item]+'</span>')
+
+                                        }
+
+                                        if(item == 'location'){
+                                            
+                                            $('#location').after('<span class="text-danger">'+error.responseJSON.errors[item]+'</span>')
+
+                                        }
+
+                                        if(item == 'work_location'){
+                                            
+                                            $('#work_location').after('<span class="text-danger">'+error.responseJSON.errors[item]+'</span>')
+
+                                        }
+
+                                        if(item == 'q1'){
+                                            
+                                            $('#q1').after('<span class="text-danger">'+error.responseJSON.errors[item]+'</span>')
+
+                                        }
+                                        if(item == 'q3'){
+                                            
+                                            $('#q3').after('<span class="text-danger">'+error.responseJSON.errors[item]+'</span>')
+
+                                        }
+                                        if(item == 'q5'){
+                                            
+                                            $('#q5').after('<span class="text-danger">'+error.responseJSON.errors[item]+'</span>')
+
+                                        }
+                                        if(item == 'q6'){
+                                            
+                                            $('#q6').after('<span class="text-danger">'+error.responseJSON.errors[item]+'</span>')
+
+                                        }
+                                        if(item == 'q8'){
+                                            
+                                            $('#q8').after('<span class="text-danger">'+error.responseJSON.errors[item]+'</span>')
+
+                                        }
+                                        
+
+                                    } else {
+                                        
                                     input.addClass('is-invalid')
                                     
                                     inputAfter.remove() 
@@ -568,6 +636,8 @@
                                     
                                     inputAfterArr.remove() 
                                     inputArr.after('<span class="text-danger">'+error.responseJSON.errors[item]+'</span>')
+
+                                    } 
 
                                 })    
                             }

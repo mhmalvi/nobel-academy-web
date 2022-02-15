@@ -356,6 +356,7 @@
                                                 standards</li>
                                             <li class="nta_course"><strong>SHBBSKS002</strong> - Provide diathermy
                                                 treatments</li>
+                                  
                                         </ul>
                                     </div>
                                 </div>
@@ -398,14 +399,8 @@
                                 <div id="C" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                     <div class="panel-body">
                                         <ul>
-                                            <li><strong>SHBBBOS004</strong> - Provide aromatherapy massages</li>
-                                            <li><strong>SHBBCCS002</strong> - Prepare personalised aromatic plant oil blends
-                                                for beauty treatments</li>
                                             <li><strong>SHBBSPA001</strong> - Work in a spa therapies framework</li>
                                             <li><strong>SHBBSPA002</strong> - Provide spa therapies</li>
-                                            <li><strong>SHBBSPA003</strong> - Provide stone therapy massages</li>
-                                            <li><strong>SHBBSPA004</strong> - Provide Indian head massages for relaxation
-                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -422,52 +417,9 @@
                                 <div id="D" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                     <div class="panel-body">
                                         <ul>
-                                            <li><strong>BSBSMB304</strong> - Determine resource requirements for the micro
-                                                business</li>
-                                            <li><strong>BSBSMB403</strong> -
-                                                Market the small business</li>
-                                            <li><strong>BSBSMB404</strong> -
-                                                Undertake small business planning</li>
-                                            <li><strong>BSBSMB405</strong> - Monitor and manage small business operations
-                                            </li>
-                                            <li><strong>BSBSMB406</strong> - Manage small business finances</li>
-                                            <li><strong>SHBBBOS004</strong> - Provide aromatherapy massages
-
-                                            </li>
-                                            <li><strong>SHBBBOS005</strong> -
-                                                Use reflexology relaxation techniques in beauty treatments</li>
-                                            <li><strong>SHBBBOS006</strong> -
-                                                Provide superficial lymph massage treatments</li>
-                                            <li><strong>SHBBCCS002</strong> -
-                                                Prepare personalised aromatic plant oil blends for beauty treatments</li>
-                                            <li><strong>SHBBHRS002</strong> -
-                                                Provide female intimate waxing services</li>
-                                            <li><strong>SHBBHRS003</strong> - Provide male intimate waxing services
-
-                                            </li>
-                                            <li><strong>SHBBINF001</strong> - Maintain infection control standards
-
-                                            </li>
-                                            <li><strong>SHBBMUP003</strong> -
-                                                Design and apply make-up for photography</li>
-                                            <li><strong>SHBBMUP004</strong> -
-                                                Design and apply remedial camouflage make-upn</li>
-                                            <li><strong>SHBBSKS002</strong> -
-                                                Provide diathermy treatments</li>
-                                            <li><strong>SHBBSKS003</strong> - Design and provide cosmetic tattooing
-
-                                            </li>
-                                            <li><strong>SHBBSKS004</strong> - Provide upper body piercing
-
-                                            </li>
-                                            <li><strong>SHBBSKS005</strong> -
-                                                Provide micro-dermabrasion treatments</li>
-                                            <li><strong>SHBBSPA001</strong> - Work in a spa therapies framework</li>
-                                            <li><strong>SHBBSPA002</strong> - Provide spa therapies</li>
-                                            <li><strong>SHBBSPA003</strong> - Provide stone therapy massages</li>
-                                            <li><strong>SHBBSPA004</strong> - Provide Indian head massages for relaxation
-
-                                            </li>
+                                            <li class="nta_course"><strong>BSBSMB304</strong> -	Determine resource requirements for the micro business</li>
+                                            <li class="nta_course"><strong>BSBSMB403</strong> -	Market the small business</li>
+                                            
                                         </ul>
                                     </div>
                                 </div>

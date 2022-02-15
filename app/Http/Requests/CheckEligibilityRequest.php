@@ -25,7 +25,7 @@ class CheckEligibilityRequest extends FormRequest
     {
         return [
             'name' => 'required|max:50|string',
-            'email' => 'required|max:50|email',
+            'email' => 'required|max:50|email|regex:/(.+)@(.+)\.(.+)/i',
             'contact' => 'required|max:50|string',
             'location' => 'required',
             'qualification' => 'required',

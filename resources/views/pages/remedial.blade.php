@@ -50,7 +50,6 @@
                                 as detailed in the Assessment Requirements of units of competency. No licensing,
                                 legislative, regulatory or certification requirements apply to this qualification at the
                                 time of publication.
-
                             </p>
                             <p class="bottom25 text-justify">
                                 At Noble Training Academy, everything you study has a direct application in the real world.
@@ -392,14 +391,10 @@
                                 <div id="A" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
                                         <ul>
-                                            <li class="nta_course"><strong>BSBSMB403</strong> - Market the small business
-                                            </li>
                                             <li class="nta_course"><strong>BSBSMB404</strong> - Undertake small business
                                                 planning</li>
                                             <li class="nta_course"><strong>BSBSMB405</strong> - Monitor and manage small
                                                 business operations</li>
-                                            <li class="nta_course"><strong>BSBSMB406</strong> - Manage small business
-                                                finances</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -416,50 +411,9 @@
                                 <div id="B" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                     <div class="panel-body">
                                         <ul>
-                                            <li class="nta_course"><strong>CHCAGE001</strong> - Provide aromatherapy
-                                                massages</li>
-                                            <li class="nta_course"><strong>CHCCCS001</strong> - Use reflexology relaxation
-                                                techniques in beauty treatments</li>
-                                            <li class="nta_course"><strong>CHCCCS027</strong> - Prepare personalised
-                                                aromatic plant oil blends for beauty treatments</li>
-                                            <li class="nta_course"><strong>CHCDIS007</strong> - Provide stone therapy
-                                                massages</li>
-                                            <li class="nta_course"><strong>CHCMHS001</strong> - Facilitate the empowerment
-                                                of people with disability</li>
-                                            <li class="nta_course"><strong>CHCPOL003</strong> - Work with people with mental
-                                                health issues</li>
-                                            <li class="nta_course"><strong>CHCPRP001</strong> - Research and apply evidence
-                                                to practice</li>
-                                            <li class="nta_course"><strong>CHCPRP002</strong> - Develop and maintain
-                                                networks and collaborative partnerships</li>
-                                            <li class="nta_course"><strong>HLTARO001</strong> - Collaborate in professional
-                                                practice</li>
-                                            <li class="nta_course"><strong>HLTARO002</strong> - Develop aromatherapy
-                                                practice</li>
-                                            <li class="nta_course"><strong>HLTARO003</strong> - Source and prepare
-                                                aromatherapy products</li>
-                                            <li class="nta_course"><strong>HLTARO004</strong> - Perform aromatherapy health
-                                                assessments</li>
-                                            <li class="nta_course"><strong>HLTARO005</strong> - Provide therapeutic
-                                                aromatherapy treatments</li>
-                                            <li class="nta_course"><strong>HLTHPS010</strong> - Interpret and use
-                                                information about nutrition and diet</li>
-                                            <li class="nta_course"><strong>HLTREF002</strong> - Adapt remedial massage
-                                                practice for athletes</li>
-                                            <li class="nta_course"><strong>SISFFIT013</strong> - Provide reflexology for
-                                                relaxation</li>
-                                            <li class="nta_course"><strong>SISFFIT014</strong> - Instruct exercise to young
-                                                people aged 13 to 17 years</li>
-                                            <li class="nta_course"><strong>SISFFIT031</strong> - Instruct exercise to older
-                                                clients</li>
-                                            <li class="nta_course"><strong>SISSSCO307</strong> - Implement injury prevention
-                                                strategies</li>
-                                            <li class="nta_course"><strong>SISSSPT307A</strong> - Conduct advanced taping
-                                            </li>
-                                            <li class="nta_course"><strong>SISSSTC301A</strong> - Instruct strength and
-                                                conditioning techniques</li>
-                                            <li class="nta_course"><strong>SISSSTC402A</strong> - Develop strength and
-                                                conditioning programs</li>
+                                            <li class="nta_course"><strong>HLTREF002</strong> -	Provide reflexology for relaxation</li>
+                                            <li class="nta_course"><strong>CHCPRP002</strong> -	Collaborate in professional practice</li>
+                                            <li class="nta_course"><strong>HLTHPS010</strong> -	Interpret and use information about nutrition and diet</li>
                                         </ul>
                                     </div>
                                 </div>

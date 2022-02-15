@@ -343,86 +343,18 @@
 
                         <table class="table">
                             <tbody>
-                                <tr>
-                                    <td style="vertical-align:middle">
-                                        <p>SHBBBOS004</p>
-                                    </td>
-                                    <td style="vertical-align:middle">
-                                        <p>Provide aromatherapy massages</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="vertical-align:middle">
-                                        <p>SHBBFAS003</p>
-                                    </td>
-                                    <td style="vertical-align:middle">
-                                        <p>Provide specialised facial treatments </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="vertical-align:middle">
-                                        <p>SHBBMUP001</p>
-                                    </td>
-                                    <td style="vertical-align:middle">
-                                        <p>Apply eyelash extensions </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="vertical-align:middle">
-                                        <p>SHBBMUP003</p>
-                                    </td>
-                                    <td style="vertical-align:middle">
-                                        <p>Design and apply make-up for photography</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="vertical-align:middle">
-                                        <p>SHBBMUP004</p>
-                                    </td>
-                                    <td style="vertical-align:middle">
-                                        <p>Design and apply remedial camouflage make-up </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="vertical-align:middle">
-                                        <p>SHBBNLS002</p>
-                                    </td>
-                                    <td style="vertical-align:middle">
-                                        <p>Apply gel nail enhancements</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="vertical-align:middle">
-                                        <p>SHBBNLS003</p>
-                                    </td>
-                                    <td style="vertical-align:middle">
-                                        <p>Apply acrylic nail enhancements</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="vertical-align:middle">
-                                        <p>SHBBNLS004</p>
-                                    </td>
-                                    <td style="vertical-align:middle">
-                                        <p>Apply nail art</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="vertical-align:middle">
-                                        <p>SHBBNLS005</p>
-                                    </td>
-                                    <td style="vertical-align:middle">
-                                        <p>Use electric file equipment for nail services</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="vertical-align:middle">
-                                        <p>SHBBNLS006</p>
-                                    </td>
-                                    <td style="vertical-align:middle">
-                                        <p>Apply advanced nail art</p>
-                                    </td>
-                                </tr>
+                                <tr><td style="vertical-align:middle"><p>SHBBHRS004</p></td>  <td style="vertical-align:middle"><p>Provide hair reduction treatments using electrical currents</p></td></tr>
+                                <tr><td style="vertical-align:middle"><p>SHBBINF001</p></td>  <td style="vertical-align:middle"><p>Maintain infection control standards</p></td></tr>
+                                <tr><td style="vertical-align:middle"><p>SHBBSKS002</p></td>  <td style="vertical-align:middle"><p>Provide diathermy treatments</p></td></tr>
+                                <tr><td style="vertical-align:middle"><p>SHBBBOS004</p></td>  <td style="vertical-align:middle"><p>Provide aromatherapy massages</p></td></tr>
+                                <tr><td style="vertical-align:middle"><p>SHBBBOS005</p></td>  <td style="vertical-align:middle"><p>Use reflexology relaxation techniques in beauty treatments</p></td></tr>
+                                <tr><td style="vertical-align:middle"><p>SHBBCCS002</p></td>  <td style="vertical-align:middle"><p>Prepare personalized aromatic plant oil blends for beauty treatments</p></td></tr>
+                                <tr><td style="vertical-align:middle"><p>SHBBSPA003</p></td>  <td style="vertical-align:middle"><p>Provide stone therapy massages</p></td></tr>
+                                <tr><td style="vertical-align:middle"><p>SHBBSPA004</p></td>  <td style="vertical-align:middle"><p>Provide Indian head massages for relaxation</p></td></tr>
+                                <tr><td style="vertical-align:middle"><p>SHBBSPA001</p></td>  <td style="vertical-align:middle"><p>Work in a spa therapies framework</p></td></tr>
+                                <tr><td style="vertical-align:middle"><p>SHBBSPA002</p></td>  <td style="vertical-align:middle"><p>Provide spa therapies</p></td></tr>
+                                <tr><td style="vertical-align:middle"><p>BSBSMB304</p></td> 	<td style="vertical-align:middle"><p>Determine resource requirements for the micro business</p></td></tr>
+                                <tr><td style="vertical-align:middle"><p>BSBSMB403</p></td> 	<td style="vertical-align:middle"><p>Market the small business</p></td></tr>
                             </tbody>
                         </table>
                     </div>
