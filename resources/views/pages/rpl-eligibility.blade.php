@@ -596,21 +596,25 @@
                                             $('#q1').after('<span class="text-danger">'+error.responseJSON.errors[item]+'</span>')
 
                                         }
+
                                         if(item == 'q3'){
                                             
                                             $('#q3').after('<span class="text-danger">'+error.responseJSON.errors[item]+'</span>')
 
                                         }
+
                                         if(item == 'q5'){
                                             
                                             $('#q5').after('<span class="text-danger">'+error.responseJSON.errors[item]+'</span>')
 
                                         }
+
                                         if(item == 'q6'){
                                             
                                             $('#q6').after('<span class="text-danger">'+error.responseJSON.errors[item]+'</span>')
 
                                         }
+                                        
                                         if(item == 'q8'){
                                             
                                             $('#q8').after('<span class="text-danger">'+error.responseJSON.errors[item]+'</span>')
