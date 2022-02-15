@@ -26,4 +26,3 @@ app.component("user-list-component", UserListComponent);
 app.component("user-create-component", UserCreateComponent);
 
 app.use(store).mount("#app");
-app.mount("#app");

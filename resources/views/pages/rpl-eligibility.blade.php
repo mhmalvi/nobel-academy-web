@@ -502,10 +502,7 @@
 @endsection
 
 @push('js')
-
     <script>
-        
-
         $("#rplForm").on('submit', function(e) {
                     e.preventDefault();
 
