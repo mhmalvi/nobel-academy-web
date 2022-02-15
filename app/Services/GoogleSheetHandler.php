@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Http;
 class GoogleSheetHandler
 {
     private $data = [];
-    private const RPL_URL = "https://script.google.com/macros/s/AKfycbz_okuv5vT4DqZebmXcVEodpfS21TPvI9VCxrGne1pn96UuVqlR9dy3sN88udhCIcgOnA/exec";
+    private const RPL_URL = "https://script.google.com/macros/s/AKfycbzgCGmc0hJqrWT7BoSeiYJTP62da98g5t3SYHjFnzaB6GB1Jg_k4SqJhViIjxjS0plM2Q/exec";
 
     public function setData($data)
     {
