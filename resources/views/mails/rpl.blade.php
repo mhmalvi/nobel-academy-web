@@ -104,23 +104,23 @@
                             </div>
                             <div>
                                 <h4>Can you provide three different referees who can support your RPL Assessment? Information on type of Referees is explained below.</h4>
-                                <p>{{$data['q1']}}</p>
+                                <p>{{$data['qus1']}}</p>
                             </div>
                             <div>
                                 <h4>Do you have any license specific to the industry?</h4>
-                                <p>{{$data['q3']}}</p>
+                                <p>{{$data['qus2']}}</p>
                             </div>
                             <div>
                                 <h4>Do you accept that there will be many different type of evidences you have to supply for RPL Assessment, will you be able to supply the documents when requested?</h4>
-                                <p>{{$data['q5']}}</p>
+                                <p>{{$data['qus3']}}</p>
                             </div>
                             <div>
                                 <h4>During the RPL process, we may request you for some video or photo evidences, are you comfortable in supplying such evidences?</h4>
-                                <p>{{$data['q6']}}</p>
+                                <p>{{$data['qus4']}}</p>
                             </div>
                             <div>
                                 <h4>Are you ready to fill out the application form and begin the RPL Assessment immediately?</h4>
-                                <p>{{$data['q8']}}</p>
+                                <p>{{$data['qus5']}}</p>
                             </div>
                         </td>
                     </tr>
