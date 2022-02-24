@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Http;
 class GoogleSheetHandler
 {
     private $data = [];
-    private const RPL_URL = "https://script.google.com/macros/s/AKfycbzgCGmc0hJqrWT7BoSeiYJTP62da98g5t3SYHjFnzaB6GB1Jg_k4SqJhViIjxjS0plM2Q/exec";
+    private const RPL_URL = "https://script.google.com/macros/s/AKfycbzKxuqTCD4jKT65GlHX1zywCfZXyHW9WFdOVU9WCA_2OMeG9FZPCWY04VxuIrIf2ztq-g/exec";
 
     public function setData($data)
     {
@@ -17,6 +17,7 @@ class GoogleSheetHandler
 
     public function saveRPL()
     {
+        $this->data['sheet'] = 'NTA';
         $res = Http::post(self::RPL_URL, $this->data);
 
         if ($res->getStatusCode() != 200) {
