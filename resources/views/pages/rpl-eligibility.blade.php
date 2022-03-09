@@ -9,6 +9,11 @@
                 <div class="alert alert-success" id="alert-success"></div>
             </div>
         </div>
+        <div class="row" style="margin-top: 30px; margin-bottom: 3px;">
+            <div class="col-md-12">
+                @include('components.rpl_form_ad_banner')
+            </div>
+        </div>
         <div class="form-wrapper">
             <form action="" id="rplForm" enctype="multipart/form-data">
                 <div class="row">
@@ -29,22 +34,44 @@
 
                                         <div id="qualification"></div>
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-sm-6">
                                                 <input type="radio" name="qualification" id="first_course"
-                                                    value="SHB50115 - Diploma of Beauty Therapy" />
+                                                    value="SHB40115 - Certificate IV in Beauty Therapy" />
                                                 <label for="first_course" class="exp-lbl exp-lbl2">
+                                                    <div>
+                                                        Certificate IV in Beauty Therapy
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <input type="radio" name="qualification" id="second_course"
+                                                    value="SHB30416 - Certificate III in Hairdressing" />
+                                                <label for="second_course" class="exp-lbl exp-lbl2">
+                                                    <div>
+                                                        Certificate III in Hairdressing
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <input type="radio" name="qualification" id="third_course"
+                                                    value="SHB50115 - Diploma of Beauty Therapy" />
+                                                <label for="third_course" class="exp-lbl exp-lbl2">
                                                     <div>
                                                         Diploma of Beauty Therapy
                                                     </div>
                                                 </label>
                                             </div>
 
-                                            <div class="col-md-6">
-                                                <input type="radio" name="qualification" id="second_course"
-                                                    value="HLT52015 - Diploma of Remedial Massage" />
-                                                <label for="second_course" class="exp-lbl exp-lbl2">
+                                            <div class="col-sm-6">
+                                                <input type="radio" name="qualification" id="fourth_course"
+                                                    value="SHB40216 - Certificate IV in Hairdressing" />
+                                                <label for="fourth_course" class="exp-lbl exp-lbl2">
                                                     <div>
-                                                        Diploma of Remedial Massage
+                                                        Certificate IV in Hairdressing
                                                     </div>
                                                 </label>
                                             </div>
@@ -274,35 +301,23 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-md-6" style="margin-bottom: 24px;">
+                        <div class="card card-custom">
+                            <h5 class="card-title card-title-custom">Looking for answer you can't find?</h5>
+                            <div class="card-body">
+                                <img
+                                    src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-headphone-devices-icongeek26-linear-colour-icongeek26-1.png" />
+                                <p class="card-text">Our expert are always here to help!</p>
+                                <p class="card-text card-text-number">1300 616 123</p>
+                                <a href="#" class="btn btn-primary btn-primary-custom">Get in touch now!</a>
+                            </div>
+                        </div>
+
                         <div class="box">
                             <div class="box-header">
                                 <h3>
                                     <strong>5</strong>
-                                    Miscellaneous
-                                </h3>
-                                <br />
-                                <p>Tell us more about you.</p>
-                            </div>
-                            <div class="box-content">
-                                <div class="form-group">
-                                    <label for="remark">Remarks:</label>
-                                    <textarea id="remark" class="form-control" rows="5"
-                                        placeholder="Do you have any query?" name="remark"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label class="fieldlabels filesLbl filesLbl2" for="files" id="filesLbl">Upload your
-                                        documents</label>
-                                    <input type="file" class="form-control files" id="files" onchange="fileUpload(event)"
-                                        multiple />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="box">
-                            <div class="box-header">
-                                <h3>
-                                    <strong>6</strong>
                                     RPL Checklist
                                 </h3>
                                 <br />
@@ -312,9 +327,7 @@
                             <div class="box-content">
                                 <div class="radio">
                                     <label class="p-0">
-                                        Can you provide referees who can support your RPL Assessment?
-                                        <a href="#abc">Information</a> on type of Referees is
-                                        explained below.**
+                                        Do you hold any academic qualifications relating to the course being enquired?
                                     </label>
                                     <div id="q1"></div>
                                     <div class="row">
@@ -334,6 +347,79 @@
                                     <div class="text-danger" v-if="errors.messages.q1.length > 0">
                                         {{-- {{ errors.messages.q1[0] }} --}}
                                     </div>
+                                </div>
+
+                                <div class="radio">
+                                    <label class="p-0">
+                                        Are you able to provide evidence of industry work experience? Eg: Reference letters,
+                                        pay slips, pictures, videos and more
+                                    </label>
+                                    <div id="q2"></div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <input type="radio" name="q2" id="q2_1" value="Yes" />
+                                            <label for="q2_1" class="exp-lbl exp-lbl2">
+                                                <div>Yes</div>
+                                            </label>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <input type="radio" name="q2" id="q2_2" value="No" />
+                                            <label for="q2_2" class="exp-lbl exp-lbl2">
+                                                <div>No</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="text-danger" v-if="errors.messages.q1.length > 0">
+                                        {{-- {{ errors.messages.q1[0] }} --}}
+                                    </div>
+                                </div>
+
+                                <div class="radio">
+                                    <label class="p-0">
+                                        Are you ready to become industry qualified immediately?
+                                    </label>
+                                    <div id="q3"></div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <input type="radio" name="q3" id="q3_1" value="Yes" />
+                                            <label for="q3_1" class="exp-lbl exp-lbl2">
+                                                <div>Yes</div>
+                                            </label>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <input type="radio" name="q3" id="q3_2" value="No" />
+                                            <label for="q3_2" class="exp-lbl exp-lbl2">
+                                                <div>No</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="text-danger" v-if="errors.messages.q1.length > 0">
+                                        {{-- {{ errors.messages.q1[0] }} --}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="box-header">
+                                <h3>
+                                    <strong>6</strong>
+                                    Miscellaneous
+                                </h3>
+                                <br />
+                                <p>Tell us more about you.</p>
+                            </div>
+                            <div class="box-content">
+                                <div class="form-group">
+                                    <label for="remark">Remarks:</label>
+                                    <textarea id="remark" class="form-control" rows="5"
+                                        placeholder="Do you have any query?" name="remark"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="fieldlabels filesLbl filesLbl2" for="files" id="filesLbl">Upload your
+                                        documents</label>
+                                    <input type="file" class="form-control files" id="files" onchange="fileUpload(event)"
+                                        multiple />
                                 </div>
                             </div>
                         </div>
@@ -383,21 +469,10 @@
                         <button type="submit" class="button-rpl" id="is_submit_button">Submit</button>
                         <button type="button" class="button-rpl" id="is_spinner"
                             style="display: none;background: #46d6fb;"><i
-                                class="fa fa-circle-o-notch fa-spin fa-1x fa-fw"></i><span style="font-size:
-                                                            18px;">Submitting..</span></button>
+                                class="fa fa-circle-o-notch fa-spin fa-1x fa-fw"></i><span
+                                style="font-size:
+                                                                                                                                                                    18px;">Submitting..</span></button>
                         {{-- <button type="button" class="button-rpl" onclick="createRPL()">Submit</button> --}}
-
-
-                        <div class="card card-custom" style="width:350px;">
-                            <h5 class="card-title card-title-custom">Looking for answer you can't find?</h5>
-                            <div class="card-body">
-                                <img
-                                    src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-headphone-devices-icongeek26-linear-colour-icongeek26-1.png" />
-                                <p class="card-text">Our expert are always here to help!</p>
-                                <p class="card-text card-text-number">1300 616 123</p>
-                                <a href="#" class="btn btn-primary btn-primary-custom">Get in touch now!</a>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
@@ -575,7 +650,7 @@
 @push('css')
     <style>
         .card-custom {
-            margin-top: 30px;
+            margin-top: 24px;
             margin-bottom: 20px;
             border: 1px solid #E0E0E0;
             text-align: center;

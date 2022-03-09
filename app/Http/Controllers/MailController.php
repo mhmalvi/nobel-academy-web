@@ -160,10 +160,8 @@ class MailController extends Controller
                 'course' => '',
 
                 'qus1' => $request->q1,
-                'qus2' => $request->q3,
-                'qus3' => $request->q5,
-                'qus4' => $request->q6,
-                'qus5' => $request->q8,
+                'qus2' => $request->q2,
+                'qus3' => $request->q3,
             ];
 
 
