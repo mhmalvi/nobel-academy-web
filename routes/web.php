@@ -50,6 +50,7 @@ Route::post('/upload', [AdminBlogController::class, 'uploadFile']);
  * lead generation
  */
 Route::view('check-your-rpl-eligibility', 'pages.rpl-eligibility')->name('check-your-rpl-eligibility');
+Route::view('check-your-rpl-eligibility-2', 'pages.rpl-eligibility-2')->name('check-your-rpl-eligibility');
 
 
 /**
