@@ -423,7 +423,7 @@
                             style="display: none;background: #46d6fb;"><i
                                 class="fa fa-circle-o-notch fa-spin fa-1x fa-fw"></i><span
                                 style="font-size:
-                                                                                                                                                                            18px;">Submitting..</span></button>
+                                                                                                                                                                                    18px;">Submitting..</span></button>
                         {{-- <button type="button" class="button-rpl" onclick="createRPL()">Submit</button> --}}
 
                     </div>
@@ -472,6 +472,8 @@
                 success: function(dataofconfirm) {
                     console.log('dataofconfirm.status', dataofconfirm.success);
                     if (dataofconfirm.success == 'success') {
+
+                        window.location.href = base_url + '/rpl/success';
 
                         $('#alert').show();
                         $('#alert-success').text(

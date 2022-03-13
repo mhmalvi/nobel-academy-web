@@ -32,10 +32,8 @@ class CheckEligibilityRequest extends FormRequest
             'experience' => 'required',
             'work_location' => 'required',
             'q1' => "required",
+            'q2' => "required",
             'q3' => 'required',
-            'q5' => 'required',
-            'q6' => 'required',
-            'q8' => 'required',
         ];
     }
 
