@@ -415,63 +415,15 @@
                                     <textarea id="remark" class="form-control" rows="5"
                                         placeholder="Do you have any query?" name="remark"></textarea>
                                 </div>
-                                <div class="form-group">
-                                    <label class="fieldlabels filesLbl filesLbl2" for="files" id="filesLbl">Upload your
-                                        documents</label>
-                                    <input type="file" class="form-control files" id="files" onchange="fileUpload(event)"
-                                        multiple />
-                                </div>
                             </div>
                         </div>
 
-                        <div class="box" id="abc">
-                            <div class="box-header">
-                                <h3>
-                                    <strong>*</strong>
-                                    Type of Referees
-                                </h3>
-                                <br />
-                                <p>
-                                    Who are eligible Referees that can assess your skill and
-                                    knowledge?
-                                </p>
-                            </div>
-                            <div class="box-body">
-                                <br />
-                                <p>
-                                    For the RPL process an applicant must provide at least three
-                                    referee details. Out of the three: one of your referee must be a
-                                    Supervisor at work, who is referred to as ‘Testimonial Referee’
-                                    and the other two must be ‘Nominated Referees’, whom your
-                                    Assessor will contact for reference check. One of your Nominated
-                                    Referee should be able to provide you with ‘Third Party Report'.
-                                    The detail explanation of the type of referees are given below:
-                                </p>
-                                <br />
-                                <p>
-                                    <strong>Testimonial Referee:&nbsp;</strong>
-                                    'Testimonial Referees' are mostly your Employer, Supervisor,
-                                    Managers who can provide you with a testimonial letter declaring
-                                    that they know you for more than 1 year and who can declare that
-                                    you have sufficient job experience to meet the qualification
-                                    requirements.
-                                </p>
-                                <br />
-                                <p>
-                                    <strong>Nominated Referee:&nbsp;</strong>
-                                    You should have two Nominated referee who could either be your
-                                    colleague, supervisor, manager and other relevant person, who
-                                    has worked with you and can assess your skill and knowledge in
-                                    relevance to each unit of competency.
-                                </p>
-                            </div>
-                        </div>
                         <button type="submit" class="button-rpl" id="is_submit_button">Submit</button>
                         <button type="button" class="button-rpl" id="is_spinner"
                             style="display: none;background: #46d6fb;"><i
                                 class="fa fa-circle-o-notch fa-spin fa-1x fa-fw"></i><span
                                 style="font-size:
-                                                                                                                                                                    18px;">Submitting..</span></button>
+                                                                                                                                                                            18px;">Submitting..</span></button>
                         {{-- <button type="button" class="button-rpl" onclick="createRPL()">Submit</button> --}}
 
                     </div>
