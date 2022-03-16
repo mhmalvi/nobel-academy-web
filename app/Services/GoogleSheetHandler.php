@@ -17,7 +17,7 @@ class GoogleSheetHandler
 
     public function saveRPL()
     {
-        $this->data['sheet'] = 'NTA';
+        $this->data['sheet'] = 'NTA-QQ';
         $res = Http::post(self::RPL_URL, $this->data);
 
         if ($res->getStatusCode() != 200) {
