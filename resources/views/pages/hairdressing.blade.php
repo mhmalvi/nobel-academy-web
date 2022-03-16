@@ -1,11 +1,9 @@
 @extends('layouts.app')
 @section('title', 'Certificate III in Hairdressing')
-    @push('seo')
-
-        <meta name="description"
-            content="With this hairdressing course certification, you can get started on your way to a promising career in hairdressing. Which will help you to work as a hairdresser in a salon with confidence" />
-
-    @endpush
+@push('seo')
+    <meta name="description"
+        content="With this hairdressing course certification, you can get started on your way to a promising career in hairdressing. Which will help you to work as a hairdresser in a salon with confidence" />
+@endpush
 
 @section('content')
     <!--Page Header-->
@@ -67,8 +65,10 @@
                             </p>
                             <br>
                             <div style="width:100%; text-align:center;">
-                                <a href="{{url('/check-your-rpl-eligibility')}}" target="_blank" class="btn btn-lg btn-primary btn-custom-in-content" role="button">Check Your Eligibility For RPL</a>
-                           </div>
+                                <a href="{{ url('/check-your-rpl-eligibility') }}" target="_blank"
+                                    class="btn btn-lg btn-primary btn-custom-in-content" role="button">Check Your
+                                    Eligibility For RPL</a>
+                            </div>
                             <div>
                                 <p><strong>Learn New Skills</strong></p>
                                 <p>Through your on-the-job experience and course work, you will learn:</p>
@@ -81,7 +81,8 @@
                             <br>
                             <div>
                                 <p><strong>Develop your talent</strong></p>
-                                <p>Develop the personal qualities and abilities that will help you advance in this field:</p>
+                                <p>Develop the personal qualities and abilities that will help you advance in this field:
+                                </p>
                                 <p>- Communication skills to connect with clients</p>
                                 <p>- Skills in customer care, teamwork, and consultation</p>
                                 <p>- To meet client needs, problem-solving techniques are used.</p>
@@ -106,12 +107,12 @@
                     </div>
                     <br>
                     <br>
-                    <div class="d-flex">
-                        <button type="button" class="btn_common yellow border_radius" data-toggle="modal"
+                    {{-- <button type="button" class="btn_common yellow border_radius" data-toggle="modal"
                             data-target="#applyNow"
                             onclick="event.preventDefault(); applyNow('Certificate III in Hairdressing');">Apply
-                            Now</button>
-                    </div>
+                            Now</button> --}}
+                    <a href="{{ url('/check-your-rpl-eligibility') }}" target="_blank"
+                        class="btn btn-lg btn-primary btn-custom-in-content" role="button">Apply Now</a>
                     <br>
                     <div class="row">
                         <div class="col-md-12">
@@ -121,7 +122,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingOne">
                                             <h4 class="panel-title" role="button" data-toggle="collapse"
-                                                data-parent="#accordion" href="#faqA" aria-expanded="false" aria-controls="faqA">
+                                                data-parent="#accordion" href="#faqA" aria-expanded="false"
+                                                aria-controls="faqA">
                                                 What is the time of admission for Beauty therapy course?
                                             </h4>
                                         </div>
@@ -225,7 +227,8 @@
                             </lord-icon>
                             Click Here For Your Free Skill Check
                         </button> --}}
-                        <a href="{{url('/check-your-rpl-eligibility')}}" target="_blank" class="btn btn-lg btn-primary btn-custom" role="button">Check Your Eligibility For RPL</a>
+                        <a href="{{ url('/check-your-rpl-eligibility') }}" target="_blank"
+                            class="btn btn-lg btn-primary btn-custom" role="button">Check Your Eligibility For RPL</a>
                         <h3 class="bottom20">Core units</h3>
                         <div class="media">
                             <div class="media-body">
@@ -417,10 +420,13 @@
                                 <div id="A" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
                                         <ul>
-                                            <li class="nta_course"><strong>SHBHCUT006</strong> - Create combined haircut structures</li>
-                                            <li class="nta_course"><strong>SHBHCUT007</strong> - Create combined traditional and classic men’s haircut structures</li>
-                                            <li class="nta_course"><strong>SHBHDES004</strong> - Create classic long hair up-styles</li>
-                                                   
+                                            <li class="nta_course"><strong>SHBHCUT006</strong> - Create combined haircut
+                                                structures</li>
+                                            <li class="nta_course"><strong>SHBHCUT007</strong> - Create combined
+                                                traditional and classic men’s haircut structures</li>
+                                            <li class="nta_course"><strong>SHBHDES004</strong> - Create classic long
+                                                hair up-styles</li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -443,7 +449,7 @@
                                                 and moustaches</li>
                                             <li class="nta_course"><strong>SHBHCUT012</strong> - Shave heads and faces</li>
 
-                                            
+
                                         </ul>
                                     </div>
                                 </div>
@@ -451,8 +457,8 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingTwo">
                                     <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                            href="#C" aria-expanded="false" aria-controls="C">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#C" aria-expanded="false" aria-controls="C">
                                             Group C- General Electives
                                         </a>
                                     </h4>
@@ -460,11 +466,14 @@
                                 <div id="C" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                     <div class="panel-body">
                                         <ul>
-                                            <li class="nta_course"><strong>SHBHCCS001</strong> - Plan hair services for special events</li>
-                                            <li class="nta_course"><strong>SHBHBAS002</strong> - Provide head, neck, and shoulder massages for relaxation</li>
+                                            <li class="nta_course"><strong>SHBHCCS001</strong> - Plan hair services for
+                                                special events</li>
+                                            <li class="nta_course"><strong>SHBHBAS002</strong> - Provide head, neck, and
+                                                shoulder massages for relaxation</li>
                                             <li class="nta_course"><strong>SHBHDES002</strong> - Braid hair</li>
-                                            <li class="nta_course"><strong>SHBXCCS004</strong> - Recommend products and services</li>
- 
+                                            <li class="nta_course"><strong>SHBXCCS004</strong> - Recommend products and
+                                                services</li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -480,29 +489,31 @@
 
 @push('css')
     <style>
-        .btn-custom{
-    border: none;
-    background: #3FD4FB;
-    color: #fff !important;
-    text-transform: uppercase;
-    width: 100%;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 13px;
-    /* height: 43px; */
-    padding: 15px;
-}
-.btn-custom-in-content{
-    border: none;
-    background: #3FD4FB;
-    color: #fff !important;
-    text-transform: uppercase;
-    padding: 15px 55px !important;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 13px;
-    /* height: 43px; */
-    padding: 15px;
-}
+        .btn-custom {
+            border: none;
+            background: #3FD4FB;
+            color: #fff !important;
+            text-transform: uppercase;
+            width: 100%;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 13px;
+            /* height: 43px; */
+            padding: 15px;
+        }
+
+        .btn-custom-in-content {
+            border: none;
+            background: #3FD4FB;
+            color: #fff !important;
+            text-transform: uppercase;
+            padding: 15px 55px !important;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 13px;
+            /* height: 43px; */
+            padding: 15px;
+        }
+
     </style>
 @endpush

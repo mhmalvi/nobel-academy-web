@@ -1,11 +1,9 @@
 @extends('layouts.app')
 @section('title', 'Diploma of Remedial Massage')
-    @push('seo')
-
-        <meta name="description"
-            content="With a Diploma of Remedial Massage course at Noble Training Academy, develop essential skills to work across a range of industries from sport to rehabilitation" />
-
-    @endpush
+@push('seo')
+    <meta name="description"
+        content="With a Diploma of Remedial Massage course at Noble Training Academy, develop essential skills to work across a range of industries from sport to rehabilitation" />
+@endpush
 @section('content')
     <!--Page Header-->
     <section class="page_header padding-top">
@@ -57,11 +55,13 @@
                                 experience in massage clinics. This allows you to perform massage techniques on a variety of
                                 people, including students, employees, and the general public.
                             </p>
-                            
+
                             <br>
                             <div style="width:100%; text-align:center;">
-                                <a href="{{url('/check-your-rpl-eligibility')}}" target="_blank" class="btn btn-lg btn-primary btn-custom-in-content" role="button">Check Your Eligibility For RPL</a>
-                           </div>
+                                <a href="{{ url('/check-your-rpl-eligibility-remedial-massage') }}" target="_blank"
+                                    class="btn btn-lg btn-primary btn-custom-in-content" role="button">Check Your
+                                    Eligibility For RPL</a>
+                            </div>
                             <div>
                                 <p>
                                     <strong>Our programs include:</strong>
@@ -73,20 +73,21 @@
                                 <p>- Math’s and writing resources</p>
                                 <p>- Resume and career guidance.</p>
                             </div>
-                            
+
                             <br>
-                            
+
                             <div class="bottom25 text-justify">
                                 <p>
                                     <strong>
-                                        Our remedial massage experts will teach you the following in this nationally recognized qualification:
+                                        Our remedial massage experts will teach you the following in this nationally
+                                        recognized qualification:
                                     </strong>
                                 </p>
                                 <br>
-                                <p> 
+                                <p>
                                     - Advanced massage techniques to treat a variety of injuries.
                                 </p>
-                                <p> 
+                                <p>
                                     - Clients with soft tissue dysfunction, musculoskeletal imbalance, or motion limitations
                                     are assessed and treated.
                                 </p>
@@ -96,7 +97,7 @@
                                     Remedial Massage Practitioner or Therapist. This course may be available as part of a
                                     Traineeship program.
                                 </p>
-                                <p> 
+                                <p>
                                     - Via job-placement opportunities offered as part of this course, you can complete the
                                     required 200 hours of hands-on and real-world massage therapy work.
                                 </p>
@@ -104,8 +105,10 @@
                             <br>
                             <p><strong>Career:</strong></p>
                             <br>
-                            <p>- Graduates may be able to work independently or as part of a health clinic as remedial massage therapists.</p>
-                            <p>- A remedial massage therapist may also work as part of a multi-disciplinary health care team as a specialist member.</p>
+                            <p>- Graduates may be able to work independently or as part of a health clinic as remedial
+                                massage therapists.</p>
+                            <p>- A remedial massage therapist may also work as part of a multi-disciplinary health care team
+                                as a specialist member.</p>
                             <p>- Graduates will continue their education with the Advanced Diploma in Myotherapy.</p>
                             <br>
                             <p><strong>Entry and Enrolment Process:</strong></p>
@@ -124,20 +127,26 @@
                             <h2 class="top30 bottom20">Packaging Rules</h2>
                             <p>Total number of units = 21</p>
                             <p>- 16 core units</p>
-                            <p>- 5 elective units, consisting of at least 1 unit from the Business Management group below</p>
+                            <p>- 5 elective units, consisting of at least 1 unit from the Business Management group below
+                            </p>
                             <p>
-                                - up to 4 units from the electives listed below, any endorsed Training Package or accredited course – these units must be relevant to the work outcome
+                                - up to 4 units from the electives listed below, any endorsed Training Package or accredited
+                                course – these units must be relevant to the work outcome
                             </p>
                         </div>
                     </div>
 
                     <br>
                     <br>
-                    <div class="d-flex">
+                    {{-- <div class="d-flex">
                         <button type="button" class="btn_common yellow border_radius" data-toggle="modal"
                             data-target="#applyNow"
                             onclick="event.preventDefault(); applyNow('Diploma of Remedial Massage');">Apply Now</button>
-                    </div>
+                    </div> --}}
+                    <a href="{{ url('/check-your-rpl-eligibility-remedial-massage') }}" target="_blank"
+                        class="btn btn-lg btn-primary btn-custom-in-content" role="button">
+                        Apply Now
+                    </a>
                     <br />
                     <br />
                     <div class="row">
@@ -148,7 +157,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingOne">
                                             <h4 class="panel-title" role="button" data-toggle="collapse"
-                                                data-parent="#accordion" href="#faqA" aria-expanded="false" aria-controls="faqA">
+                                                data-parent="#accordion" href="#faqA" aria-expanded="false"
+                                                aria-controls="faqA">
                                                 How you will learn?
                                             </h4>
                                         </div>
@@ -238,7 +248,8 @@
                             Click Here For Your Free Skill Check
                         </button> --}}
 
-                        <a href="{{url('/check-your-rpl-eligibility')}}" target="_blank" class="btn btn-lg btn-primary btn-custom" role="button">Check Your Eligibility For RPL</a>
+                        <a href="{{ url('/check-your-rpl-eligibility-remedial-massage') }}" target="_blank"
+                            class="btn btn-lg btn-primary btn-custom" role="button">Check Your Eligibility For RPL</a>
 
                         <h3 class="bottom20">Core units</h3>
                         <div class="media">
@@ -402,8 +413,8 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingTwo">
                                     <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                            href="#B" aria-expanded="false" aria-controls="B">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#B" aria-expanded="false" aria-controls="B">
                                             Other electives
                                         </a>
                                     </h4>
@@ -411,9 +422,12 @@
                                 <div id="B" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                     <div class="panel-body">
                                         <ul>
-                                            <li class="nta_course"><strong>HLTREF002</strong> -	Provide reflexology for relaxation</li>
-                                            <li class="nta_course"><strong>CHCPRP002</strong> -	Collaborate in professional practice</li>
-                                            <li class="nta_course"><strong>HLTHPS010</strong> -	Interpret and use information about nutrition and diet</li>
+                                            <li class="nta_course"><strong>HLTREF002</strong> - Provide reflexology for
+                                                relaxation</li>
+                                            <li class="nta_course"><strong>CHCPRP002</strong> - Collaborate in
+                                                professional practice</li>
+                                            <li class="nta_course"><strong>HLTHPS010</strong> - Interpret and use
+                                                information about nutrition and diet</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -428,30 +442,32 @@
 @endsection
 
 @push('css')
-<style>
-    .btn-custom{
-    border: none;
-    background: #3FD4FB;
-    color: #fff !important;
-    text-transform: uppercase;
-    width: 100%;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 13px;
-    /* height: 43px; */
-    padding: 15px;
-}
-.btn-custom-in-content{
-    border: none;
-    background: #3FD4FB;
-    color: #fff !important;
-    text-transform: uppercase;
-    padding: 15px 55px !important;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 13px;
-    /* height: 43px; */
-    padding: 15px;
-}
-</style>
+    <style>
+        .btn-custom {
+            border: none;
+            background: #3FD4FB;
+            color: #fff !important;
+            text-transform: uppercase;
+            width: 100%;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 13px;
+            /* height: 43px; */
+            padding: 15px;
+        }
+
+        .btn-custom-in-content {
+            border: none;
+            background: #3FD4FB;
+            color: #fff !important;
+            text-transform: uppercase;
+            padding: 15px 55px !important;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 13px;
+            /* height: 43px; */
+            padding: 15px;
+        }
+
+    </style>
 @endpush
