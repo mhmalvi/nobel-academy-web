@@ -43,9 +43,6 @@
                                         SHB40115 - Certificate IV in Beauty Therapy
                                     </option>
                                 </select>
-                                <div class="text-danger" v-if="errors.messages.qualification.length > 0">
-                                    {{-- {{ errors.messages.qualification[0] }} --}}
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -106,9 +103,6 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="text-danger" v-if="errors.messages.experience.length > 0">
-                                        {{-- {{ errors.messages.experience[0] }} --}}
-                                    </div>
                                 </div>
                                 <div class="radio p-0">
                                     <label class="p-0">Where is your work experience? *</label>
@@ -135,9 +129,6 @@
                                                 <div>Other</div>
                                             </label>
                                         </div>
-                                    </div>
-                                    <div class="text-danger" v-if="errors.messages.work_location.length > 0">
-                                        {{-- {{ errors.messages.work_location[0] }} --}}
                                     </div>
                                 </div>
                             </div>
@@ -225,10 +216,6 @@
                                             </label>
                                         </div>
                                     </div>
-
-                                    <div class="text-danger" v-if="errors.messages.location.length > 0">
-                                        {{-- {{ errors.messages.location[0] }} --}}
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -247,25 +234,16 @@
                                 <label for="name">Full Name *</label>
                                 <input type="text" id="name" class="form-control"
                                     placeholder="Please enter your full name" name="name" />
-                                <div class="text-danger" v-if="errors.messages.name.length > 0">
-                                    {{-- {{ errors.messages.name[0] }} --}}
-                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email Address *</label>
                                 <input type="email" id="email" class="form-control" placeholder="example@email.com"
                                     name="email" />
-                                <div class="text-danger" v-if="errors.messages.email.length > 0">
-                                    {{-- {{ errors.messages.email[0] }} --}}
-                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Contact Number *</label>
                                 <input type="text" id="phone" class="form-control"
                                     placeholder="Enter your contact number" name="contact" />
-                                <div class="text-danger" v-if="errors.messages.contact.length > 0">
-                                    {{-- {{ errors.messages.contact[0] }} --}}
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -326,9 +304,6 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="text-danger" v-if="errors.messages.q1.length > 0">
-                                    {{-- {{ errors.messages.q1[0] }} --}}
-                                </div>
                             </div>
 
                             <div class="radio">
@@ -350,9 +325,6 @@
                                             <div>No</div>
                                         </label>
                                     </div>
-                                </div>
-                                <div class="text-danger" v-if="errors.messages.q3.length > 0">
-                                    {{-- {{ errors.messages.q3[0] }} --}}
                                 </div>
                             </div>
 
@@ -377,9 +349,6 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="text-danger" v-if="errors.messages.q5.length > 0">
-                                    {{-- {{ errors.messages.q5[0] }} --}}
-                                </div>
                             </div>
 
                             <div class="radio">
@@ -403,9 +372,6 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="text-danger" v-if="errors.messages.q6.length > 0">
-                                    {{-- {{ errors.messages.q6[0] }} --}}
-                                </div>
                             </div>
 
                             <div class="radio">
@@ -427,9 +393,6 @@
                                             <div>No</div>
                                         </label>
                                     </div>
-                                </div>
-                                <div class="text-danger" v-if="errors.messages.q8.length > 0">
-                                    {{-- {{ errors.messages.q8[0] }} --}}
                                 </div>
                             </div>
                         </div>

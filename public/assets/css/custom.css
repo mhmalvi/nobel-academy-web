@@ -572,3 +572,9 @@ Success
 .scrollToTop i {
     color: #fff !important;
 }
+
+nav ul li a,
+footer ul li a,
+footer p a {
+    color: #002b46 !important;
+}
