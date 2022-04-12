@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\FAQDataService;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -46,6 +47,9 @@ class HomeController extends Controller
      */
     public function faqPage()
     {
-        return view('pages.faq');
+        $faq_data_service = new FAQDataService();
+        $data = $faq_data_service->getData();
+
+        return view('pages.faq', compact('data'));
     }
 }

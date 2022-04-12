@@ -1,11 +1,9 @@
 @extends('layouts.app')
 @section('title', 'Certificate IV in Beauty Therapy')
-    @push('seo')
-
-        <meta name="description"
-            content="With this hairdressing course certification, you can get started on your way to a promising career in hairdressing. Which will help you to work as a hairdresser in a salon with confidence" />
-
-    @endpush
+@push('seo')
+    <meta name="description"
+        content="With this hairdressing course certification, you can get started on your way to a promising career in hairdressing. Which will help you to work as a hairdresser in a salon with confidence" />
+@endpush
 @section('content')
     <!--Page Header-->
     <section class="page_header padding-top">
@@ -63,16 +61,19 @@
                                 This course will also prepare you to start your own company or work in the industry. You can
                                 learn small business promotion tips to help you succeed in a highly competitive market.
                             </p>
-                            
-                            <br/>
+
+                            <br />
                             <div style="width:100%; text-align:center;">
-                                <a href="{{url('/check-your-rpl-eligibility')}}" target="_blank" class="btn btn-lg btn-primary btn-custom-in-content" role="button">Check Your Eligibility For RPL</a>
-                           </div>
+                                <a href="{{ url('/check-your-rpl-eligibility') }}" target="_blank"
+                                    class="btn btn-lg btn-primary btn-custom-in-content" role="button">Check Your
+                                    Eligibility For RPL</a>
+                            </div>
                             <div>
                                 <p>
                                     <strong>Learn New Skills</strong>
                                 </p>
-                                <p> You will learn and expand your skills in the following areas through theoretical and practical course work:</p>
+                                <p> You will learn and expand your skills in the following areas through theoretical and
+                                    practical course work:</p>
                                 <p>- A range of massage techniques</p>
                                 <p>- Facial techniques including exfoliation and facial massage</p>
                                 <p>- Nail treatments including manicure and pedicure</p>
@@ -84,9 +85,9 @@
                                 <p>- Eye lash extensions</p>
                                 <p>- Lash and brows</p>
                             </div>
-                            
-                            <br/>
-                            
+
+                            <br />
+
                             <div>
                                 <p>
                                     <strong>Develop Your Telent</strong>
@@ -97,16 +98,17 @@
                                 <p>- The ability to manage time effectively</p>
                                 <p>- High levels of discretion and professional integrity</p>
                             </div>
-                            
-                            <br/>
-                            
+
+                            <br />
+
                             <div>
                                 <p>
                                     <strong>Job opportunity:</strong>
                                 </p>
                                 <p>- Senior Beauty Therapist</p>
                                 <p>
-                                    - Freelance Make-up Artist at retail cosmetic counters, fashion and media sets, or photography studios
+                                    - Freelance Make-up Artist at retail cosmetic counters, fashion and media sets, or
+                                    photography studios
                                 </p>
                             </div>
                         </div>
@@ -120,19 +122,23 @@
                             <p>- 6 elective units, consisting of</p>
                             <p>- 3 units from the list below</p>
                             <p>
-                                - 3 units from the list below, elsewhere in SHB Training Package, or any other current Training Package or accredited course
+                                - 3 units from the list below, elsewhere in SHB Training Package, or any other current
+                                Training Package or accredited course
                             </p>
                         </div>
                     </div>
 
                     <br>
                     <br>
-                    <div class="d-flex">
+                    {{-- <div class="d-flex">
                         <button type="button" class="btn_common yellow border_radius" data-toggle="modal"
                             data-target="#applyNow"
                             onclick="event.preventDefault(); applyNow('Certificate IV in Beauty Therapy');">Apply
                             Now</button>
-                    </div>
+                    </div> --}}
+                    <a href="{{ url('/check-your-rpl-eligibility') }}" target="_blank"
+                        class="btn btn-lg btn-primary btn-custom-in-content" role="button">Apply
+                        Now</a>
                     <br />
                     <br />
                     <div class="row">
@@ -221,7 +227,8 @@
                             </lord-icon>
                             Check Yout Eligibility For RPL
                         </button> --}}
-                        <a href="{{url('/check-your-rpl-eligibility')}}" target="_blank" class="btn btn-lg btn-primary btn-custom" role="button">Check Your Eligibility For RPL</a>
+                        <a href="{{ url('/check-your-rpl-eligibility') }}" target="_blank"
+                            class="btn btn-lg btn-primary btn-custom" role="button">Check Your Eligibility For RPL</a>
                         <h3 class="bottom20">Core units</h3>
                         <div class="media">
                             <div class="media-body">
@@ -343,18 +350,102 @@
 
                         <table class="table">
                             <tbody>
-                                <tr><td style="vertical-align:middle"><p>SHBBHRS004</p></td>  <td style="vertical-align:middle"><p>Provide hair reduction treatments using electrical currents</p></td></tr>
-                                <tr><td style="vertical-align:middle"><p>SHBBINF001</p></td>  <td style="vertical-align:middle"><p>Maintain infection control standards</p></td></tr>
-                                <tr><td style="vertical-align:middle"><p>SHBBSKS002</p></td>  <td style="vertical-align:middle"><p>Provide diathermy treatments</p></td></tr>
-                                <tr><td style="vertical-align:middle"><p>SHBBBOS004</p></td>  <td style="vertical-align:middle"><p>Provide aromatherapy massages</p></td></tr>
-                                <tr><td style="vertical-align:middle"><p>SHBBBOS005</p></td>  <td style="vertical-align:middle"><p>Use reflexology relaxation techniques in beauty treatments</p></td></tr>
-                                <tr><td style="vertical-align:middle"><p>SHBBCCS002</p></td>  <td style="vertical-align:middle"><p>Prepare personalized aromatic plant oil blends for beauty treatments</p></td></tr>
-                                <tr><td style="vertical-align:middle"><p>SHBBSPA003</p></td>  <td style="vertical-align:middle"><p>Provide stone therapy massages</p></td></tr>
-                                <tr><td style="vertical-align:middle"><p>SHBBSPA004</p></td>  <td style="vertical-align:middle"><p>Provide Indian head massages for relaxation</p></td></tr>
-                                <tr><td style="vertical-align:middle"><p>SHBBSPA001</p></td>  <td style="vertical-align:middle"><p>Work in a spa therapies framework</p></td></tr>
-                                <tr><td style="vertical-align:middle"><p>SHBBSPA002</p></td>  <td style="vertical-align:middle"><p>Provide spa therapies</p></td></tr>
-                                <tr><td style="vertical-align:middle"><p>BSBSMB304</p></td> 	<td style="vertical-align:middle"><p>Determine resource requirements for the micro business</p></td></tr>
-                                <tr><td style="vertical-align:middle"><p>BSBSMB403</p></td> 	<td style="vertical-align:middle"><p>Market the small business</p></td></tr>
+                                <tr>
+                                    <td style="vertical-align:middle">
+                                        <p>SHBBHRS004</p>
+                                    </td>
+                                    <td style="vertical-align:middle">
+                                        <p>Provide hair reduction treatments using electrical currents</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle">
+                                        <p>SHBBINF001</p>
+                                    </td>
+                                    <td style="vertical-align:middle">
+                                        <p>Maintain infection control standards</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle">
+                                        <p>SHBBSKS002</p>
+                                    </td>
+                                    <td style="vertical-align:middle">
+                                        <p>Provide diathermy treatments</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle">
+                                        <p>SHBBBOS004</p>
+                                    </td>
+                                    <td style="vertical-align:middle">
+                                        <p>Provide aromatherapy massages</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle">
+                                        <p>SHBBBOS005</p>
+                                    </td>
+                                    <td style="vertical-align:middle">
+                                        <p>Use reflexology relaxation techniques in beauty treatments</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle">
+                                        <p>SHBBCCS002</p>
+                                    </td>
+                                    <td style="vertical-align:middle">
+                                        <p>Prepare personalized aromatic plant oil blends for beauty treatments</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle">
+                                        <p>SHBBSPA003</p>
+                                    </td>
+                                    <td style="vertical-align:middle">
+                                        <p>Provide stone therapy massages</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle">
+                                        <p>SHBBSPA004</p>
+                                    </td>
+                                    <td style="vertical-align:middle">
+                                        <p>Provide Indian head massages for relaxation</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle">
+                                        <p>SHBBSPA001</p>
+                                    </td>
+                                    <td style="vertical-align:middle">
+                                        <p>Work in a spa therapies framework</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle">
+                                        <p>SHBBSPA002</p>
+                                    </td>
+                                    <td style="vertical-align:middle">
+                                        <p>Provide spa therapies</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle">
+                                        <p>BSBSMB304</p>
+                                    </td>
+                                    <td style="vertical-align:middle">
+                                        <p>Determine resource requirements for the micro business</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:middle">
+                                        <p>BSBSMB403</p>
+                                    </td>
+                                    <td style="vertical-align:middle">
+                                        <p>Market the small business</p>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -366,30 +457,32 @@
 @endsection
 
 @push('css')
-<style>
-.btn-custom{
-    border: none;
-    background: #3FD4FB;
-    color: #fff !important;
-    text-transform: uppercase;
-    width: 100%;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 13px;
-    /* height: 43px; */
-    padding: 15px;
-}
-.btn-custom-in-content{
-    border: none;
-    background: #3FD4FB;
-    color: #fff !important;
-    text-transform: uppercase;
-    padding: 15px 55px !important;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 13px;
-    /* height: 43px; */
-    padding: 15px;
-}
-</style>
+    <style>
+        .btn-custom {
+            border: none;
+            background: #3FD4FB;
+            color: #fff !important;
+            text-transform: uppercase;
+            width: 100%;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 13px;
+            /* height: 43px; */
+            padding: 15px;
+        }
+
+        .btn-custom-in-content {
+            border: none;
+            background: #3FD4FB;
+            color: #fff !important;
+            text-transform: uppercase;
+            padding: 15px 55px !important;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 13px;
+            /* height: 43px; */
+            padding: 15px;
+        }
+
+    </style>
 @endpush

@@ -51,9 +51,11 @@
                                 who understand the industry and its requirements.
                             </p>
                             <br>
-                           <div style="width:100%; text-align:center;">
-                                <a href="{{url('/check-your-rpl-eligibility')}}" target="_blank" class="btn btn-lg btn-primary btn-custom-in-content" role="button">Check Your Eligibility For RPL</a>
-                           </div>
+                            <div style="width:100%; text-align:center;">
+                                <a href="{{ url('/check-your-rpl-eligibility') }}" target="_blank"
+                                    class="btn btn-lg btn-primary btn-custom-in-content" role="button">Check Your
+                                    Eligibility For RPL</a>
+                            </div>
                             <p>
                                 <strong>Entry and Enrolment Process:</strong>
                             </p>
@@ -76,16 +78,20 @@
                             <p><strong>Group A</strong> – Electrolysis/Diathermy</p>
                             <p><strong>Group B</strong> – Relaxation Massage</p>
                             <p><strong>Group C</strong> – Spa Treatments</p>
-                            <p>remaining units from Group D - General Electives, elsewhere in SHB Training Package, or any other current training package or accredited course.</p>
+                            <p>remaining units from Group D - General Electives, elsewhere in SHB Training Package, or any
+                                other current training package or accredited course.</p>
                         </div>
                     </div>
                     <br>
                     <br>
-                    <div class="d-flex">
+                    {{-- <div class="d-flex">
                         <button type="button" class="btn_common yellow border_radius" data-toggle="modal"
                             data-target="#applyNow"
-                            onclick="event.preventDefault(); applyNow('Diploma of Beauty Therapy');">Apply Now</button>
-                    </div>
+                            onclick="event.preventDefault(); applyNow('Certificate IV in Beauty Therapy');">Apply
+                            Now</button>
+                    </div> --}}
+                    <a href="{{ url('/check-your-rpl-eligibility') }}" target="_blank"
+                        class="btn btn-lg btn-primary btn-custom-in-content" role="button">Apply Now</a>
                     <br />
                     <br />
                     <div class="row">
@@ -96,7 +102,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingOne">
                                             <h4 class="panel-title" role="button" data-toggle="collapse"
-                                                data-parent="#accordion" href="#faqA" aria-expanded="false" aria-controls="faqA">
+                                                data-parent="#accordion" href="#faqA" aria-expanded="false"
+                                                aria-controls="faqA">
                                                 What is the time of admission for Beauty therapy course?
                                             </h4>
                                         </div>
@@ -220,8 +227,9 @@
                             </lord-icon>
                             Check Your Eligibility For RPL
                         </button> --}}
-                        <a href="{{url('/check-your-rpl-eligibility')}}" target="_blank" class="btn btn-lg btn-primary btn-custom" role="button">Check Your Eligibility For RPL</a>
-                        
+                        <a href="{{ url('/check-your-rpl-eligibility') }}" target="_blank"
+                            class="btn btn-lg btn-primary btn-custom" role="button">Check Your Eligibility For RPL</a>
+
                         <h3 class="bottom20">Core units</h3>
                         <div class="media">
                             <div class="media-body">
@@ -352,11 +360,12 @@
                                         <ul>
                                             <li class="nta_course"><strong>SHBBHRS004</strong> - Provide hair reduction
                                                 treatments using electrical currents</li>
-                                            <li class="nta_course"><strong>SHBBINF001</strong> - Maintain infection control
+                                            <li class="nta_course"><strong>SHBBINF001</strong> - Maintain infection
+                                                control
                                                 standards</li>
                                             <li class="nta_course"><strong>SHBBSKS002</strong> - Provide diathermy
                                                 treatments</li>
-                                  
+
                                         </ul>
                                     </div>
                                 </div>
@@ -364,8 +373,8 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingTwo">
                                     <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                            href="#B" aria-expanded="false" aria-controls="B">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#B" aria-expanded="false" aria-controls="B">
                                             Group B – Relaxation Massage
                                         </a>
                                     </h4>
@@ -375,7 +384,8 @@
                                         <ul>
                                             <li class="nta_course"><strong>SHBBBOS004</strong> - Provide aromatherapy
                                                 massages</li>
-                                            <li class="nta_course"><strong>SHBBBOS005</strong> - Use reflexology relaxation
+                                            <li class="nta_course"><strong>SHBBBOS005</strong> - Use reflexology
+                                                relaxation
                                                 techniques in beauty treatments</li>
                                             <li class="nta_course"><strong>SHBBCCS002</strong> - Prepare personalised
                                                 aromatic plant oil blends for beauty treatments</li>
@@ -390,8 +400,8 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingTwo">
                                     <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                            href="#C" aria-expanded="false" aria-controls="C">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#C" aria-expanded="false" aria-controls="C">
                                             Group C – Spa Treatments
                                         </a>
                                     </h4>
@@ -408,8 +418,8 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingTwo">
                                     <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                            href="#D" aria-expanded="false" aria-controls="D">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#D" aria-expanded="false" aria-controls="D">
                                             Group D - General electives
                                         </a>
                                     </h4>
@@ -417,9 +427,11 @@
                                 <div id="D" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                     <div class="panel-body">
                                         <ul>
-                                            <li class="nta_course"><strong>BSBSMB304</strong> -	Determine resource requirements for the micro business</li>
-                                            <li class="nta_course"><strong>BSBSMB403</strong> -	Market the small business</li>
-                                            
+                                            <li class="nta_course"><strong>BSBSMB304</strong> - Determine resource
+                                                requirements for the micro business</li>
+                                            <li class="nta_course"><strong>BSBSMB403</strong> - Market the small
+                                                business</li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -430,12 +442,13 @@
                     <div class="card card-custom">
                         <h5 class="card-title card-title-custom">Looking for answer you can't find?</h5>
                         <div class="card-body">
-                          <img src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-headphone-devices-icongeek26-linear-colour-icongeek26-1.png"/>
-                          <p class="card-text">Our expert are always here to help!</p>
-                          <p class="card-text card-text-number">1300 616 123</p>
-                          <a href="#" class="btn btn-primary btn-primary-custom">Get in touch now!</a>
+                            <img
+                                src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-headphone-devices-icongeek26-linear-colour-icongeek26-1.png" />
+                            <p class="card-text">Our expert are always here to help!</p>
+                            <p class="card-text card-text-number">1300 616 123</p>
+                            <a href="#" class="btn btn-primary btn-primary-custom">Get in touch now!</a>
                         </div>
-                      </div>
+                    </div>
                 </aside>
             </div>
         </div>
@@ -444,66 +457,63 @@
 @endsection
 
 @push('css')
-<style>
-.btn-custom{
-    border: none;
-    background: #3FD4FB;
-    color: #fff !important;
-    text-transform: uppercase;
-    width: 100%;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 13px;
-    /* height: 43px; */
-    padding: 15px;
-}
-.btn-custom-in-content{
-    border: none;
-    background: #3FD4FB;
-    color: #fff !important;
-    text-transform: uppercase;
-    padding: 15px 55px !important;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 13px;
-    /* height: 43px; */
-    padding: 15px;
-}
+    <style>
+        .btn-custom {
+            border: none;
+            background: #3FD4FB;
+            color: #fff !important;
+            text-transform: uppercase;
+            width: 100%;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 13px;
+            /* height: 43px; */
+            padding: 15px;
+        }
+
+        .btn-custom-in-content {
+            border: none;
+            background: #3FD4FB;
+            color: #fff !important;
+            text-transform: uppercase;
+            padding: 15px 55px !important;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 13px;
+            /* height: 43px; */
+            padding: 15px;
+        }
 
 
 
 
 
-.card-custom {
-    border: 1px solid #E0E0E0;
-    text-align: center;
-}
+        .card-custom {
+            border: 1px solid #E0E0E0;
+            text-align: center;
+        }
 
-.card-title-custom{
-    margin-bottom: 0.75rem;
-    background: #46D6FB;
-    padding: 10px 0px;
-    color: #fff;
-    font-weight: 900;
-}
+        .card-title-custom {
+            margin-bottom: 0.75rem;
+            background: #46D6FB;
+            padding: 10px 0px;
+            color: #fff;
+            font-weight: 900;
+        }
 
-.card-text-number{
-    color: #46D6FB;
-    font-weight: 900;
-}
-
-
-.btn-primary-custom{
-    width: 100%;
-    background: #46D6FB;
-    color: #fff !important;
-    font-weight: 700;
-    border: none;
-}
+        .card-text-number {
+            color: #46D6FB;
+            font-weight: 900;
+        }
 
 
+        .btn-primary-custom {
+            width: 100%;
+            background: #46D6FB;
+            color: #fff !important;
+            font-weight: 700;
+            border: none;
+        }
 
-
-
-   </style>
+    </style>
 @endpush

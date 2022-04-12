@@ -23,8 +23,7 @@ use App\Mail\RplEligibilityMail;
 use App\Http\Requests\CheckEligibilityRequest;
 
 use App\Models\RplEligibilityRequest;
-
-
+use App\Services\GoogleSheetHandler;
 
 class MailController extends Controller
 
@@ -160,11 +159,9 @@ class MailController extends Controller
                 'industry' => '',
                 'course' => '',
 
-                'q1' => $request->q1,
-                'q3' => $request->q3,
-                'q5' => $request->q5,
-                'q6' => $request->q6,
-                'q8' => $request->q8,
+                'qus1' => $request->q1,
+                'qus2' => $request->q2,
+                'qus3' => $request->q3,
             ];
 
 
@@ -200,18 +197,19 @@ class MailController extends Controller
                 }
             }
 
+            // Mail::to('dev.quadque@gmail.com')->send(new RplEligibilityMail($data, $filePath));
+
+            $google_sheet_handler = new GoogleSheetHandler();
+
+            // Mail::to('shere1895@gmail.com')->send(new RplEligibilityMail($data, $filePath));
 
 
-            Mail::to('shere1895@gmail.com')->send(new RplEligibilityMail($data, $filePath));
-
-
+            $google_sheet_handler->setData($data)->saveRPL();
 
             if ($request->hasFile('files') && count($request->file('files')) > 0) {
 
                 Storage::deleteDirectory('public/' . $directory);
             }
-
-
 
             return response()->json(['success' => 'success'], 200);
         } catch (\Throwable $th) {
