@@ -263,128 +263,107 @@
             <div id="js-grid-masonry" class="cbp">
                 <div class="cbp-item">
                     <div class="cbp-caption-defaultWrap">
-                    <div class="testimonial_wrap">
-                        <div class="testimonial_text text-center">
-                        <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
-                        <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling.</p>
+                        <div class="testimonial_wrap">
+                            <div class="testimonial_text text-center">
+                                <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
+                                <p>
+                                    With my 2 years of experience in the Saloon industry, I managed to get an RPL- Certificate 
+                                    III in Hairdressing (SHB30416) in just 10 Days with the help of NTA.
+                                </p>
+                            </div>
+                            <div class="testimonial_pic">
+                                <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
+                                <span class="color">Roslyen Cilvia</span>
+                            </div>
                         </div>
-                        <div class="testimonial_pic">
-                        <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
-                        <span class="color">John Smith</span>
-                        <span class="post_img">Owner Edua</span>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <div class="cbp-item">
                     <div class="cbp-caption-defaultWrap">
-                    <div class="testimonial_wrap">
-                        <div class="testimonial_text text-center">
-                        <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
-                        <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling. Innovativeness is 
-                            the pledge of our stable development. We tap into the most successful international management data, forestalling market.
-                        </p>
+                        <div class="testimonial_wrap">
+                            <div class="testimonial_text text-center">
+                                <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
+                                <p>
+                                    I am very much grateful to have such a recognized training organization to complete my 
+                                    (Diploma of Beauty Therapy, SHB50115) course to develop my career in the beauty industry. 
+                                </p>
+                            </div>
+                            <div class="testimonial_pic">
+                                <img src="{{asset('assets/images/testinomial2.jpg')}}" alt="testimonial" width="59">
+                                <span class="color">Sun Fang Chang</span>
+                            </div>
                         </div>
-                        <div class="testimonial_pic">
-                        <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
-                        <span class="color">John Smith</span>
-                        <span class="post_img">Owner Edua</span>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <div class="cbp-item">
                     <div class="cbp-caption-defaultWrap">
-                    <div class="testimonial_wrap">
-                        <div class="testimonial_text text-center">
-                        <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
-                        <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling.
-                            Innovativeness is the pledge of our stable development. We tap into successful.
-                        </p>
+                        <div class="testimonial_wrap">
+                            <div class="testimonial_text text-center">
+                                <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
+                                <p>
+                                    All the members of the noble training academy are nice, and the instructors are very knowledgeable and very 
+                                    friendly during my remedial massage therapy courses.
+                                </p>
+                            </div>
+                            <div class="testimonial_pic">
+                                <img src="{{asset('assets/images/testinomial3.jpg')}}" alt="testimonial" width="59">
+                                <span class="color">Li fu hang </span>
+                            </div>
                         </div>
-                        <div class="testimonial_pic">
-                        <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
-                        <span class="color">John Smith</span>
-                        <span class="post_img">Owner Edua</span>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <div class="cbp-item">
                     <div class="cbp-caption-defaultWrap">
-                    <div class="testimonial_wrap">
-                        <div class="testimonial_text text-center">
-                        <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
-                        <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling.</p>
+                        <div class="testimonial_wrap">
+                            <div class="testimonial_text text-center">
+                                <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
+                                <p>
+                                    After getting the qualification in remedial massage, I got to start my business as a 
+                                    Spa & massage center in Australia. Even now, I am a part-time massage therapist, advisor, 
+                                    and instructor too.
+                                </p>
+                            </div>
+                            <div class="testimonial_pic">
+                                <img src="{{asset('assets/images/testinomial4.jpg')}}" alt="testimonial" width="59">
+                                <span class="color">Louis Hennah</span>
+                            </div>
                         </div>
-                        <div class="testimonial_pic">
-                        <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
-                        <span class="color">John Smith</span>
-                        <span class="post_img">Owner Edua</span>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <div class="cbp-item">
                     <div class="cbp-caption-defaultWrap">
-                    <div class="testimonial_wrap">
-                        <div class="testimonial_text text-center">
-                        <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
-                        <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling. Innovativeness is the 
-                            pledge of our stable development. We tap into the most successful international management data, forestalling market.
-                        </p>
+                        <div class="testimonial_wrap">
+                            <div class="testimonial_text text-center">
+                                <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
+                                <p>
+                                    I can’t make any complaints about this Diploma of Beauty Therapy course while Nobel 
+                                    Training Academy (NTA) helps me with the easy assessment program and provides advanced 
+                                    learning skills.
+                                </p>
+                            </div>
+                            <div class="testimonial_pic">
+                                <img src="{{asset('assets/images/testinomial5.jpg')}}" alt="testimonial" width="59">
+                                <span class="color">Julia Ana</span>
+                            </div>
                         </div>
-                        <div class="testimonial_pic">
-                        <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
-                        <span class="color">John Smith</span>
-                        <span class="post_img">Owner Edua</span>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <div class="cbp-item">
                     <div class="cbp-caption-defaultWrap">
-                    <div class="testimonial_wrap">
-                        <div class="testimonial_text text-center">
-                        <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
-                        <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling.
-                            Innovativeness is the pledge of our stable development. We tap into successful.
-                        </p>
+                        <div class="testimonial_wrap">
+                            <div class="testimonial_text text-center">
+                                <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
+                                <p>
+                                    It was a great experience with Noble Training Academy while I did my course SHB30416 - 
+                                    Certificate III in Hairdressing. All the executives and trainer was friendly. I am lucky 
+                                    to have this assistance.
+                                </p>
+                            </div>
+                            <div class="testimonial_pic">
+                                <img src="{{asset('assets/images/testinomial6.jpg')}}" alt="testimonial" width="59">
+                                <span class="color">William Jack</span>
+                            </div>
                         </div>
-                        <div class="testimonial_pic">
-                        <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
-                        <span class="color">John Smith</span>
-                        <span class="post_img">Owner Edua</span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="cbp-item">
-                    <div class="cbp-caption-defaultWrap">
-                    <div class="testimonial_wrap">
-                        <div class="testimonial_text text-center">
-                        <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
-                        <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling.</p>
-                        </div>
-                        <div class="testimonial_pic">
-                        <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
-                        <span class="color">John Smith</span>
-                        <span class="post_img">Owner Edua</span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="cbp-item">
-                    <div class="cbp-caption-defaultWrap testimonial_wrap">
-                    <div class="testimonial_text text-center">
-                        <img src="{{asset('assets/images/quote.png')}}" alt="quote" class="quote">
-                        <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling. Innovativeness is the pledge of our stable development. We tap into the most successful international management data, forestalling market.</p>
-                    </div>
-                    <div class="testimonial_pic">
-                        <img src="{{asset('assets/images/testinomial1.jpg')}}" alt="testimonial" width="59">
-                        <span class="color">John Smith</span>
-                        <span class="post_img">Owner Edua</span>
-                    </div>
                     </div>
                 </div>
             </div>
