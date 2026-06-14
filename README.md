@@ -1,6 +1,8 @@
 <!-- repo-card -->
 ![nobel-academy-web](docs/assets/social-card.png)
 
+![nobel-academy-web — architecture](docs/assets/architecture.png)
+
 # Nobel Academy Web
 
 The official website for **Nobel Academy**, built with Laravel 8 and Jetstream. This platform serves as the public-facing web presence, featuring course showcases, blog publishing, application processing, and RPL eligibility checks.
